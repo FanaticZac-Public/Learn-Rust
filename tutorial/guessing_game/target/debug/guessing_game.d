@@ -1,0 +1,1 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/guessing_game/target/debug/guessing_game: /home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/guessing_game/src/main.rs
