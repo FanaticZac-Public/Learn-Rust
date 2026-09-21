@@ -8,4 +8,4 @@ Learning Rust - creating tutorialized reference and practice project for career 
 
 I will be putting most notes and human readable work within /notebooks, but quick links here.
 
-1. [Learning Rust](notebooks/Learn-Rust.md)
+1. [Learning Rust](./notebooks/00-learning-rust.md)

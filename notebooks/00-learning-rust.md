@@ -19,12 +19,16 @@ A professional learning record of Rust - which will evolve into applications foc
     ### Note
     - Kill 2 birds with 1 stone is one of my fundemental personal/professional philosophies for maximizing productivity 
     - 1 action - 2 (or more) results
-    - This Project = (learn rust | practice compSci | market for the jobs I want)
+    - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game)
 
 
 ## Rust Learning Links
 - [The Rust Programming Language](https://doc.rust-lang.org)
     - [Appendix A: Keywords](https://doc.rust-lang.org/book/appendix-01-keywords.html)
+    - [Appendix B: Operators and Symbols](https://doc.rust-lang.org/book/appendix-02-operators.html)
+    - [Appendix C: Derivable Traits](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
+    - [Appendix D: Useful Development Tools](https://doc.rust-lang.org/book/appendix-04-useful-development-tools.html)
+    - [Constant Evaluation - which operations and compile time concerns](https://doc.rust-lang.org/reference/const_eval.html)
 - [Rust Language API reference](https://doc.rust-lang.org/std/prelude/index.html)
 - Package Managers
     - [Rust - The Cargo Book](https://doc.rust-lang.org/cargo/)
