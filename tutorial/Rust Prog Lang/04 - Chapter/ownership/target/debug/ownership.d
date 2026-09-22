@@ -1,0 +1,1 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/04\ -\ Chapter/ownership/target/debug/ownership: /home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/04\ -\ Chapter/ownership/src/main.rs
