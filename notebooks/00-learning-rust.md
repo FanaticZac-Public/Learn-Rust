@@ -37,7 +37,19 @@ A professional learning record of Rust - which will evolve into applications foc
     - [Appendix C: Derivable Traits](https://doc.rust-lang.org/book/appendix-03-derivable-traits.html)
     - [Appendix D: Useful Development Tools](https://doc.rust-lang.org/book/appendix-04-useful-development-tools.html)
     - [Constant Evaluation - which operations and compile time concerns](https://doc.rust-lang.org/reference/const_eval.html)
+
 - [Rust Language API reference](https://doc.rust-lang.org/std/prelude/index.html)
+    - [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
+        - TODO: Need to review this (following tutorial - haven't yet).
+    - [Collections](https://doc.rust-lang.org/std/collections/index.html)
+        - This also has a "use a BLANK" for "BLANK" situation section - which might be helpful when building stuff from scratch in an architecturally conscience way.
+        - Also has Big(O) performance chart for all (plus guide)
+        - [Vectors (struct)](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+        - [String (struct)](https://doc.rust-lang.org/std/vec/struct.Vec.html)
+            - There's some complexity and error potential with strings in Rust (re-read chapter later)
+            - Be sure to check out the documentation for useful methods:
+                - contains for searching in a string 
+                - replace for substituting parts of a string with another string.
 - Package Managers
     - [Rust - The Cargo Book](https://doc.rust-lang.org/cargo/)
     - [Crates - Rust Community Crates](https://crates.io/)
@@ -48,8 +60,8 @@ A professional learning record of Rust - which will evolve into applications foc
 
 ## Other Learning Links
 - [Markdown (MD) Reference](https://www.markdownguide.org/cheat-sheet/)
-- 
-
+- [SipHash - Rust hashmap default hasher to mitigate DDOS](https://en.wikipedia.org/wiki/SipHash)
+    - Discussed end ot ch8 lightly
 ## Rust API Quick Reference - mostly just adding stuff i looked at for tutorial or specific use-case 
 - [Enum Option (Special Enum - built in - Rust's version of null)](https://doc.rust-lang.org/std/option/enum.Option.html)
 - [Enum IpAddr ](https://doc.rust-lang.org/std/net/enum.IpAddr.html)

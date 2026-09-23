@@ -11,6 +11,8 @@ Learning Rust - creating tutorialized reference and practice project for career 
 My name is Zach and I hold a Bachelor of Science - Applied Computer Science (Game Development option) from BCIT, located in Greater Vancouver Area, British Columbia.
 - Note: I also took most (4/5) Network Security Application option courses (out of pocket $$).
 
+*Rustacean in training*
+
 ## Project 
 
 The actual project definition is within the first link, but this page will hold quick links here for better navigation by potential (employers), observers of the project.
