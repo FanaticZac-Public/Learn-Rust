@@ -2,7 +2,11 @@
 
 A professional learning record of Rust - which will evolve into applications focused on practicing physics, algorithms, game development, socket programming, and beyond.
 
-(This is all me btw - no AI copy-pastes)
+- Note: I have a Bsc.CompSci Degree so I may skip over some stuff I find boring and standard.
+    - However I will probably still go over all sections of the text just for posterity sake.
+- This is all me btw - no AI - at least for the book tutorials
+    - For larger projects - or professional indy stuff... time is money. 
+    - I don't publish what i don't understand at any rate.
 
 ## Goals
 
@@ -13,13 +17,17 @@ A professional learning record of Rust - which will evolve into applications foc
     - Game Development (with Bevy)
     - Socket Programming (NetSec + Multiplayer Games)
     - Professional Projects
-    - Review all course material for degree (and work in if possible)
+    - Review all course material from degree (and work it in where possible)
 - For this git project to be my reference and career demonstration
 
     ### Note
-    - Kill 2 birds with 1 stone is one of my fundemental personal/professional philosophies for maximizing productivity 
+    - Kill 2 birds with 1 stone is one of my fundamental personal/professional philosophies for maximizing productivity 
     - 1 action - 2 (or more) results
     - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game)
+
+## Plan
+- Going to go over entire "The Rust Programming Language" text. 
+- Will learn Bevy Quick
 
 
 ## Rust Learning Links
@@ -41,3 +49,7 @@ A professional learning record of Rust - which will evolve into applications foc
 ## Other Learning Links
 - [Markdown (MD) Reference](https://www.markdownguide.org/cheat-sheet/)
 - 
+
+## Rust API Quick Reference - mostly just adding stuff i looked at for tutorial or specific use-case 
+- [Enum Option (Special Enum - built in - Rust's version of null)](https://doc.rust-lang.org/std/option/enum.Option.html)
+- [Enum IpAddr ](https://doc.rust-lang.org/std/net/enum.IpAddr.html)

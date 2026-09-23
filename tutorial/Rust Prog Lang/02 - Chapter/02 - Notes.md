@@ -1,4 +1,4 @@
-# Chapter 02 - Notes
+# Chapter 02 - Programming Guessing Game
 
 ## part 1
 - Variables are immutable by default. use mut for mutable

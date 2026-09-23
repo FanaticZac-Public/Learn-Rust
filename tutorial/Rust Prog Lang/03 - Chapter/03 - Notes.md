@@ -1,4 +1,4 @@
-# Chapter 03 - My First Read Notes
+# Chapter 03 - Common Programming Concepts
 
 This section is about variables, basic types, functions, comments, and control flow. These notes are just stuff that stands out from me from the book - that i may want to refer to later in short form.
 
