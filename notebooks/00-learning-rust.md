@@ -50,6 +50,8 @@ A professional learning record of Rust - which will evolve into applications foc
             - Be sure to check out the documentation for useful methods:
                 - contains for searching in a string 
                 - replace for substituting parts of a string with another string.
+        - [Trait Termination (process)](https://doc.rust-lang.org/std/process/trait.Termination.html)
+            - Is for custom main function termination exit codes with function 'report'.
 - Package Managers
     - [Rust - The Cargo Book](https://doc.rust-lang.org/cargo/)
     - [Crates - Rust Community Crates](https://crates.io/)

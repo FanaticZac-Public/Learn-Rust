@@ -15,11 +15,25 @@ As much as I find this kind of tedious and would rather just start on bevy or ot
 - I will jot down ideas for putting this all together in simple test bed application that explores these topic together.
 - And hopefully this will allow me dig down on Rust fundamentals most important to programmers who are not new to programming but maybe new to rust (and perhaps i can do a short video related at the end of this section)
 
-So I will go back for chapters 1-8 for each tasks, but will be cautious going forward for cheatsheet and Rust specific mentions
+So I will go back for chapters 1-8 for each tasks, I will still do a first read-through for quick notes for each chapter but do all potential exercises to get my head around the concepts if new, and then later i will come back and make cheat sheets for that on second pass (is better for memorization). But I will note Rust specific mentions to make cheat sheets easier later.
+
 ---
 
 ## Cheat Sheets Completed
 Check chapter folders for cheat sheets
+|  | |  |
+|---|---|---|
+| [x] Chapter 1 | [ ] Chapter 2 | [ ] Chapter 3 |
+| [ ] Chapter 4 | [ ] Chapter 5 | [ ] Chapter 6 |
+| [ ] Chapter 7 | [ ] Chapter 8 | [ ] Chapter 9 |
+| [ ] Chapter 10 | [ ] Chapter 11 | [ ] Chapter 12 |
+| [ ] Chapter 13 | [ ] Chapter 14 | [ ] Chapter 15 |
+| [ ] Chapter 16 | [ ] Chapter 17 | [ ] Chapter 18 |
+| [ ] Chapter 19 | [ ] Chapter 20 | [ ] Chapter 21 |
+
+## Personal Chapter exercise competency  
+For chapter 9 and beyond - going to ensure perfect practice first time. 
+For 1-8 - going to go back and review with cheatsheet creation and assess. Will mark below whether I'm confident with the learning outcomes - remaining requires review or extra practice.
 |  | |  |
 |---|---|---|
 | [x] Chapter 1 | [ ] Chapter 2 | [ ] Chapter 3 |
