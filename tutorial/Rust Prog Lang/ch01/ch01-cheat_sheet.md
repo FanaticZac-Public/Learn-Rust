@@ -1,7 +1,11 @@
+<style>
+@import url("../notes.css");
+</style>
 
 # Chapter 1 - Getting Started
 
 ## rustup
+
 ```console
 // update rust
 $ rustup update
@@ -9,39 +13,53 @@ $ rustup update
 // uninstall rust
 $ rustup self uninstall
 ```
-## work offline 
-read local document 
-```console 
+
+## work offline
+
+read local document
+
+```console
 rustup doc
 ```
+
 install dependencies to work offline
-```console 
+
+```console
 cargo new get-dependencies
 cd get-dependencies
 cargo add rand@0.8.5 trpl@0.2.0
 ```
-- Can delete get-dependencies folder after. 
+
+- Can delete get-dependencies folder after.
 - Use the --offline flag with all cargo commands to use these cached versions
 
 ## rust/cargo usages
+
 Running from console, create file main.rs and set main function
+
 ```rust
 fn main() {
     println!("Hello, world!");
 }
 ```
+
 In terminal, compile and run (linux)
+
 ```console
-$ rustc main.rs 
+$ rustc main.rs
 $ ./main
 ```
+
 You can run 'rustfmt' to format to default standard.
+
 ```console
 $ rustfmt main.rs
 ```
+
 - Rust is an ahead-of-time compiled language, meaning you can compile a program and give the executable to someone else, and they can run it even without having Rust installed.
 
-Cargo is Rust’s build system and package manager. 
+Cargo is Rust’s build system and package manager.
+
 ```console
 // get version
 $ cargo --version
@@ -70,5 +88,14 @@ $ cargo run
 
 // Build release version
 $ cargo build --release
+```
 
+
+<div class="zac-note">
+Some added for reference from later chapters
+</div>
+
+```console
+// Will build documentation for your project using a your toml and open it.
+$ cargo doc --open
 ```

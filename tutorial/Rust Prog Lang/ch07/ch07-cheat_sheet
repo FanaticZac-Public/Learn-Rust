@@ -1,0 +1,140 @@
+<style>
+@import url("../notes.css");
+</style>
+
+# Chapter 07 - Packages, Crates, and Modules - cheat sheet - Quick Reference
+
+<div class="zac-note">
+<h3>Zac Intro</h3>
+
+These cheat sheet pages were done on second re-read - where I remove the example scenarios and just keep the factual statements or example code - without the long winded explanations from the book. So when I am trying to recall all the facts or nuances of say, ownership, or package management, I can save a bit of time.
+
+The exercise of refinement and elaboration on cursory topics supports memorization
+
+I did create 'full-package-crate-experiment' package to test using binary and library crates together - on second go around.
+
+My personal comments will appear like this from now on.
+
+</div>
+
+## project organization and modularization
+
+As a project grows, you should organize code by splitting it into multiple modules and then multiple files.
+
+A package can contain multiple binary crates and optionally one library crate.
+
+As a package grows, you can extract parts into separate crates that become external dependencies.
+
+This chapter covers all these techniques.
+
+For very large projects comprising a set of interrelated packages that evolve together, Cargo provides workspaces (ch14)
+
+## Encapsulation and public interface design
+
+Encapsulating implementation details lets you reuse code at a higher level
+
+Once you’ve implemented an operation, other code can call your code via its public interface without having to know how the implementation works.
+
+The way you write code defines which parts are public for other code to use and which parts are private implementation details that you reserve the right to change.
+
+## Scope
+
+The nested context in which code is written has a set of names that are defined as “in scope.”
+
+You can create scopes and change which names are in or out of scope.
+
+You can’t have two items with the same name in the same scope; tools are available to resolve name conflicts.
+
+These features in **Rust** are collectively referred to as the module system, include:
+
+- Packages: A Cargo feature that lets you build, test, and share crates
+- Crates: A tree of modules that produces a library or executable
+- Modules and use: Let you control the organization, scope, and privacy of paths
+- Paths: A way of naming an item, such as a struct, function, or module
+
+---
+
+## Packages and Crates
+
+A crate is the smallest amount of code that the Rust compiler considers at a time. Even if you run rustc rather than cargo and pass a single source code file, the compiler considers that file to be a crate.
+
+- Crates can contain modules
+- A crate can come in one of two forms: a binary crate or a library crate.
+- The crate root is a source file that the Rust compiler starts from and makes up the root module of your crate
+
+### Binary crates
+
+Programs you can compile to an executable that you can run, such as a command line program or a server. Each must have a function called main that defines what happens when the executable runs.
+
+### Library crates
+
+don’t have a main function, and they don’t compile to an executable. Instead, they define functionality intended to be shared with multiple projects.
+
+For example, the rand crate we used in Chapter 2 provides functionality that generates random numbers.
+
+Most of the time when Rustaceans say “crate,” they mean library crate, and they use “crate” interchangeably with the general programming concept of a “library.”
+
+### Package
+
+A package is a bundle of one or more crates that provides a set of functionality
+
+A package contains a Cargo.toml file that describes how to build those crates.
+
+A package can contain as many binary crates as you like, but at most only one library crate.
+
+A package must contain at least one crate, whether that’s a library or binary crate.
+
+Cargo follows a convention that src/main.rs is the crate root of a binary crate with the same name as the package.
+
+Likewise, Cargo knows that if the package directory contains src/lib.rs, the package contains a library crate with the same name as the package, and src/lib.rs is its crate root.
+
+Cargo passes the crate root files to rustc to build the library or binary.
+
+If a package contains src/main.rs and src/lib.rs, it has two crates: a binary and a library, both with the same name as the package.
+
+A package can have multiple binary crates by placing files in the src/bin directory: Each file will be a separate binary crate.
+
+## Control Scope and Privacy with Modules
+
+<div style="border-left: 4px solid #dac400; padding: 10px;">
+One thing i was confused about when reading about putting other binary crates in the src/bin folder, is what this is for.
+
+The "The Rust Programming Language" guide doesn't explain the purpose, and here's what I determined. In my mind i still view Rust as being a sort of utility language like C (where you might make performance utils but would be slow to develop big projects with), but Rust really can - I can already tell the semantic sugar and simplicity with performance is grand, but I digress.
+
+So the value of having several entry points to the same library is same as how often in web development, you may want a mobile app, a console app, a web app, and API - all as different interface points to the same application. You want this because a singular solution under the hood of the various interfaces only requires 1 solution for 1 bug. Below is an example of those options illustrated. Want to make a mobile UI to connect to the service, add it to bin, publish your variant, and away you go.
+
+```
+my_project/
+├── src/
+│   ├── lib.rs
+│   ├── bin/
+│   │   ├── cli.rs
+│   │   ├── daemon.rs
+│   │   └── worker.rs
+├── Cargo.toml
+```
+
+If you have both main.rs and /bin/secondary.rs (any names - I chose secondary), the compiler will give you this error when you try and run:
+
+```console
+$ cargo run
+
+error: `cargo run` could not determine which binary to run. Use the `--bin` option to specify a binary, or the `default-run` manifest key.
+available binaries: full-package-crate-experiment, secondary
+```
+
+So you have to run with explicit call such as:
+
+```
+$ cargo run --bin full-package-crate-experiment
+```
+
+</div>
+
+### Modules Cheat Sheet - compiler perspective
+
+1. When compiling a crate, the compiler first looks in the crate root file (usually src/lib.rs for a library crate and src/main.rs for a binary crate) for code to compile.
+2. In the crate root file, you can declare new modules; say you declare a “garden” module with mod garden;. The compiler will look for the module’s code in these places:
+   - Inline, within curly brackets that replace the semicolon following mod garden
+   - In the file src/garden.rs
+   - In the file src/garden/mod.rs
