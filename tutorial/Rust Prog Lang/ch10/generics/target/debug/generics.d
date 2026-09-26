@@ -1,0 +1,1 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch10/generics/target/debug/generics: /home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch10/generics/src/main.rs
