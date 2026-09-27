@@ -98,4 +98,12 @@ Some added for reference from later chapters
 ```console
 // Will build documentation for your project using a your toml and open it.
 $ cargo doc --open
+
+// create library project
+$ cargo new project_name --lib
+
+// run tests
+$ cargo test
+
+
 ```

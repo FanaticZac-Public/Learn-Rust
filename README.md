@@ -132,7 +132,32 @@ These are my cheat sheets for each chapter
 8. TODO
 9. TODO
 10. [My Cheat Sheet - ch10 - Generic Types, Traits, and Lifelines](./tutorial/Rust%20Prog%20Lang/ch10/ch10-cheat_sheet.md)
-11. TODO
+11. [My Cheat Sheet - ch11 - Writing Tests](./tutorial/Rust%20Prog%20Lang/ch11/ch11-cheat-sheet.md) - DONE
+
+| Chapter | Read | Cheatsheet | Notes |
+|---|---|---|---|
+| Chapter 1 | [x] | [ ] | |
+| Chapter 2 | [ ] | [ ] | |
+| Chapter 3 | [ ] | [ ] | |
+| Chapter 4 | [ ] | [ ] | |
+| Chapter 5 | [ ] | [ ] | |
+| Chapter 6 | [ ] | [ ] | |
+| Chapter 7 | [ ] | [ ] | |
+| Chapter 8 | [ ] | [ ] | |
+| Chapter 9 | [ ] | [ ] | |
+| Chapter 10 | [ ] | [ ] | |
+| Chapter 11 | [ ] | [ ] | |
+| Chapter 12 | [ ] | [ ] | |
+| Chapter 13 | [ ] | [ ] | |
+| Chapter 14 | [ ] | [ ] | |
+| Chapter 15 | [ ] | [ ] | |
+| Chapter 16 | [ ] | [ ] | |
+| Chapter 17 | [ ] | [ ] | |
+| Chapter 18 | [ ] | [ ] | |
+| Chapter 19 | [ ] | [ ] | |
+| Chapter 20 | [ ] | [ ] | |
+| Chapter 21 | [ ] | [ ] | |
+
 
 ---
 
