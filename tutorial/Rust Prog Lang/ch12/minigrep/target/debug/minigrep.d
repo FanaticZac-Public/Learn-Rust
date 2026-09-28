@@ -1,0 +1,1 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch12/minigrep/target/debug/minigrep: /home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch12/minigrep/src/lib.rs /home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch12/minigrep/src/main.rs

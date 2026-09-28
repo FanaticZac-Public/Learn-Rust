@@ -12,7 +12,7 @@ Going forward - I'm just going to do this:
 - So consider this one needing a redo - but some of the effort here can be re-used (this was first attempt at doing this in one pass - but it's hard to learn and organize at the same time.)
 </div>
 
-# Generic Types, Traits, and Lifetimes
+# Chapter 10 - Generic Types, Traits, and Lifetimes - Cheat Sheet - Quick Reference
 
 Generics are abstract stand-ins for concrete types or other properties to reduce code duplication.
 

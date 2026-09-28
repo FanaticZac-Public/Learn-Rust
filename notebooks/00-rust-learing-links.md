@@ -22,8 +22,9 @@ These are links that I wanted to reference via things i encountered in the book 
             - Be sure to check out the documentation for useful methods:
                 - contains for searching in a string 
                 - replace for substituting parts of a string with another string.
-        - [Trait Termination (process)](https://doc.rust-lang.org/std/process/trait.Termination.html)
-            - Is for custom main function termination exit codes with function 'report'.
+    - [Trait Termination (process)](https://doc.rust-lang.org/std/process/trait.Termination.html)
+        - Is for custom main function termination exit codes with function 'report'.
+    - [args (Function)](https://doc.rust-lang.org/std/env/fn.args.html)
 - Package Managers
     - [Rust - The Cargo Book](https://doc.rust-lang.org/cargo/)
     - [Crates - Rust Community Crates](https://crates.io/)
@@ -39,3 +40,7 @@ These are links that I wanted to reference via things i encountered in the book 
 ## Rust API Quick Reference - mostly just adding stuff i looked at for tutorial or specific use-case 
 - [Enum Option (Special Enum - built in - Rust's version of null)](https://doc.rust-lang.org/std/option/enum.Option.html)
 - [Enum IpAddr ](https://doc.rust-lang.org/std/net/enum.IpAddr.html)
+
+
+## Other topics discussed that could use a closer look
+- TDD principles

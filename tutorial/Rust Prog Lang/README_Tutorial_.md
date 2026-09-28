@@ -20,10 +20,10 @@ So I will go back for chapters 1-8 for each tasks, I will still do a first read-
 ---
 
 ## Cheat Sheets Completed
-| Chapter | Read | Cheatsheet | Notes |
+| Chapter | Read | Cheat<br>Sheet | Topics |
 |---|---|---|---|
-| Chapter 1 | [x] | [ ] | |
-| Chapter 2 | [x] | [ ] | |
+| Chapter 1 | [x] | [ ] | Basic Setup | 
+| Chapter 2 | [x] | [ ] | A guessing game | 
 | Chapter 3 | [x] | [ ] | |
 | Chapter 4 | [x] | [ ] | |
 | Chapter 5 | [x] | [ ] | |
@@ -50,15 +50,6 @@ So I will go back for chapters 1-8 for each tasks, I will still do a first read-
 ## Personal Chapter exercise competency  
 For chapter 9 and beyond - going to ensure perfect practice first time. 
 For 1-8 - going to go back and review with cheatsheet creation and assess. Will mark below whether I'm confident with the learning outcomes - remaining requires review or extra practice.
-|  | |  |
-|---|---|---|
-| [x] Chapter 1 | [ ] Chapter 2 | [ ] Chapter 3 |
-| [ ] Chapter 4 | [ ] Chapter 5 | [ ] Chapter 6 |
-| [ ] Chapter 7 | [ ] Chapter 8 | [ ] Chapter 9 |
-| [ ] Chapter 10 | [ ] Chapter 11 | [ ] Chapter 12 |
-| [ ] Chapter 13 | [ ] Chapter 14 | [ ] Chapter 15 |
-| [ ] Chapter 16 | [ ] Chapter 17 | [ ] Chapter 18 |
-| [ ] Chapter 19 | [ ] Chapter 20 | [ ] Chapter 21 |
 
 ---
 ## Rust Specific Topics/Notes
@@ -73,10 +64,31 @@ For 1-8 - going to go back and review with cheatsheet creation and assess. Will 
 
 --- 
 ## App Ideas for Rust (more serious then exercises - but not my actual App ideas)
-- Recreate every assignment from NetSec specialty courses (but in Rust)
+
+### Portfolio Website - With demos, videos - in progress
 - Build backend server in Rust for my Unity WebGL multiplayer demo (for portfolio) 
+
+### Bevy
 - Bevy - Create simulations using bevy for every chapter of the Physics 11 (upgrading course) from BCIT
     - preferably before I take the (12 one) which is offered free in winter semester
 - Do initial Bevy tutorial
     - "The Impatient Programmer's Guide to Bevy and Rust" looks good but it's also only free up to chapter 7. 
+
+### NetSec / Networking / Socket Programming
+- Recreate every assignment from NetSec specialty courses (but in Rust)
+- Remote keyboard control of raspberry pi 1 handed keyboard project 
+    - multiple computers need to switch between them with wearable keyboard (and Raspberry Pi Zero 2)
+
+### Web or General
+- I really want to make a logical statement deconstructing
+    - For running text book through:
+        - Applying propositional logic analysis
+        - Pulling out statements and marking logical strength
+        - Have option for reordering statements into questions and answers (for flashcards later)
+
+### Linux OS - Util or App
+- Recreate encryption util from NetSec courses
+- Create custom app as deep-dive for printing /proc folder updates.
+
+    
 

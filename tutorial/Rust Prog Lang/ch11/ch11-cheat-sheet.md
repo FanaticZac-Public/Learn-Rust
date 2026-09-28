@@ -1,4 +1,4 @@
-# Chapter 09 - Writing Automated Tests - Cheat Sheet - Quick Reference
+# Chapter 11 - Writing Automated Tests - Cheat Sheet - Quick Reference
 
 [Writing Automatic Tests - The Rust Programming Language](https://doc.rust-lang.org/book/ch11-00-testing.html)
 
