@@ -1,0 +1,1 @@
+Filter<std::str::Lines<'_>, {closure@src/lib.rs:19:17: 19:23}>

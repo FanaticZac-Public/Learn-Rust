@@ -1,4 +1,5 @@
 <style>
+
 .status {
   display: inline-flex;
   align-items: center;
@@ -33,6 +34,13 @@
 
 .status-blocked::before {
   color: #dc2626;
+}
+
+.zac-note {
+    border-left: 2px solid #ffd000;
+    padding: 0 10px;
+    margin: 1em 0;
+    color: #e0e0e0;
 }
 
 </style>
@@ -81,6 +89,12 @@ I am located in Greater Vancouver Area, British Columbia.
 _Rustacean in training_
 
 ## Project
+
+<div class="zac-note">
+Just FYI - on any notes/cheat-sheet pages - my more informal notes will appear like this. 
+</div>
+
+
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
@@ -133,7 +147,12 @@ These are my cheat sheets for each chapter
 9. TODO
 10. [My Cheat Sheet - ch10 - Generic Types, Traits, and Lifelines](./tutorial/Rust%20Prog%20Lang/ch10/ch10-cheat_sheet.md)
 11. [My Cheat Sheet - ch11 - Writing Tests](./tutorial/Rust%20Prog%20Lang/ch11/ch11-cheat-sheet.md) - DONE
-12. [My Cheat Sheet - ch12 - 12. An I/O Project: Building a Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
+12. [My Cheat Sheet - ch12 - An I/O Project: Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
+  - Worth mentioning, touches on (as well):
+    - Test Driven Development
+    - args / environmental variables
+13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) - DONE - but fix writing later / review
+
 
 ---
 
@@ -152,7 +171,7 @@ These are my cheat sheets for each chapter
 
 ---
 
-### Step 3 - Physics Simulations - Grade 11 Physics Practice
+### Step 3 - Physics Simulations - Grade 11 Physics Review
 
 <span class="status status-blocked">
   <img

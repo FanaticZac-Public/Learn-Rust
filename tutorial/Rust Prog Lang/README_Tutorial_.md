@@ -10,60 +10,42 @@ So far I've followed the book closely, completed the exercises, and made a docum
 
 As much as I find this kind of tedious and would rather just start on bevy or other projects - I do want to gain a mastery level knowledge of Rust, and I want to spend a bit more time digging down on the special interest concepts. So I will:
 
-- Create a much smaller cheatsheet document for each chapter - that i can refer to (for things like ownership, commands, etc.)
+- Create a much smaller cheat-sheet document for each chapter - that i can refer to (for things like ownership, commands, etc.)
 - I will go back for chapters that don't have full exercises and create my won lesson to help memorize certain topics
 - I will jot down ideas for putting this all together in simple test bed application that explores these topic together.
 - And hopefully this will allow me dig down on Rust fundamentals most important to programmers who are not new to programming but maybe new to rust (and perhaps i can do a short video related at the end of this section)
 
 So I will go back for chapters 1-8 for each tasks, I will still do a first read-through for quick notes for each chapter but do all potential exercises to get my head around the concepts if new, and then later i will come back and make cheat sheets for that on second pass (is better for memorization). But I will note Rust specific mentions to make cheat sheets easier later.
 
----
-
-## Cheat Sheets Completed
-| Chapter | Read | Cheat<br>Sheet | Topics |
-|---|---|---|---|
-| Chapter 1 | [x] | [ ] | Basic Setup | 
-| Chapter 2 | [x] | [ ] | A guessing game | 
-| Chapter 3 | [x] | [ ] | |
-| Chapter 4 | [x] | [ ] | |
-| Chapter 5 | [x] | [ ] | |
-| Chapter 6 | [x] | [ ] | |
-| Chapter 7 | [x] | [ ] | |
-| Chapter 8 | [ ] | [ ] | |
-| Chapter 9 | [ ] | [ ] | |
-| Chapter 10 | [ ] | [ ] | |
-| Chapter 11 | [ ] | [ ] | |
-| Chapter 12 | [ ] | [ ] | |
-| Chapter 13 | [ ] | [ ] | |
-| Chapter 14 | [ ] | [ ] | |
-| Chapter 15 | [ ] | [ ] | |
-| Chapter 16 | [ ] | [ ] | |
-| Chapter 17 | [ ] | [ ] | |
-| Chapter 18 | [ ] | [ ] | |
-| Chapter 19 | [ ] | [ ] | |
-| Chapter 20 | [ ] | [ ] | |
-| Chapter 21 | [ ] | [ ] | |
-
-
-
 
 ## Personal Chapter exercise competency  
 For chapter 9 and beyond - going to ensure perfect practice first time. 
-For 1-8 - going to go back and review with cheatsheet creation and assess. Will mark below whether I'm confident with the learning outcomes - remaining requires review or extra practice.
-
----
-## Rust Specific Topics/Notes
-- Ownership (elaborate later as going back to do the cheat sheets)
+For 1-8 - going to go back and review with cheat-sheet creation and assess. Will mark below whether I'm confident with the learning outcomes - remaining requires review or extra practice.
 
 
----
 ## Exercise Options
 - Create you own version of the walkthroughs in ch07 (Packages, Crates, and Modules)
     - Most of it was common, except it didn't explore the 2 crate types enough, their typical
+- I need to write (or find) an acceptable benchmark utility
+
+## Rust Specific Topics/Notes to review
+- Ownership (elaborate later as going back to do the cheat sheets)
+- TDD principles
+- Shadowing
+- [Zero Cost Abstractions](https://doc.rust-lang.org/beta/embedded-book/static-guarantees/zero-cost-abstractions.html)
 
 
---- 
-## App Ideas for Rust (more serious then exercises - but not my actual App ideas)
+
+## App/Objective/Project backlog for Rust learning (more serious then exercises)
+
+Just brainstorming here. 
+
+Methodologies:
+    - Pick favorite textbooks to dig into (Algorithms)
+    - Test Rust Paradigms (Bevy, WebAssembly, embedded) 
+        - At least touch on each briefly
+    - Pick at platform: web, micro-controller (raspberry, esp), gpu
+    - Portfolio booster
 
 ### Portfolio Website - With demos, videos - in progress
 - Build backend server in Rust for my Unity WebGL multiplayer demo (for portfolio) 
@@ -74,10 +56,18 @@ For 1-8 - going to go back and review with cheatsheet creation and assess. Will 
 - Do initial Bevy tutorial
     - "The Impatient Programmer's Guide to Bevy and Rust" looks good but it's also only free up to chapter 7. 
 
+### Physics 11 Review - with Bevy Simulations
+- One chapter review per week
+
+### Algorithms BCIT courses
+- Go over algorithm courses material
+    - Redo assignments in Rust
+
 ### NetSec / Networking / Socket Programming
 - Recreate every assignment from NetSec specialty courses (but in Rust)
 - Remote keyboard control of raspberry pi 1 handed keyboard project 
     - multiple computers need to switch between them with wearable keyboard (and Raspberry Pi Zero 2)
+- Major Project was C2 BotNet - I'd like to redo this project especially.
 
 ### Web or General
 - I really want to make a logical statement deconstructing
@@ -90,5 +80,21 @@ For 1-8 - going to go back and review with cheatsheet creation and assess. Will 
 - Recreate encryption util from NetSec courses
 - Create custom app as deep-dive for printing /proc folder updates.
 
-    
+### CompSci Review Topics
+- Processes and threads breakdown - 
+    - Make Rust program to find boundaries and limits
 
+### WebAssembly 
+- [WebAssembly](https://webassembly.org/) aims to execute at native speed by taking advantage of common hardware capabilities available on a wide range of platforms.
+    - And one of Rust's strengths is that it can build to this. 
+    - Test early because i feel there's some good app ideas to come out of this.
+
+### Embedded
+- I have ESPs (I usually just still with raspberry pi) but could use one for testing my keyboard socket program.
+- Overlaps with [The Embedded Rust Book](https://doc.rust-lang.org/beta/embedded-book/)
+
+### Books worth doing a Rust related walkthrough
+- [The Embedded Rust Book](https://doc.rust-lang.org/beta/embedded-book/)
+    - My keyboard project above for raspberry pi Zero 2 would pair well with this. 
+
+### Raspberry Pi kit - Central Repository Kit
