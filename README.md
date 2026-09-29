@@ -44,11 +44,11 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" valign="middle">
+    <td width="50" height="50"  valign="middle">
       <img
                src="./images/ed-images/ed_hack_1.png"
-        width="100%"
-        height="100%"
+        width="50
+        height="50"
               alt="Author Git Logo"
         align="right"
       >
@@ -69,11 +69,11 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="60" valign="middle">
+    <td width="50" height="50" valign="middle">
       <img
         src="./images/rust-images/rust-does_not_compile.svg"
-        width="100%"
-        height="100%"
+        width="50"
+        height="50"
         alt="Rust - Does note compile crab"
         align="right"
       >
@@ -139,7 +139,7 @@ These are my cheat sheets for each chapter
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" valign="middle">
+    <td width="50" height="50"  valign="middle">
       <img
           src="./images/rust-images/rust-panics.svg"
         width="50"
@@ -164,7 +164,7 @@ These are my cheat sheets for each chapter
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" valign="middle">
+    <td width="50" height="50"  valign="middle">
       <img
           src="./images/rust-images/rust-panics.svg"
         width="100%"
