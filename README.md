@@ -39,17 +39,16 @@ Frankly - that's where Rust is an excellent avenue. Since Rust has some incredib
 
 So it is in the spirit of practice, marketing, and intellectual exploration - that I have created this project. Rust (an actually new-ish language conceptually, with excellent characteristics for my primary hobbies and professional goals) makes this potentially monotonous process of self-marketing something rather exciting instead.
 
-
-
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" height="50"  valign="middle">
+    <td width="40" height="40"  valign="middle"  cellpadding="0"
+  cellspacing="0">
       <img
-               src="./images/ed-images/ed_hack_1.png"
-        width="50
-        height="50"
-              alt="Author Git Logo"
+        src="./images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
         align="right"
       >
     </td>
@@ -69,19 +68,18 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" height="50" valign="middle">
+    <td width="40" height="50" valign="middle"  cellpadding="0"
+  cellspacing="0">
       <img
         src="./images/rust-images/rust-does_not_compile.svg"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         alt="Rust - Does note compile crab"
         align="right"
       >
     </td>
     <td>
-    <blockquote align="left" valign="top">
- <strong>Currently in progress</strong>
-      </blockquote>
+      <strong>Currently in progress</strong>
     </td>
   </tr>
 </table>
@@ -98,8 +96,6 @@ Quick references that are relevant to me and this leg of the project.
 - [TimeSchedule](./schedule/pomodoros-timesheet.ods)
 
 Here's something special. Unlike the cheat sheet below which is more exhaustive to overall syntax related to Rust, I wanted to create a document that digs down specifically on the advantages of the Rust languages, in a shorter form document (for my mindfulness and as reference for others).<table cellpadding="0" cellspacing="0">
-
-
 
 - [Rust - Primary Advantages](./notebooks/01-rust-primary-advantages)
 
@@ -139,11 +135,12 @@ These are my cheat sheets for each chapter
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" height="50"  valign="middle">
+    <td width="40" height="40"  valign="middle"  cellpadding="0"
+  cellspacing="0">
       <img
           src="./images/rust-images/rust-panics.svg"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         alt="Rust - Panic crab"
         align="right"
       >
@@ -156,7 +153,6 @@ These are my cheat sheets for each chapter
   </tr>
 </table>
 
-
 ---
 
 ### Step 3 - Physics Simulations - Grade 11 Physics Review
@@ -164,7 +160,8 @@ These are my cheat sheets for each chapter
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" height="50"  valign="middle">
+    <td width="40" height="40"  valign="middle"  cellpadding="0"
+  cellspacing="0">
       <img
           src="./images/rust-images/rust-panics.svg"
         width="100%"
@@ -174,9 +171,7 @@ These are my cheat sheets for each chapter
       >
     </td>
     <td>
-    <blockquote align="left" valign="top">
       <strong>Blocked / Pending</strong>
-      </blockquote>
     </td>
   </tr>
 </table>
