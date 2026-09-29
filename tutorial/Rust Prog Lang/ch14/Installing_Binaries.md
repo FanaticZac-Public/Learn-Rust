@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 ## Installing Binaries with cargo install
 
@@ -25,9 +23,27 @@ $ cargo install ripgrep
   Installing ~/.cargo/bin/rg
    Installed package `ripgrep v14.1.1` (executable `rg`)
 ```
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 Ok - i did it. On linux it was in 
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
+
 
 ```console
 ~/.cargo/bin$ ls
@@ -36,9 +52,28 @@ cargo-clippy  clippy-driver  rust-analyzer  rustfmt   rust-lldb
 cargo-fmt     rg             rustc          rust-gdb  rustup
 ```
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 It's the rg one. Usage below.
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
+
+
 
 ```console
 ~/.cargo/bin$ ls | rg rust

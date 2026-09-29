@@ -1,18 +1,31 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 # Chapter 02 - Programming Guessing Game
 
-<div class="zac-note">
-Ok - this chapter is largely introductory but for consistency sake I will just abbreviate the whole chapter and only add things of note.
-
-For this chapter - Im just going to put in the final application and comment on segments.
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
+ Ok - this chapter is largely introductory but for consistency sake I will just abbreviate the whole chapter and only add things of note.
+</strong>
+    </td>
+  </tr>
+</table>
 
 Certainly check out the actual tutorial if interested in the broader discussion:
 [Chapter 02 - Programming Guessing Game](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html)
 
-</div>
+
 
 Setting up the project with command:
 

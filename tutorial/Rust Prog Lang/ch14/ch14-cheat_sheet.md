@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 # Chapter 14 - More About Cargo and Crates.io - Cheat Sheet - Quick Reference
 

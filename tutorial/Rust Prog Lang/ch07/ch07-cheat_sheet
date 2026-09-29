@@ -1,21 +1,6 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 # Chapter 07 - Packages, Crates, and Modules - cheat sheet - Quick Reference
-
-<div class="zac-note">
-<h3>Zac Intro</h3>
-
-These cheat sheet pages were done on second re-read - where I remove the example scenarios and just keep the factual statements or example code - without the long winded explanations from the book. So when I am trying to recall all the facts or nuances of say, ownership, or package management, I can save a bit of time.
-
-The exercise of refinement and elaboration on cursory topics supports memorization
-
-I did create 'full-package-crate-experiment' package to test using binary and library crates together - on second go around.
-
-My personal comments will appear like this from now on.
-
-</div>
 
 ## project organization and modularization
 

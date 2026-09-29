@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 ## Cargo Workspaces
 
@@ -47,9 +45,26 @@ resolver = "3"
 members = ["adder"]
 ```
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 It did!
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
 
 File structure looks like :
 
@@ -150,15 +165,50 @@ Hello, world! 10 plus one is 11!
 
 This runs the code in adder/src/main.rs, which depends on the `add_one` crate.
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 Seems simple enough - so i can build as many library crates as i want locally (since there's only 1 allowed per crate) - and link their functions via local dependencies in the callers (binary crate) Cargo.toml file. 
-</div>
-<div class="zac-note">
+</strong>
+    </td>
+  </tr>
+</table>
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 I'm not exactly sure why that can't be done without the workspace Cargo.toml - but I guess the benefit is you have on target for the whole project in the workspace level folder. <br>
 - I suppose one benefit is not having to build them all separately whenever I'm working across them.<br>
 - Also it means you are only downloading dependencies once if they're used for multiple crates in a workspace(next section)<br>
 - Also it means all tests occur at once across workspace
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
+
 
 ### Depending on an External Package
 
@@ -230,9 +280,26 @@ mod tests {
 ```
 
 Now run cargo test in the top-level add directory. Running cargo test in a workspace structured like this one will run the tests for all the crates in the workspace:
-<div class="zac-note">
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 I had to add --lib flag but uh-huh, sure did.
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
 
 ```console
 $ cargo test
@@ -261,9 +328,25 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 We can also run tests for one particular crate in a workspace from the top-level directory by using the -p flag and specifying the name of the crate we want to test:
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 I had to add --lib flag but uh-huh, sure did.
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
 
 ```console
 $ cargo test -p add_one
@@ -287,6 +370,22 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 **If you publish the crates in the workspace to crates.io, each crate in the workspace will need to be published separately.** Like cargo test, we can publish a particular crate in our workspace by using the -p flag and specifying the name of the crate we want to publish.
 
 For additional practice, add an add_two crate to this workspace in a similar way as the add_one crate!
-<div class="zac-note">
-Nah. I'm good i get it. 
-</div>
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
+Nah. I'm good i get it.</strong>
+    </td>
+  </tr>
+</table>
+ 

@@ -1,19 +1,51 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 ## Super Summary
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 TODO - Honestly I'm not sure this is cheatsheet worthy. 
-</div>
+
+</strong>
+    </td>
+  </tr>
+</table>
 
 Just look up this chapter in the book when you are getting ready to publish - regarding comments and/or publishing/updating. 
 [Publishing a Crate to Crates.io](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html)
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 I'm copied most data here as reading along - but not really that much shorter - this part of the book - for comments section also - requires viewing the console, the comments in rust, and the image of how it looks in the documentation... so just see actual book for this section.
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
 
 ## Publishing a Crate to Crates.io
 
@@ -68,9 +100,26 @@ Most documentation comments don’t need all of these sections, but this is a go
 
 ### Documentation Comments as Tests
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 TODO: Added Doc-tests explanation to the Testing chapter.
-</div>
+
+</strong>
+    </td>
+  </tr>
+</table>
 
 Example code blocks in your documentation will also be ran with `cargo test` to ensure they still work.
 

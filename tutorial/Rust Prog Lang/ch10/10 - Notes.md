@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 # Generic Types, Traits, and Lifetimes
 

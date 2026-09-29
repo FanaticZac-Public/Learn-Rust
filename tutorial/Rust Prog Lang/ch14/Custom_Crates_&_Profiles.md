@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 
 
@@ -43,11 +41,28 @@ opt-level = 3
 
 See [Profiles - The Cargo Book](https://doc.rust-lang.org/cargo/reference/profiles.html)
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
     For example - book shows:<br>
     2 other built-in profiles: <br>
     - test and bench.<br>
     And it shows 2 other optimization instructions:<br>
     - "s": optimize for binary size<br>
     - "z": optimize for binary size, but also turn off loop vectorization.<br>
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+

@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 # Chapter 13 - Functional Language Features: Iterators and Closures - Cheat Sheet - Quick Reference
 
@@ -18,9 +16,28 @@ Covers:
 
 Mastering closures and iterators is an important part of writing fast, idiomatic, Rust code
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 I'm now splitting up the cheat sheets into separate subsections so i can create links by topic on another page.
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
+
+
 
 
 Chapter 13 discusses:

@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 # Chapter 12 - An I/O Project: Building a Command Line Program - Cheat Sheet - Quick Reference
 
@@ -103,9 +101,26 @@ fn main() {
 }
 ```
 
-<div class="zac-note">
-TODO - COULD CONDENSE THE PREVIOUS EXAMPLES INTO THE BELOW ONE
-</div>
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
+TODO - Could condense the previous examples into the one below
+</strong>
+    </td>
+  </tr>
+</table>
+
 ## Reading a File
 
 ```rust
@@ -156,9 +171,28 @@ This pattern is about separating concerns: main.rs handles running the program a
 
 A nonzero exit status is a convention to signal to the process that called our program that the program exited with an error state.
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 The tutorial builds this program section by section - but this is rudimentary so i'll just put final result following my summary of events
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
+
+
 
 1. Extracting the Argument Parser
    - separation of concerns
@@ -264,9 +298,27 @@ fn run(config: Config) -> Result<(), Box<dyn Error>> {
 
 ## Adding Functionality with Test-Driven Development
 
-<div class="zac-note>
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 Up until now in the section i was careful to make this cheatsheet almost publish worthy. But I just woke up and am reading and refreshing TDD... (and there's 3 more sections in this chapter) my focus on the subject is high but not on the cheat sheet. - consider the following section to required a review and super summarization after for cheat sheet worthiness.
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
+
 Now that we have the search logic in src/lib.rs separate from the main function, it’s much easier to write tests for the core functionality of our code. We can call functions directly with various arguments and check return values without having to call our binary from the command line.
 
 In this section, we’ll add the searching logic to the minigrep program using the test-driven development (TDD) process with the following steps:
@@ -334,9 +386,26 @@ Currently, our test is failing because we always return an empty vector. To fix 
 4. If it doesn’t, do nothing.
 5. Return the list of results that match.
 
-<div class="zac-note"> 
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 This does another rudimentary step by step - so ill follow the book but just add final result here and comment on it - whatever is worth remembering or unique to rust
-</div>
+</strong>
+    </td>
+  </tr>
+</table>
+
 
 ```rust
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
@@ -489,10 +558,28 @@ impl Config {
     }
 }
 ```
-<div class="zac-note">
 
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 This was really annoying me that it wasn't checking the actual value when i changed the env variable in linux. 
-My change below checks via match, (will also default to case sensitive with no value set) but actually works now.
+My change below checks via match, (will also default to case sensitive with no value set) but actually works now.</strong>
+    </td>
+  </tr>
+</table>
+
+
 ```rust
 // mine because it wasn't actually checking value
 let ignore_case = match env::var("IGNORE_CASE") {

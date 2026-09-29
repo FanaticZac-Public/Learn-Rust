@@ -52,10 +52,8 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
       >
     </td>
     <td>
-    <blockquote align="left" valign="top">
    <strong>Rustacean in training 
 </strong> - (FYI - my comments look like this - in documentation)
-      </blockquote>
     </td>
   </tr>
 </table>
@@ -78,9 +76,7 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
       >
     </td>
     <td>
-     <blockquote align="left" valign="top">
       <strong>Currently in progress</strong>
-       </blockquote>
     </td>
   </tr>
 </table>
@@ -147,9 +143,7 @@ These are my cheat sheets for each chapter
       >
     </td>
     <td>
-    <blockquote align="left" valign="top">
       <strong>Blocked / Pending</strong>
-      </blockquote>
     </td>
   </tr>
 </table>

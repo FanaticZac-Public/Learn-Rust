@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 # Chapter 1 - Getting Started
 
@@ -93,19 +91,19 @@ $ cargo build --release
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="35" valign="middle">
+    <td width="66" valign="middle">
       <img
         src="../../../images/ed-images/ed_hack_1.png"
-        width="35"
-        height="35"
+        width="40"
+        height="40"
         alt="Author Git Logo"
-        align="right"
+        align="center"
       >
     </td>
-    <td >
-    <blockquote align="left" valign="top" >
+    <td>
+   <strong>
     Some added for reference from later chapters
-      </blockquote>
+    </strong> 
     </td>
   </tr>
 </table>

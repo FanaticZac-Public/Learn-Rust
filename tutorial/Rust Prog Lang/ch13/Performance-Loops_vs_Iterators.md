@@ -1,6 +1,4 @@
-<style>
-@import url("../notes.css");
-</style>
+
 
 
 # Performance in Loops vs. Iterators
@@ -24,11 +22,27 @@ The point is this: Iterators, although a high-level abstraction, get compiled do
 
 Iterators are one of Rust’s zero-cost abstractions, by which we mean that using the abstraction imposes no additional runtime overhead.
 
-<div class="zac-note">
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
 Now that you mention it: 
+</strong>
+    </td>
+  </tr>
+</table>
 
 [Zero Cost Abstractions](https://doc.rust-lang.org/beta/embedded-book/static-guarantees/zero-cost-abstractions.html)
-</div>
 
 In many cases, Rust code using iterators compiles to the same assembly you’d write by hand. Optimizations such as loop unrolling and eliminating bounds checking on array access apply and make the resultant code extremely efficient. Now that you know this, you can use iterators and closures without fear! They make code seem like it’s higher level but don’t impose a runtime performance penalty for doing so.
 

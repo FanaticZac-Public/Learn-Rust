@@ -1,8 +1,25 @@
-<style>
-@import url("../notes.css");
-</style>
 
-<div class="zac-note">
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
+Note:
+</strong>
+    </td>
+  </tr>
+</table>
+
 On this one - I made some good cheat sheet notes - compared to notes - but this is problematic. 
 Going forward - I'm just going to do this:
 - First pass write/copy notes into notes.md
@@ -10,7 +27,7 @@ Going forward - I'm just going to do this:
     - For cheat sheet, for each chapter do one section of cheat sheet as it's own thing - but unify the code and explanation
     - e.g. for this section, generics, Traits, and lifelines would each be their won.
 - So consider this one needing a redo - but some of the effort here can be re-used (this was first attempt at doing this in one pass - but it's hard to learn and organize at the same time.)
-</div>
+
 
 # Chapter 10 - Generic Types, Traits, and Lifetimes - Cheat Sheet - Quick Reference
 
