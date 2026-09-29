@@ -1,50 +1,3 @@
-<style>
-
-.status {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4em;
-}
-
-.status img {
-  display: block;
-  width: 40px;
-  height: 40px;
-}
-
-.status-complete {
-  color: #16a34a;
-}
-
-.status-complete::before {
-  color: #16a34a;
-}
-
-.status-in-progress {
-  color: #d99606;
-}
-
-.status-in-progress::before {
-  color: #d99606;
-}
-
-.status-blocked {
-  color: #dc2626;
-}
-
-.status-blocked::before {
-  color: #dc2626;
-}
-
-.zac-note {
-    border-left: 2px solid #ffd000;
-    padding: 0 10px;
-    margin: 1em 0;
-    color: #e0e0e0;
-}
-
-</style>
-
 <div align="center">
   <img src="./images/rust-images/rust-panics.svg" width="30%">
   <img src="./images/rust-images/rust-does_not_compile.svg" width="30%">
@@ -67,56 +20,86 @@ A professional learning record of Rust - which will evolve into applications foc
   - Review all course material from degree (and work it in where possible)
 - For this git project to be my reference and career demonstration
 
-  ### Note
-  - Kill 2 birds with 1 stone is one of my fundamental personal/professional philosophies for maximizing productivity
-  - 1 action - 2 (or more) results
-  - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game)
+> [!TIP]
+>
+> - Kill 2 (or more) birds with 1 stone a fundamental philosophy for maximizing productivity
+> - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game)
 
-## Hello World! ... Who am I?
+## Hello, World ...?
 
-My name is Zach and I hold a Bachelor of Science - Applied Computer Science (Game Development option) from BCIT.
+My name is Zach, I'm a Software Developer based in British Columbia, Canada, and I've achieved a Bachelor of Science degree in Applied Computer Science (Game Development specialty) from BCIT.
 
-- Note: I also took most (4/5) Network Security Application option courses (out of pocket $$).
+- I also completed specialty courses in Network Security Applications.
 
-I am located in Greater Vancouver Area, British Columbia.
+### Repository Purpose
 
-### My Purpose Here
+I didn't do much marketing myself throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), and frankly, I don't really like dumping my previous instructors resources on git, and dumping all my old assignments on git after-the-fact is... lame lol.
 
-- I must admit - I almost never updated git with my school projects as I went along unless in large groups (which would have been smarter - for much of it). In some cases, like games, the sources are often too large for git anyway (and we used perforce), and in other ways I just don't sharing school work because much of it is the IP of our instructors (and kept private). As well, some major projects I completed for my degree - I formulated in the hopes those efforts could be expanded on into real entrepreneurial outcomes - and don't much like sharing my source or project plans.
+Frankly - that's where Rust is an excellent avenue. Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way.
 
-- However it makes the job market hard - and so it is in the spirit of practice, marketing, and intellectual exploration - that I have created this project. And learning Rust (an actually new-ish language conceptually, with excellent characteristics for my primary hobbies and professional goals) and so the monotonous process of self-marketing becomes exciting instead.
+So it is in the spirit of practice, marketing, and intellectual exploration - that I have created this project. Rust (an actually new-ish language conceptually, with excellent characteristics for my primary hobbies and professional goals) makes this potentially monotonous process of self-marketing something rather exciting instead.
 
-_Rustacean in training_
 
-## Project
 
-> [!NOTE]
-> I'm co-opting this notification for my personal more-informal comments on any notes/cheat-sheet pages
-> Only works on git - locally looks like garbage...
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="35" valign="middle">
+      <img
+               src="./images/ed-images/ed_hack_1.png"
+        width="35"
+        height="35"
+              alt="Author Git Logo"
+        align="right"
+      >
+    </td>
+    <td>
+    <blockquote align="left" valign="top">
+   <strong>Rustacean in training 
+</strong> - (FYI - my comments look like this - in documentation)
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
+## Project Orchestration (Flexible)
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
-<span class="status status-in-progress">
-  <img
-    src="./images/rust-images/rust-does_not_compile.svg"
-    width="40"
-    height="40"
-    alt=""
-    aria-hidden="true"
-  >
-  <span> — Currently in progress</span>
-</span>
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="45" valign="middle">
+      <img
+        src="./images/rust-images/rust-does_not_compile.svg"
+        width="45"
+        height="45"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+    <blockquote align="left" valign="top">
+ <strong>Currently in progress</strong>
+      </blockquote>
+    </td>
+  </tr>
+</table>
 
-Initial objective is to just read through the entire book and do all the primary exercises. There is a exercise guide I'll do after so i didn't mess around with a lot of the extras, it's mostly for beginners (to programming) anyway - and I'm most interested in getting pass this part quickly so i can build real things. However, below - Ill add resource links below to my practice, schedule, and so on.
+My initial objective is to just read through the entire book and do all the primary exercises to become familiar with the language and it's core mechanisms that have given Rust it's reputation for safety and performance with higher language syntactic sugar.
+
+I'm most interested in getting pass this part quickly so i can build - real things, especially with Bevy, but also other applications. Ill add resource links below to my practice, schedule, exercise ideas, and so on. I'll be updating as I go - so this repository is a large catch all for a bunch of things that I'm willing to share - and is less about producing a thing. It's an educational resource I can publicize, and so inherently dynamic.
 
 #### Personal Resources
 
-Here's some quick references that are relevant to me and this leg of the project.
+Quick references that are relevant to me and this leg of the project.
 
 - [Rust Learning Links](./notebooks/00-rust-learing-links.md)
 - [TimeSchedule](./schedule/pomodoros-timesheet.ods)
 
-Here's something special. Unlike the cheat sheet below which is more exhaustive to overall syntax related to Rust, I wanted to create a document that digs down specifically on the advantages of the Rust languages, in a shorter form document (for my mindfulness and as reference for others)
+Here's something special. Unlike the cheat sheet below which is more exhaustive to overall syntax related to Rust, I wanted to create a document that digs down specifically on the advantages of the Rust languages, in a shorter form document (for my mindfulness and as reference for others).<table cellpadding="0" cellspacing="0">
+
+
 
 - [Rust - Primary Advantages](./notebooks/01-rust-primary-advantages)
 
@@ -149,33 +132,51 @@ These are my cheat sheets for each chapter
 13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) - DONE - but fix writing later / review
 14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) - Done, but needs more work for final cheat-sheet
 
-
 ---
 
 ### Step 2 - Bevy Tutorial
 
-<span class="status status-blocked">
-  <img
-    src="./images/rust-images/rust-panics.svg"
-    width="40"
-    height="40"
-    alt=""
-    aria-hidden="true"
-  >
-  <span> — Blocked</span>
-</span>
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="45" valign="middle">
+      <img
+          src="./images/rust-images/rust-panics.svg"
+        width="45"
+        height="45"
+        alt="Rust - Panic crab"
+        align="right"
+      >
+    </td>
+    <td>
+    <blockquote align="left" valign="top">
+      <strong>Blocked / Pending</strong>
+      </blockquote>
+    </td>
+  </tr>
+</table>
+
 
 ---
 
 ### Step 3 - Physics Simulations - Grade 11 Physics Review
 
-<span class="status status-blocked">
-  <img
-    src="./images/rust-images/rust-panics.svg"
-    width="40"
-    height="40"
-    alt=""
-    aria-hidden="true"
-  >
-  <span> — Blocked</span>
-</span>
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="45" valign="middle">
+      <img
+          src="./images/rust-images/rust-panics.svg"
+        width="45"
+        height="45"
+        alt="Rust - Panic crab"
+        align="right"
+      >
+    </td>
+    <td>
+    <blockquote align="left" valign="top">
+      <strong>Blocked / Pending</strong>
+      </blockquote>
+    </td>
+  </tr>
+</table>

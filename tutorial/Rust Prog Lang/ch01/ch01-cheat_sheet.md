@@ -90,10 +90,26 @@ $ cargo run
 $ cargo build --release
 ```
 
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="35" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="35"
+        height="35"
+        alt="Author Git Logo"
+        align="right"
+      >
+    </td>
+    <td >
+    <blockquote align="left" valign="top" >
+    Some added for reference from later chapters
+      </blockquote>
+    </td>
+  </tr>
+</table>
 
-<div class="zac-note">
-Some added for reference from later chapters
-</div>
 
 ```console
 // Will build documentation for your project using a your toml and open it.
@@ -104,6 +120,4 @@ $ cargo new project_name --lib
 
 // run tests
 $ cargo test
-
-
 ```
