@@ -42,7 +42,7 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="76" valign="middle">
+    <td width="66" valign="middle">
       <img
         src="./images/ed-images/ed_hack_1.png"
         width="40"
@@ -67,7 +67,7 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="76"  valign="middle"  cellpadding="0"
+    <td width="66"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
         src="./images/rust-images/rust-does_not_compile.svg"
@@ -136,7 +136,7 @@ These are my cheat sheets for each chapter
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="76"  valign="middle"  cellpadding="0"
+    <td width="66"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
           src="./images/rust-images/rust-panics.svg"
@@ -161,7 +161,7 @@ These are my cheat sheets for each chapter
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="76"  valign="middle"  >
+    <td width="66"  valign="middle"  >
       <img
           src="./images/rust-images/rust-panics.svg"
         width="40"
