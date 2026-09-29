@@ -48,7 +48,7 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
         width="40"
         height="40"
         alt="Author Git Logo"
-        align="right"
+        align="center"
       >
     </td>
     <td>
@@ -74,7 +74,7 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
         width="40"
         height="40"
         alt="Rust - Does note compile crab"
-        align="right"
+        align="center"
       >
     </td>
     <td>
@@ -143,7 +143,7 @@ These are my cheat sheets for each chapter
         width="40"
         height="40"
         alt="Rust - Panic crab"
-        align="right"
+        align="center"
       >
     </td>
     <td>
@@ -167,7 +167,7 @@ These are my cheat sheets for each chapter
         width="40"
         height="40"
         alt="Rust - Panic crab"
-        align="right"
+        align="center"
       >
     </td>
     <td>
