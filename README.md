@@ -90,11 +90,9 @@ _Rustacean in training_
 
 ## Project
 
-<div class="zac-note">
-Just FYI - on any notes/cheat-sheet pages - my more informal notes will appear like this. 
-</div>
-
-
+> [!NOTE]
+> I'm co-opting this notification for my personal more-informal comments on any notes/cheat-sheet pages
+> Only works on git - locally looks like garbage...
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
@@ -148,10 +146,8 @@ These are my cheat sheets for each chapter
 10. [My Cheat Sheet - ch10 - Generic Types, Traits, and Lifelines](./tutorial/Rust%20Prog%20Lang/ch10/ch10-cheat_sheet.md)
 11. [My Cheat Sheet - ch11 - Writing Tests](./tutorial/Rust%20Prog%20Lang/ch11/ch11-cheat-sheet.md) - DONE
 12. [My Cheat Sheet - ch12 - An I/O Project: Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
-  - Worth mentioning, touches on (as well):
-    - Test Driven Development
-    - args / environmental variables
 13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) - DONE - but fix writing later / review
+14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) - Done, but needs more work for final cheat-sheet
 
 
 ---

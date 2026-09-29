@@ -12,7 +12,8 @@ These are links that I wanted to reference via things i encountered in the book 
 - [Rust's Resource Recommendations](https://doc.rust-lang.org/stable/)
 - [The Embedded Rust Book](https://doc.rust-lang.org/beta/embedded-book/)
     - [Zero Cost Abstractions](https://doc.rust-lang.org/beta/embedded-book/static-guarantees/zero-cost-abstractions.html)
-- [The Cargo Book](https://doc.rust-lang.org/cargo/index.html)
+- [The Cargo Book](https://doc.rust-lang.org/cargo/)
+    - [Profiles - The Cargo Book](https://doc.rust-lang.org/cargo/reference/profiles.html)
 - [Rust Language API reference](https://doc.rust-lang.org/std/prelude/index.html)
     - [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
         - TODO: Need to review this (following tutorial - haven't yet).
@@ -41,6 +42,8 @@ These are links that I wanted to reference via things i encountered in the book 
 - [SipHash - Rust hashmap default hasher to mitigate DDOS](https://en.wikipedia.org/wiki/SipHash)
     - Discussed end ot ch8 lightly
 - [WebAssembly](https://webassembly.org/)
+- [Linux Foundation’s Software Package Data Exchange (SPDX)](https://spdx.org/licenses/)
+    - For the license field of TOML files for published crates, you need to give a license identifier value.
 
 ## Rust API Quick Reference - mostly just adding stuff i looked at for tutorial or specific use-case 
 
