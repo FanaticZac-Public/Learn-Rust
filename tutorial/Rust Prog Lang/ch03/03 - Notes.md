@@ -13,12 +13,11 @@ This section is about variables, basic types, functions, comments, and control f
 - Constants are mutable too, obviously
     - but you cannot use mut
     - you use 'const' instead of 'let'
-    - the type must be annotated
+    - the type *must* be annotated
     - const can be declared in any scope, including global
     - must be set to a value and the result of a function
         - not the result of an expression that could only be computed at runtime (can be expression of other constants)
     - naming convention is all caps with underscores for spaces
-        - const THREE_HOURS_IN_SECONDS: u32 = 60 * 60 * 3;
     - are valid for full entire program execution time, within the same scope as declared
         - makes useful for globally relevant data 
 
@@ -71,7 +70,7 @@ let guess: u32 = "42".parse().expect("Not a number!");
 
 ### Integer Types
 
-- Integer is a number without a faractional component.
+- Integer is a number without a fractional component.
 
 | Length              | Signed | Unsigned |
 |---------------------|--------|----------|
@@ -154,7 +153,7 @@ fn main() {
 - Rust’s char type is 4 bytes in size and represents a Unicode scalar value, which means it can represent a lot more than just ASCII.
 - Unicode scalar values range from U+0000 to U+D7FF and U+E000 to U+10FFFF inclusive.
 
-## Compount Types
+## Compound Types
 Compound types can group multiple values into one type. Rust has two primitive compound types: tuples and arrays.
 
 ### Tuple Type

@@ -22,22 +22,72 @@ A professional learning record of Rust - which will evolve into applications foc
 
 > [!TIP]
 >
-> - Kill 2 (or more) birds with 1 stone a fundamental philosophy for maximizing productivity
+> (1 ACTION = 2 OR MORE RESULTS)
+> - The 'Kill many birds with 1 stone' philosophy maximizes productivity 
 > - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game)
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="./images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+   <strong>"What an arm!"
+</strong> ... they'll say. 
+    </td>
+  </tr>
+</table>
 
 ## Hello, World ...?
 
-My name is Zach, I'm a Software Developer based in British Columbia, Canada, and I've achieved a Bachelor of Science degree in Applied Computer Science (Game Development specialty) from BCIT.
+My name is Zach, I'm a Software Developer based in British Columbia, Canada. I hold a Bachelor of Science degree in Applied Computer Science (Game Development specialty) from BCIT.
 
-- I also completed specialty courses in Network Security Applications.
+- I completed specialty courses in Network Security Applications also. 💪
 
 ### Repository Purpose
 
-I didn't do much marketing myself throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), and frankly, I don't really like dumping my previous instructors resources on git, and dumping all my old assignments on git after-the-fact is... lame lol.
+I didn't marketing myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), and frankly, I don't like dumping my previous instructors resources on git, nor like the prospect of dumping my old assignments on git after-the-fact is... lame lol.
 
-Frankly - that's where Rust is an excellent avenue. Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way.
+Frankly - that's where this Rust venture is an excellent avenue. Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way - going forward.
 
-So it is in the spirit of practice, marketing, and intellectual exploration - that I have created this project. Rust (an actually new-ish language conceptually, with excellent characteristics for my primary hobbies and professional goals) makes this potentially monotonous process of self-marketing something rather exciting instead.
+So it is in that spirit of practice, marketing, and intellectual exploration - that I have created this project repository. Rust (an actually new-ish language conceptually, with excellent characteristics for my primary hobbies and professional goals) makes this potentially monotonous process of self-marketing something rather exciting instead.
+
+Advantages of Rust:
+- Compiles into machine code
+- High performance 
+  - C/C++-level performance with stronger memory and concurrency safety.
+  - (But still with that syntactic sugar (so sweet))
+- Safer conduct 
+  - Memory safety without garbage collection
+  - Pushes several run-time errors into the compile time checks
+  - Ownership and borrowing 
+  - Thread safety
+
+Pushes many common bugs from runtime to compile time errors: 
+- e.g. Prevents these bugs: use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
+
+Those advantages are excelling for:
+  - System Programming
+  - Games (Bevy)
+  - Embedded Programming
+  - Web Assembly
+  - Socket programming
+
+Some disadvantages:
+  - Steeper learning curve 
+    - (Oh baby)
+  - Longer compile time 
+    - (Sure, but pairs well with espresso breaks)
+
+In short, it offers: 
+  - C/C++-level performance with stronger memory and concurrency safety. 
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -53,7 +103,7 @@ So it is in the spirit of practice, marketing, and intellectual exploration - th
     </td>
     <td>
    <strong>Rustacean in training 
-</strong> - (FYI - my comments look like this - in documentation)
+</strong>
     </td>
   </tr>
 </table>
@@ -89,30 +139,32 @@ I'm most interested in getting pass this part quickly so i can build - real thin
 
 Quick references that are relevant to me and this leg of the project.
 
-- [Rust Learning Links](./notebooks/00-rust-learing-links.md)
-- [TimeSchedule](./schedule/pomodoros-timesheet.ods)
+- [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
+- [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based)
 
-Here's something special. Unlike the cheat sheet below which is more exhaustive to overall syntax related to Rust, I wanted to create a document that digs down specifically on the advantages of the Rust languages, in a shorter form document (for my mindfulness and as reference for others).<table cellpadding="0" cellspacing="0">
+Here's something special. Unlike the cheat sheet below which is more exhaustive to overall syntax related to Rust, I wanted to create a document that digs down specifically on the advantages of the Rust languages, in a shorter form document (for my mindfulness and as reference for others).
 
 - [Rust - Primary Advantages](./notebooks/01-rust-primary-advantages)
 
-#### Cheat Sheets (created on second re-read)
+#### Cheat Sheets - Quick Reference
 
-These mostly contain factual statements or code samples from the book without the fluff - for quick reference by me - but I also added more where I had extra questions, wanted more samples, or run tangential experiments. If you have already read the rust book (or have professional coding experience) - might be a faster way to explore Rust (or least skim it's benefits - like safety enforcement - big time).
+These mostly contain factual statements or code samples from the book without the fluff - for quick reference by me - but I also added more where I had extra questions, wanted more samples, or ran tangential experiments. 
 
-This is a more rough brain stormy project plan
+If you have already read the rust book (or have professional coding experience) - might be a faster way to explore Rust (or least skim it's benefits - like safety enforcement - big time). At any rate - it's a record of my learning progress
+
+This is a more rough brain stormy project plan (at this point I don't have a scrum board)
 
 - [README_Tutorial](./tutorial/Rust%20Prog%20Lang/README_Tutorial_.md)
 
-This is the template project for working on big picture organization (package, modules, structure), understand lib.rs, main.rs, bin/, and a larger projects shape and standards throughout.
+<!-- This is the template project for working on big picture organization (package, modules, structure), understand lib.rs, main.rs, bin/, and a larger projects shape and standards throughout.
 
-- [Template-Project](./tutorial/Rust%20Prog%20Lang/template-project/)
+- [Template-Project](./tutorial/Rust%20Prog%20Lang/template-project/) -->
 
 These are my cheat sheets for each chapter
 
 1. [My Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md) - DONE
-2. [My Cheat Sheet - ch02 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) - DONE - but fix writing later.
-3. TODO
+2. [My Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) - DONE - but fix writing later.
+3. [My Cheat Sheet - ch03 - Common Programming Concepts](./tutorial/Rust%20Prog%20Lang/ch03/ch03-cheat_sheet.md)
 4. TODO
 5. TODO
 6. TODO
@@ -124,6 +176,13 @@ These are my cheat sheets for each chapter
 12. [My Cheat Sheet - ch12 - An I/O Project: Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
 13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) - DONE - but fix writing later / review
 14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) - Done, but needs more work for final cheat-sheet
+
+##### Final Checklist for this Unit
+- [ ] Final check all chapters - CODE EXAMPLES (add more if wanting)
+- [ ] Final check all chapters - Writing makes sense
+- [ ] Final check all chapters - Formatting
+- [ ] Final check all chapters - Create links for 'by subject'
+- [ ] Final check all chapters - For my primary advantages guide
 
 ---
 
