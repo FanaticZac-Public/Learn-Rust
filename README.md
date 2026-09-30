@@ -22,8 +22,8 @@ A professional learning record of Rust - which will evolve into applications foc
 
 > [!TIP]
 >
-> (1 ACTION = 2 OR MORE RESULTS)
-> - The 'Kill many birds with 1 stone' philosophy maximizes productivity 
+> The 'Kill many birds with 1 stone throw' philosophy maximizes productivity  
+> - (1 ACTION FOR 2 OR MORE RESULTS)
 > - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game)
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
@@ -88,6 +88,7 @@ Some disadvantages:
 
 In short, it offers: 
   - C/C++-level performance with stronger memory and concurrency safety. 
+  - And a plethora of practical use-cases for myinterests
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -164,8 +165,8 @@ These are my cheat sheets for each chapter
 
 1. [My Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md) - DONE
 2. [My Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) - DONE - but fix writing later.
-3. [My Cheat Sheet - ch03 - Common Programming Concepts](./tutorial/Rust%20Prog%20Lang/ch03/ch03-cheat_sheet.md)
-4. TODO
+3. [My Cheat Sheet - ch03 - Common Programming Concepts](./tutorial/Rust%20Prog%20Lang/ch03/ch03-cheat_sheet.md) - DONE
+4. [My Cheat Sheet - ch04 - Understanding Ownership](./tutorial/Rust%20Prog%20Lang/ch04/ch04-cheat_sheet.md)
 5. TODO
 6. TODO
 7. [My Cheat Sheet - ch07 - Packages, Crates, and Modules](./tutorial/Rust%20Prog%20Lang/ch07/ch07-cheat_sheet)
@@ -177,12 +178,14 @@ These are my cheat sheets for each chapter
 13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) - DONE - but fix writing later / review
 14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) - Done, but needs more work for final cheat-sheet
 
-##### Final Checklist for this Unit
-- [ ] Final check all chapters - CODE EXAMPLES (add more if wanting)
-- [ ] Final check all chapters - Writing makes sense
-- [ ] Final check all chapters - Formatting
-- [ ] Final check all chapters - Create links for 'by subject'
-- [ ] Final check all chapters - For my primary advantages guide
+##### Final Checklist for all chapters
+- [ ] Check - CODE EXAMPLES (add more if wanting)
+- [ ] Check - Writing makes sense
+- [ ] Check - Formatting
+- [ ] Check - Create links for 'by subject'
+- [ ] Check - For my primary advantages guide
+- [ ] Check - That all summaries are added to the cheat sheet main page
+- [ ] Finally - Can probably remove the original notes.md after each chapter is FINAL CHECKED.
 
 ---
 

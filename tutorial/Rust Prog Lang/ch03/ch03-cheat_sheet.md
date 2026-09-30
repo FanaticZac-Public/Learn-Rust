@@ -1,6 +1,11 @@
-# Common Programming Concepts
+# Chapter 03 - Common Programming Concepts
 
-Topics: variables, basic types, functions, comments, and control flow. These foundations will be in every Rust program, and learning them early will give you a strong core to start from.
+Topics: 
+- variables
+- basic types
+- functions
+- comments
+- control flow
 
 [Rust Keywords](https://doc.rust-lang.org/book/appendix-01-keywords.html)
 
