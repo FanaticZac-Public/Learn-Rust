@@ -1,4 +1,5 @@
-# Ownership 
+# Ownership
+
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
@@ -19,11 +20,12 @@
 </table>
 
 ## Super Summary
+
 ```rust
 
 //-------------- String --------------
 // Can't be mutated
-let a = String::from("hello"); 
+let a = String::from("hello");
 
 // Can be mutated - below
 let mut s = String::from("hello");
@@ -53,7 +55,7 @@ let y = x; // both variables still good. (it's a copy but free performance wise)
 // Complex types are on the heap
 let s1 = String::from("hello"); // Allocated to heap
 let s2 = s1; // This copy is a shallow copy and is default in Rust, preferred.
-// New reference is added to stack - but it points to the same heap. 
+// New reference is added to stack - but it points to the same heap.
 // IN RUST - s1 become invalided and removed to prevent double pointer/memory related bugs
 println!("{s1}, world!");
 // error[E0382]: borrow of moved value: `s1`
@@ -77,12 +79,12 @@ println!("{s1}, world!");
 
 
 //-------------- Tuples and the Copy Trait --------------
-// If a tuple is made up of primitives only (who only have the copy trait (related to stack) - and not the drop trait (related to heap)) - then the tuple will copy implicitly to the stack. 
+// If a tuple is made up of primitives only (who only have the copy trait (related to stack) - and not the drop trait (related to heap)) - then the tuple will copy implicitly to the stack.
 // - If even one of the members of tuple is complex - the whole thing will be treated like complex type
 
 
 //-------------- Ownership and functions --------------
-// Same as previous rules copy or move based on type - when passed as parameter. 
+// Same as previous rules copy or move based on type - when passed as parameter.
 fn main() {
     let s = String::from("hello");  // s comes into scope
 
@@ -144,8 +146,6 @@ fn takes_and_gives_back(a_string: String) -> String {
 
 
 ```
-
-
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -213,12 +213,14 @@ Examples will focus on a very common data structure: strings.
 ## The String Type
 
 Basic data types **will be on the stack**
+
 - e.g. int, float, char, bool,
 - Can be quickly and trivially copied to make a new independent instance if value is needed in new scope
 
 We've already seen string literals `let s = "hello";` which are hardcoded into our program, convenient but not versatile.
-  - They are immutable also.
-  - Aren't always known at compile time.
+
+- They are immutable also.
+- Aren't always known at compile time.
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
@@ -239,8 +241,9 @@ We've already seen string literals `let s = "hello";` which are hardcoded into o
 </table>
 
 String **will be on the heap**
+
 - Strings can be modified while the program runs (unlike string literal)
-    - aka string literals but be known at compile time.
+  - aka string literals but be known at compile time.
 - knowing how data is cleaned up is important is good use case for ownership
   - Also valid for other complex data types in the std library
 
@@ -248,7 +251,7 @@ String **will be on the heap**
 // String type manages data allocation on the heap during program operation
 
 // Can't be mutated
-let a = String::from("hello"); 
+let a = String::from("hello");
 
 // double colon :: operator allows us to namespace this particular from function under the String type.
 
@@ -261,16 +264,18 @@ println!("{s}"); // this will print `hello, world!`
 ```
 
 ## Memory and Allocation
+
 In order to support a mutable, growable piece of text, we need to allocate an amount of memory on the heap, unknown at compile time, to hold the contents.
+
 - The memory must be requested from the memory allocator at runtime.
-    - That first part is done by us: When we call String::from, its implementation requests the memory it needs (standard)
+  - That first part is done by us: When we call String::from, its implementation requests the memory it needs (standard)
 - We need a way of returning this memory to the allocator when we’re done with our String.
-    - We need to pair exactly one allocate with exactly one free.
+  - We need to pair exactly one allocate with exactly one free.
 - **How Rust handles this is to automatically release memory when it goes out of scope.**
-    - **When a variable goes out of scope, Rust calls a special function for us. This function is called `drop`, and it’s where the author of String can put the code to return the memory. Rust calls `drop` automatically at the closing curly bracket.**
+  - **When a variable goes out of scope, Rust calls a special function for us. This function is called `drop`, and it’s where the author of String can put the code to return the memory. Rust calls `drop` automatically at the closing curly bracket.**
 
 ```rust
-// Rust 
+// Rust
 {
     let s = String::from("hello"); // s is valid from this point forward
 
@@ -287,22 +292,25 @@ This pattern has a profound impact on the way Rust code is written. It may seem 
     let x = 5;
     let y = x;
 ```
+
 - Bind the value 5 to x; then, make a copy of the value in x and bind it to y.” We now have two variables, x and y, and both equal 5. This is indeed what is happening, because integers are simple values with a known, fixed size, and these two 5 values are pushed onto the stack.
+
 ```rust
     let s1 = String::from("hello");
     let s2 = s1;
 ```
+
 - This looks very similar, so we might assume that the way it works would be the same: That is, the second line would make a copy of the value in s1 and bind it to s2. But this isn’t quite what happens.
-![String](https://doc.rust-lang.org/book/img/trpl04-01.svg)
-- String has 3 parts, ptr to memory, len (bytes), capacity 
+  ![String](https://doc.rust-lang.org/book/img/trpl04-01.svg)
+- String has 3 parts, ptr to memory, len (bytes), capacity
 - On left is the stack - right is the heap memory
 - capacity is the total amount of memory that string has received from the allocator
-- When we assign s1 to s2 - the string data is copied, meaning we copy the pointer, length and capacity that is on the stack. 
-    - We do not copy the heap
-![String](https://doc.rust-lang.org/book/img/trpl04-02.svg)
+- When we assign s1 to s2 - the string data is copied, meaning we copy the pointer, length and capacity that is on the stack. - We do not copy the heap
+  ![String](https://doc.rust-lang.org/book/img/trpl04-02.svg)
 - By doing this by reference - is better performance
 - When one of these references goes out of scope - drop would automatically clear the heap causing "double free" error - memory saftey bug.
-- ** To ensure memory safety - Rust considers s1 no longer valid - preventing this error
+- \*\* To ensure memory safety - Rust considers s1 no longer valid - preventing this error
+
 ```rust
     let s1 = String::from("hello");
     let s2 = s1;
@@ -310,17 +318,20 @@ This pattern has a profound impact on the way Rust code is written. It may seem 
     println!("{s1}, world!");
     // error[E0382]: borrow of moved value: `s1`
 ```
+
 - This is neither a shallow copy or deep copy
-    -  the concept of copying the pointer, length, and capacity without copying the data probably sounds like making a shallow copy
-    - And if it copied the heap also - that would be a deep copy
+  - the concept of copying the pointer, length, and capacity without copying the data probably sounds like making a shallow copy
+  - And if it copied the heap also - that would be a deep copy
 - Because in Rust the first variable is invalidated - it's called a move
 - This solves the memory problem
 - **Rust will never automatically create "deep" copies - by design choice**
-    - Therefore, any automatic copying can be assumed to be inexpensive in terms of runtime performance
+  - Therefore, any automatic copying can be assumed to be inexpensive in terms of runtime performance
 
 ### Scope and Assignment
-The inverse of this is true for the relationship between scoping, ownership, and memory being freed via the drop function as well. 
--  When you assign a completely new value to an existing variable, Rust will call drop and free the original value’s memory immediately.
+
+The inverse of this is true for the relationship between scoping, ownership, and memory being freed via the drop function as well.
+
+- When you assign a completely new value to an existing variable, Rust will call drop and free the original value’s memory immediately.
 
 ```rust
     let mut s = String::from("hello");
@@ -331,9 +342,11 @@ The inverse of this is true for the relationship between scoping, ownership, and
 ```
 
 ### Variables and Data Interacting with Clone
+
 If we do want to deeply copy the heap data of the String, not just the stack data, we can use a common method called 'clone'
+
 - This visual indicator is good (no deep copy without it) and represents and expensive execution
-If we do want to deeply copy the heap data of the String, not just the stack data, we can use a common method called clone.
+  If we do want to deeply copy the heap data of the String, not just the stack data, we can use a common method called clone.
 
 ```rust
     // Explicit Deep copy - copy stack and heap data
@@ -375,6 +388,7 @@ The Boolean type, bool, with values true and false.
 All the floating-point types, such as f64.
 The character type, char.
 Tuples, if they only contain types that also implement Copy. For example, (i32, i32) implements Copy, but (i32, String) does not.
+
 - All the integer types, such as u32.
 - The Boolean type, bool, with values true and false.
 - All the floating-point types, such as f64.
