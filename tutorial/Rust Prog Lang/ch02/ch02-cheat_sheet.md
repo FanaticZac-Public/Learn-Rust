@@ -151,7 +151,7 @@ fn main() { // Main function - entry point for the program
 ## Programming a Guessing Game - From notes - first read
 ### part 1
 - Variables are immutable by default. use mut for mutable
-- :: referes to an associated function of a type such as String above
+- :: refers to an associated function of a type such as String above
 - &mut passes guess as a reference (no copy) - one of rusts major advantages are references being safe and easy.. more later
 - Like variables, references are not mutable by default. ** (chp4)
 - read_line returns enum for the state - and expect handles our exception (chp6 for enum) but it's Ok or Err here

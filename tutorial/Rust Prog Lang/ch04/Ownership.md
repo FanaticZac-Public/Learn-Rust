@@ -235,7 +235,7 @@ We've already seen string literals `let s = "hello";` which are hardcoded into o
     </td>
     <td>
    <strong>Fun fact - string literals aren't on the stack or heap
-</strong><br> They're in the static, read-only memory
+</strong><br> They're directly in the binary code - read only
     </td>
   </tr>
 </table>
