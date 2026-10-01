@@ -22,7 +22,6 @@
 ## Super Summary
 
 ```rust
-
 //-------------- Struct Usage --------------
 // Definition
 struct User {
