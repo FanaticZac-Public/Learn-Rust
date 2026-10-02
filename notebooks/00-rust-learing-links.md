@@ -14,6 +14,7 @@ These are links that I wanted to reference via things i encountered in the book 
     - [Zero Cost Abstractions](https://doc.rust-lang.org/beta/embedded-book/static-guarantees/zero-cost-abstractions.html)
 - [The Cargo Book](https://doc.rust-lang.org/cargo/)
     - [Profiles - The Cargo Book](https://doc.rust-lang.org/cargo/reference/profiles.html)
+- [The Rustonomicon - The Dark Arts of Unsafe Rust](https://doc.rust-lang.org/nomicon/index.html)
 - [Rust Language API reference](https://doc.rust-lang.org/std/prelude/index.html)
     - [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
         - TODO: Need to review this (following tutorial - haven't yet).

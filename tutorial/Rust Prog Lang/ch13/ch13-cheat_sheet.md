@@ -1,5 +1,3 @@
-
-
 # Chapter 13 - Functional Language Features: Iterators and Closures - Cheat Sheet - Quick Reference
 
 Rust’s design is significantly influenced by _functional programming_.
@@ -36,15 +34,9 @@ I'm now splitting up the cheat sheets into separate subsections so i can create 
   </tr>
 </table>
 
-
-
-
-
 Chapter 13 discusses:
+
 - [Closures](./Closures.md)
 - [Iterators](./Iterators.md)
 - [Improving Our I/O Project](./Improving-IO-Project.md)
 - [Performance(Loops vs. Iterators)](./Performance-Loops_vs_Iterators.md)
-
-
-
