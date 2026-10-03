@@ -160,8 +160,15 @@ This is a more rough brain stormy project plan (at this point I don't have a scr
 <!-- This is the template project for working on big picture organization (package, modules, structure), understand lib.rs, main.rs, bin/, and a larger projects shape and standards throughout.
 
 - [Template-Project](./tutorial/Rust%20Prog%20Lang/template-project/) -->
+#### Read-through/Cheat-Sheet Strategy
+- Largely my strategy with the section has been to read the (sub)chapters, copying in the text from the book line by like as bullet points as I'm reading (omitting fluff or examples I don't need).
+  - Then coming back and rereading the chapter doing the super-summaries (code only section, links, and sometimes a 1-2 paragraph sub-chapter section)
+  - And also removing bullet points that aren't critical (fluff)
+- I was doing more exercises with new exercise projects in every chapter. 
+- Note: it's not terribly consistent 
+  - later chapters have better organizational splits (but time will tell whether I found it worth it to go back and edit early chapters more - I'd rather move forward to Bevy and other projects likely)
 
-These are my cheat sheets for each chapter
+### These are my cheat sheets for each chapter:
 
 1. [My Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md) - DONE
 2. [My Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) - DONE - but fix writing later.
@@ -177,7 +184,13 @@ These are my cheat sheets for each chapter
 12. [My Cheat Sheet - ch12 - An I/O Project: Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
 13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) - DONE - but fix writing later / review
 14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) - Done, but needs more work for final cheat-sheet
-15. [My Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) - Done, but worth a reread for sure (particularly RefCell)
+15. [My Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) - Done, but worth a re-read for sure (particularly RefCell)
+16. [My Cheat Sheet - ch16 - Fearless Concurrency](./tutorial/Rust%20Prog%20Lang/ch16/ch16-cheat_sheet.md) - Done
+17. 
+18. 
+19. 
+20. 
+21. 
 
 ##### Final Checklist for all chapters
 - [ ] Check - CODE EXAMPLES (add more if wanting)
@@ -187,6 +200,7 @@ These are my cheat sheets for each chapter
 - [ ] Check - For my primary advantages guide
 - [ ] Check - That all summaries are added to the cheat sheet main
 - [ ] Check - Super Summary added to each chapter.
+- [ ] Check - Should move definitions in sub-chapter to chapter main page.
 - [ ] Finally - Can probably remove the original notes.md after each chapter is FINAL CHECKED.
 
 - [ ] Do a special interest sheet. 
