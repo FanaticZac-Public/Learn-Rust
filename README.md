@@ -186,9 +186,9 @@ This is a more rough brain stormy project plan (at this point I don't have a scr
 14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) - Done, but needs more work for final cheat-sheet
 15. [My Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) - Done, but worth a re-read for sure (particularly RefCell)
 16. [My Cheat Sheet - ch16 - Fearless Concurrency](./tutorial/Rust%20Prog%20Lang/ch16/ch16-cheat_sheet.md) - Done
-17. 
-18. 
-19. 
+17. [Fundamentals of Asynchronous Programming: Async, Await, Futures, and Streams](./tutorial/Rust%20Prog%20Lang/ch17/ch17-cheat_sheet.md) - Done (worth re-read)
+18. [Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md)
+19.  
 20. 
 21. 
 
@@ -210,6 +210,21 @@ This is a more rough brain stormy project plan (at this point I don't have a scr
 
 ---
 
+### Side Quests - Before Starting Bevy 
+
+I want a section here for some other tasks I will commit to with regard to practicing the basics further - drawing from the book.
+
+This side quest will contain to different objectives:
+- Practice and exercises (while the concepts are still fresh in my mind)
+- Exploring working with rust on different targets and frameworks (for help illuminating further objectives)
+  1. WebAssemby
+  2. Mobile
+  3. Embedded
+  4. Desktop
+
+- It's also become apparent that git will be problematic for devising some applications - since I'm a code hoarder at heart and I'll need to focus on orienting much of my actual project work as  demoes (or working utils) and need to investigate via these endpoints how I'd like to do that.
+
+---
 ### Step 2 - Bevy Tutorial
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
@@ -232,8 +247,7 @@ This is a more rough brain stormy project plan (at this point I don't have a scr
 </table>
 
 ---
-
-### Step 3 - Physics Simulations with Bevy - Grade 11 Physics Review
+### Step 3 - Physics Simulations with Bevy via 11 Physics Review
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">

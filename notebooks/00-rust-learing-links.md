@@ -39,6 +39,16 @@ These are links that I wanted to reference via things i encountered in the book 
     - [The Impatient Programmer's Guide to Bevy and Rust](https://aibodh.com/posts/bevy-rust-game-development-chapter-1/)
         - [Git Repo](https://github.com/jamesfebin/ImpatientProgrammerBevyRust)
 
+## Rust - Free Exercise or tutorial links
+- [Rustlings](https://rustlings.rust-lang.org/) - Recommended in parallel to reading the official Rust book 📚️
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/) - 
+
+## Rust - Bevy - Free Exercise or tutorial links
+- [Rustlings](https://bevy.org/learn/quick-start/introduction/) - Recommended in parallel to reading the official Rust book 📚️
+
+## Rust - Books (Paid)
+- [Rust for Rustaceans](https://rust-for-rustaceans.com/) - For developers who’ve mastered the basics
+
 ## Other Learning Links
 - [Markdown (MD) Reference](https://www.markdownguide.org/cheat-sheet/)
 - [SipHash - Rust hashmap default hasher to mitigate DDOS](https://en.wikipedia.org/wiki/SipHash)

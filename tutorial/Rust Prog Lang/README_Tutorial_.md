@@ -17,6 +17,9 @@ As much as I find this kind of tedious and would rather just start on bevy or ot
 
 So I will go back for chapters 1-8 for each tasks, I will still do a first read-through for quick notes for each chapter but do all potential exercises to get my head around the concepts if new, and then later i will come back and make cheat sheets for that on second pass (is better for memorization). But I will note Rust specific mentions to make cheat sheets easier later.
 
+## Next Step - Queue - Descending
+1. Make my own game engine in Rust - New Repository worthy.
+2. ... 
 
 ## Personal Chapter exercise competency  
 For chapter 9 and beyond - going to ensure perfect practice first time. 
@@ -33,11 +36,15 @@ For 1-8 - going to go back and review with cheat-sheet creation and assess. Will
 - LeetCode has rust options - you should do 1 a day and add to practice section. 
 - Find some Rust language related quizzes online.
 
-## Rust Specific Topics/Notes to review
+## Specific Topics / Notes to review - in context of Rust
 - Ownership (elaborate later as going back to do the cheat sheets)
 - TDD principles
 - Shadowing
 - [Zero Cost Abstractions](https://doc.rust-lang.org/beta/embedded-book/static-guarantees/zero-cost-abstractions.html)
+
+
+## Topics of the book that would be blog worthy (or just worth doing a write up to contextualize myself)
+- Rusts version of Polymorphism (bounded parametric polymorphism) using trait bounds.
 
 
 
