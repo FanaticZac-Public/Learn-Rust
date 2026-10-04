@@ -1,1 +1,0 @@
-tokio_stream::iter::Iter<Map<std::slice::Iter<'_, {integer}>, {closure@src/bin/Streams-Futures_in_Sequence.rs:8:38: 8:41}>>

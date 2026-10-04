@@ -1,5 +1,0 @@
-/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust Prog Lang/ch17/hello-async/target/debug/build/zerocopy-d6074b173cd58faf/build_script_build-d6074b173cd58faf.d: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.59/build.rs
-
-/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust Prog Lang/ch17/hello-async/target/debug/build/zerocopy-d6074b173cd58faf/build_script_build-d6074b173cd58faf: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.59/build.rs
-
-/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.59/build.rs:
