@@ -118,4 +118,7 @@ $ cargo new project_name --lib
 
 // run tests
 $ cargo test
+
+// To automatically add a crate from crates.io
+$ cargo add crate_name
 ```

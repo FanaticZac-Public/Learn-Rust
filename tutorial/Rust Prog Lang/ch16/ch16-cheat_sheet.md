@@ -21,7 +21,7 @@ Here are the topics we’ll cover in this chapter:
 - Shared-state concurrency, where multiple threads have access to some piece of data
 - The Sync and Send traits, which extend Rust’s concurrency guarantees to user-defined types as well as types provided by the standard library
 
-Chapter 14 contains:
+Chapter 16 contains:
 
 - [Using Threads to Run Code Simultaneously](./Threads.md) - Done (pretty much perfect)
 - [Transfer Data Between Threads with Message Passing](./Threads_Data_Passing.md) - Done (pretty much perfect)

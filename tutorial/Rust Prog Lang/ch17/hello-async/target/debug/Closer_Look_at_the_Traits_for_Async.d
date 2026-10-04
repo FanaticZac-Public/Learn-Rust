@@ -1,0 +1,1 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch17/hello-async/target/debug/Closer_Look_at_the_Traits_for_Async: /home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch17/hello-async/src/bin/Closer_Look_at_the_Traits_for_Async.rs

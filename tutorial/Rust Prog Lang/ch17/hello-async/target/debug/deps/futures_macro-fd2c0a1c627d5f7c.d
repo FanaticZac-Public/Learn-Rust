@@ -1,0 +1,9 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust Prog Lang/ch17/hello-async/target/debug/deps/futures_macro-fd2c0a1c627d5f7c.d: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/lib.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/executor.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/join.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/select.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/stream_select.rs
+
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust Prog Lang/ch17/hello-async/target/debug/deps/libfutures_macro-fd2c0a1c627d5f7c.so: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/lib.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/executor.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/join.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/select.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/stream_select.rs
+
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/lib.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/executor.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/join.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/select.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-macro-0.3.34/src/stream_select.rs:

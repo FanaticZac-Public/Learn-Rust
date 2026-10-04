@@ -1,0 +1,1 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch17/hello-async/target/debug/hello-async: /home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust\ Prog\ Lang/ch17/hello-async/src/main.rs

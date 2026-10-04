@@ -15,6 +15,7 @@ These are links that I wanted to reference via things i encountered in the book 
 - [The Cargo Book](https://doc.rust-lang.org/cargo/)
     - [Profiles - The Cargo Book](https://doc.rust-lang.org/cargo/reference/profiles.html)
 - [The Rustonomicon - The Dark Arts of Unsafe Rust](https://doc.rust-lang.org/nomicon/index.html)
+- [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
 - [Rust Language API reference](https://doc.rust-lang.org/std/prelude/index.html)
     - [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
         - TODO: Need to review this (following tutorial - haven't yet).

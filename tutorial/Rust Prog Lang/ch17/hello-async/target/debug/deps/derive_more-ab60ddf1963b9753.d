@@ -1,0 +1,10 @@
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust Prog Lang/ch17/hello-async/target/debug/deps/derive_more-ab60ddf1963b9753.d: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/lib.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/syn_compat.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/utils.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_assign_like.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_helpers.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_like.rs
+
+/home/user/@repo/LEARN_RUST_PROJECTS/workspace/Learn-Rust/tutorial/Rust Prog Lang/ch17/hello-async/target/debug/deps/libderive_more-ab60ddf1963b9753.so: /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/lib.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/syn_compat.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/utils.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_assign_like.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_helpers.rs /home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_like.rs
+
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/lib.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/syn_compat.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/utils.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_assign_like.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_helpers.rs:
+/home/user/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/derive_more-0.99.20/src/add_like.rs:

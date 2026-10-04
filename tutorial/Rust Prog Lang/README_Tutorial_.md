@@ -27,6 +27,11 @@ For 1-8 - going to go back and review with cheat-sheet creation and assess. Will
 - Create you own version of the walkthroughs in ch07 (Packages, Crates, and Modules)
     - Most of it was common, except it didn't explore the 2 crate types enough, their typical
 - I need to write (or find) an acceptable benchmark utility
+- Test out different async runtimes 
+    - for you server
+    - for your pi.
+- LeetCode has rust options - you should do 1 a day and add to practice section. 
+- Find some Rust language related quizzes online.
 
 ## Rust Specific Topics/Notes to review
 - Ownership (elaborate later as going back to do the cheat sheets)
@@ -89,6 +94,13 @@ Methodologies:
     - And one of Rust's strengths is that it can build to this. 
     - Test early because i feel there's some good app ideas to come out of this.
 
+
+### Mobile App
+- Setup starter app for cross compatible app
+- Setup starter app for cross compatible game
+    - I want to know how easy this is to configure while i plan my game project 
+    - be able to estimate the effort and ways around the 30% platform markups.
+
 ### Embedded
 - I have ESPs (I usually just still with raspberry pi) but could use one for testing my keyboard socket program.
 - Overlaps with [The Embedded Rust Book](https://doc.rust-lang.org/beta/embedded-book/)
@@ -98,3 +110,4 @@ Methodologies:
     - My keyboard project above for raspberry pi Zero 2 would pair well with this. 
 
 ### Raspberry Pi kit - Central Repository Kit
+- Make cargo crate for added GPIO support
