@@ -187,8 +187,8 @@ This is a more rough brain stormy project plan (at this point I don't have a scr
 15. [My Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) - Done, but worth a re-read for sure (particularly RefCell)
 16. [My Cheat Sheet - ch16 - Fearless Concurrency](./tutorial/Rust%20Prog%20Lang/ch16/ch16-cheat_sheet.md) - Done
 17. [Fundamentals of Asynchronous Programming: Async, Await, Futures, and Streams](./tutorial/Rust%20Prog%20Lang/ch17/ch17-cheat_sheet.md) - Done (worth re-read)
-18. [Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md)
-19.  
+18. [Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md) - Done (worth re-read)
+19. [Patterns and Matching](./tutorial/Rust%20Prog%20Lang/ch19/ch19-cheat_sheet.md) - Done
 20. 
 21. 
 
@@ -224,7 +224,14 @@ This side quest will contain to different objectives:
 
 - It's also become apparent that git will be problematic for devising some applications - since I'm a code hoarder at heart and I'll need to focus on orienting much of my actual project work as  demoes (or working utils) and need to investigate via these endpoints how I'd like to do that.
 
+- Perhaps 1 mini application using:
+  - at least 1 or more sections of the book as priority inspiration. 
+  - 1 complex data structure algorithm (not from the book)
+  - At least 1 different target from the target list (above)
+  - Some personal demonstration - and also including some 
+
 ---
+
 ### Step 2 - Bevy Tutorial
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
