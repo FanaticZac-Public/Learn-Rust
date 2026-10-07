@@ -27,7 +27,7 @@ Chapter 19 contains:
 - [Refutability: Whether a Pattern Might Fail to Match](./Refutability_with_Patterns.md) - Done (super summary perfect)
 - [Pattern Syntax](./Pattern_Syntax.md) - Done (super summary perfect)
 
-## Summary
+## Post Summary
 
 Rust’s patterns are very useful in distinguishing between different kinds of data. When used in match expressions, Rust ensures that your patterns cover every possible value, or your program won’t compile. Patterns in let statements and function parameters make those constructs more useful, enabling the destructuring of values into smaller parts and assigning those parts to variables. We can create simple or complex patterns to suit our needs.
 

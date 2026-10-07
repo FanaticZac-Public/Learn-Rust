@@ -16,6 +16,9 @@ These are links that I wanted to reference via things i encountered in the book 
     - [Profiles - The Cargo Book](https://doc.rust-lang.org/cargo/reference/profiles.html)
 - [The Rustonomicon - The Dark Arts of Unsafe Rust](https://doc.rust-lang.org/nomicon/index.html)
 - [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/)
+- Macros
+    - [The Little Book of Rust Macros](https://lukaswirth.dev/tlborm/)
+    - [Macros by example](https://doc.rust-lang.org/reference/macros-by-example.html)
 - [Rust Language API reference](https://doc.rust-lang.org/std/prelude/index.html)
     - [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
         - TODO: Need to review this (following tutorial - haven't yet).
@@ -28,12 +31,17 @@ These are links that I wanted to reference via things i encountered in the book 
             - Be sure to check out the documentation for useful methods:
                 - contains for searching in a string 
                 - replace for substituting parts of a string with another string.
+        - [quote (Crate)](https://docs.rs/quote/latest/quote/)
+        - [syn (Crate)](https://docs.rs/syn/2.0.119/syn/index.html)
     - [Trait Termination (process)](https://doc.rust-lang.org/std/process/trait.Termination.html)
         - Is for custom main function termination exit codes with function 'report'.
     - [args (Function)](https://doc.rust-lang.org/std/env/fn.args.html)
 - Package Managers
     - [Rust - The Cargo Book](https://doc.rust-lang.org/cargo/)
     - [Crates - Rust Community Crates](https://crates.io/)
+        - parsing related (parse, stringify):
+            - [syn (Crate)](https://crates.io/crates/syn)
+            - [quote (Crate)](https://crates.io/crates/syn)
 - [Bevy - Game Engine](https://bevy.org/) 
 - 3rd Party Resources
     - [The Impatient Programmer's Guide to Bevy and Rust](https://aibodh.com/posts/bevy-rust-game-development-chapter-1/)

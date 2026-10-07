@@ -35,6 +35,7 @@ For 1-8 - going to go back and review with cheat-sheet creation and assess. Will
     - for your pi.
 - LeetCode has rust options - you should do 1 a day and add to practice section. 
 - Find some Rust language related quizzes online.
+- Make your own macros (find good use-case)
 
 ## Specific Topics / Notes to review - in context of Rust
 - Ownership (elaborate later as going back to do the cheat sheets)
@@ -91,6 +92,7 @@ Methodologies:
 ### Linux OS - Util or App
 - Recreate encryption util from NetSec courses
 - Create custom app as deep-dive for printing /proc folder updates.
+- Create your own task app on desktop using one the gui options on the API. (Something you can use)
 
 ### CompSci Review Topics
 - Processes and threads breakdown - 
