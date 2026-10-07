@@ -60,7 +60,16 @@ Methodologies:
     - Pick at platform: web, micro-controller (raspberry, esp), gpu
     - Portfolio booster
 
-### Portfolio Website - With demos, videos - in progress
+
+
+### Web-Server
+#### Exercises/Samples to make
+- thread pool (was the model from ch21) - DONE
+- fork/join model, 
+- the single-threaded async I/O model
+- multithreaded async I/O model
+#### Portfolio Website - With demos, videos - in progress
+- Finish my portfolio website
 - Build backend server in Rust for my Unity WebGL multiplayer demo (for portfolio) 
 
 ### Bevy
