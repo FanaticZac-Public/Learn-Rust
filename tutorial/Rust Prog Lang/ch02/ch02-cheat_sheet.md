@@ -47,7 +47,7 @@ edition = "2024"
 [dependencies]
 rand = "0.8.5" // this one gets added, then 'cargo build' to install.
 ```
-
+## Cargo / Crate.IO / Versioning / .lock file
 - This let's you add modules from crate.io that is the public repository for rust that can support your program functionality.
 - Cargo understands Semantic Versioning is a standard for writing version numbers.
   - The specifier 0.8.5 is actually shorthand for ^0.8.5, which means any version that is at least 0.8.5 but below 0.9.0.
@@ -66,7 +66,7 @@ rand = "0.8.5" // this one gets added, then 'cargo build' to install.
 - More on this in chapter 14.
   Running 'cargo doc --open' will build documentation provided by all your dependencies locally and open it in your browser. - such as rand
 
----
+## Project Inspection
 
 Rust has a set of items defined in the standard library that it brings into the scope of every program automatically. This set is called the prelude, and you can see everything in it here:
 
@@ -156,7 +156,6 @@ fn main() { // Main function - entry point for the program
 - Like variables, references are not mutable by default. ** (chp4)
 - read_line returns enum for the state - and expect handles our exception (chp6 for enum) but it's Ok or Err here
     - rust requires this exception added -- won't compile otherwise - awesome
-
 - semantically similar to c/c++ but 2 major Rust things here is the default immutability for variables and references and the forcing of exception checking
 - Rustacean in training.
 

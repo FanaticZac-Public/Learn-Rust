@@ -1,6 +1,6 @@
 # Functions
 
-
+## Super Summary
 ```rust
 // ////////////// FUNCTIONS //////////////
 
@@ -198,8 +198,7 @@ macro_rules! create_function {
 </table>
 
 
-
-## Functions Notes
+## Functions - Original Notes 
 - In function signatures, you must declare the type of each parameter. 
     - helps compiler, helps bug detection
 - comma separated

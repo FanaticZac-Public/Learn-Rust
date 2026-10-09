@@ -2,7 +2,7 @@
 
 # Chapter 14 - More About Cargo and Crates.io - Cheat Sheet - Quick Reference
 
-More advanced features to show you how to do the following:
+Advanced features to:
 
 - Customize your build through release profiles.
 - Publish libraries on crates.io.

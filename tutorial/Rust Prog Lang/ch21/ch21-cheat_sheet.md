@@ -39,4 +39,4 @@ Chapter 21 discusses:
 
 ### Summary
 
-You’re now ready to implement your own Rust projects and help with other people’s projects. 
+Intro tutorial series - Done

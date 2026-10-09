@@ -114,7 +114,7 @@ I'm laying out my steps here - you can consider the pending ones as flexible nod
       >
     </td>
     <td>
-      <strong>Currently in progress</strong>
+      <strong style="color: limegreen;">Done</strong> - but there are some lessons I'm going to redo - and some cheat sheets revisions and super summaries to do.
     </td>
   </tr>
 </table>
@@ -176,9 +176,9 @@ Each has a `Super Summary` section that is mostly the code with annotations - as
 18. [My Cheat Sheet - ch18 - Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md) - Done (worth re-read)
 19. [My Cheat Sheet - ch19 - Patterns and Matching](./tutorial/Rust%20Prog%20Lang/ch19/ch19-cheat_sheet.md) - Done
 20. [My Cheat Sheet - ch20 - Advanced Features](./tutorial/Rust%20Prog%20Lang/ch20/ch20-cheat_sheet.md)
-21. 
+21. [My Cheat Sheet - ch21 - Final Project: Building a Multithreaded Web Server](./tutorial/Rust%20Prog%20Lang/ch21/ch21-cheat_sheet.md)
 
-##### Final Checklist for all chapters
+<!-- #### Final Checklist for all chapters
 - [ ] Check - CODE EXAMPLES (add more if wanting)
 - [ ] Check - Writing makes sense (each section with a header - has a summary that equates to understanding in the code or other section of 'super summary)
 - [ ] Check - Formatting 
@@ -191,10 +191,43 @@ Each has a `Super Summary` section that is mostly the code with annotations - as
 - [ ] Do a special interest sheet. 
   - Collect the borrowing rules (ch04) 
   - Basically 1 paragraph of each sub-chapter (no code)
-    - To add to the Super Summary section.
+    - To add to the Super Summary section. -->
 
 ---
 
+### Step 2 - Rustlings - Exercises/Quizzes
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0">
+      <img
+        src="./images/rust-images/rust-does_not_compile.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="center"
+      >
+    </td>
+    <td>
+      <strong>Currently in progress</strong>
+    </td>
+  </tr>
+</table>
+After completing first read of 'The Rust Programming Language' book, I feel I've touched on most topics related to the Rust programming language, and completed majority of the primary exercises, however there's no replacement for direct problem solving.
+
+Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. 
+
+I'm going to run through these now (while i review my cheat sheets along-side)
+
+I've created the project in /projects/Rustlings and notes are here:
+- [My Rustlings Notes](./practice/Rustlings/Rustlings_Notes.md)
+
+The official website for Rustlings is here:
+- [Official Rustlings Page](https://rustlings.rust-lang.org/)
+- [Rustlings Git](https://github.com/rust-lang/rustlings)
+
+---
 ### Side Quests - Before Starting Bevy 
 
 I want a section here for some other tasks I will commit to with regard to practicing the basics further - drawing from the book.
@@ -216,8 +249,7 @@ This side quest will contain to different objectives:
   - Some personal demonstration - and also including some 
 
 ---
-
-### Step 2 - Bevy Tutorial
+### Step 3 - Bevy Tutorial
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -239,7 +271,7 @@ This side quest will contain to different objectives:
 </table>
 
 ---
-### Step 3 - Physics Simulations with Bevy via 11 Physics Review
+### Step 4 - Physics Simulations with Bevy via 11 Physics Review
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
