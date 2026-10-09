@@ -1,35 +1,4 @@
-
-
-<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
-  frame="box"   rules="none">
-  <tr>
-    <td width="66" valign="middle">
-      <img
-        src="../../../images/ed-images/ed_hack_1.png"
-        width="40"
-        height="40"
-        alt="Author Git Logo"
-        align="center"
-      >
-    </td>
-    <td>
- <strong>
-Note:
-</strong>
-    </td>
-  </tr>
-</table>
-
-On this one - I made some good cheat sheet notes - compared to notes - but this is problematic. 
-Going forward - I'm just going to do this:
-- First pass write/copy notes into notes.md
-- once per day - go back to the first incomplete cheat sheet and do that section
-    - For cheat sheet, for each chapter do one section of cheat sheet as it's own thing - but unify the code and explanation
-    - e.g. for this section, generics, Traits, and lifelines would each be their won.
-- So consider this one needing a redo - but some of the effort here can be re-used (this was first attempt at doing this in one pass - but it's hard to learn and organize at the same time.)
-
-
-# Chapter 10 - Generic Types, Traits, and Lifetimes - Cheat Sheet - Quick Reference
+# Chapter 10 - Generic Types, Traits, and Lifetimes
 
 Generics are abstract stand-ins for concrete types or other properties to reduce code duplication.
 
@@ -45,8 +14,18 @@ Chapter discuss same techniques, making your own, how to use traits (to only acc
 
 lifetimes: a variety of generics that give the compiler information about how references relate to each other. Lifetimes allow us to give the compiler enough information about borrowed values so that it can ensure that references will be valid in more situations than it could without our help.
 
----
+This chapter contains: 
+- [Generic Data Types](./Generic_Data_Types.md)
+- [Shared Behavior with Traits](./Shared_Behavior_with_Traits.md)
+- [Validating References with Lifetimes](./Validating_References_with_Lifetimes.md)
 
+## Post Summary
+
+We covered a lot in this chapter! Now that you know about generic type parameters, traits and trait bounds, and generic lifetime parameters, you’re ready to write code without repetition that works in many different situations. Generic type parameters let you apply the code to different types. Traits and trait bounds ensure that even though the types are generic, they’ll have the behavior the code needs. You learned how to use lifetime annotations to ensure that this flexible code won’t have any dangling references. And all of this analysis happens at compile time, which doesn’t affect runtime performance!
+
+Believe it or not, there is much more to learn on the topics we discussed in this chapter: Chapter 18 discusses trait objects, which are another way to use traits. There are also more complex scenarios involving lifetime annotations that you will only need in very advanced scenarios; for those, you should read the Rust Reference. But next, you’ll learn how to write tests in Rust so that you can make sure your code is working the way it should.
+
+<!-- 
 ### In Function Definitions
 
 ```rust
@@ -247,4 +226,4 @@ pub trait Summary {
 
 ### Generic Type Parameters, Trait Bounds, and Lifetimes
 
-## Summary
+## Summary -->
