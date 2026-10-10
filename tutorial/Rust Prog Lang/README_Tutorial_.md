@@ -36,6 +36,7 @@ For 1-8 - going to go back and review with cheat-sheet creation and assess. Will
 - LeetCode has rust options - you should do 1 a day and add to practice section. 
 - Find some Rust language related quizzes online.
 - Make your own macros (find good use-case)
+- Enable clippy - and adjust lints in the compiler to enforce.
 
 ## Specific Topics / Notes to review - in context of Rust
 - Ownership (elaborate later as going back to do the cheat sheets)

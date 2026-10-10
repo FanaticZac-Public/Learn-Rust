@@ -20,30 +20,28 @@ A professional learning record of Rust - which will evolve into applications foc
   - Review all course material from degree (and work it in where possible)
 - For this git project to be my reference and career demonstration
 
-> [!TIP]
+<!-- > [!TIP]
 > The 'Kill many birds with 1 stone throw' philosophy maximizes productivity  
 > - (1 ACTION FOR 2 OR MORE RESULTS)
-> - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game)
+> - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game) -->
 
 ## Hello, World!
 
 My name is Zach, I'm a Software Developer based in British Columbia, Canada. I hold a Bachelor of Science degree in Applied Computer Science (Game Development specialty) from BCIT.
-> [!NOTE]
-> I completed specialty courses in Network Security Applications set as well. 💪
+> [!NOTE] I too courses in Network Security Applications set as well. 💪
 
 ### Repository Purpose
 
-I didn't marketing myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), and frankly, I don't like dumping my previous instructors resources on git, nor like the prospect of dumping my old assignments on git after-the-fact is... lame.
+I didn't market myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), I don't like dumping my previous instructors resources on git or enjoy the prospect of dumping my old assignments on git after-the-fact is... lame.
 
-That's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward. 
+So that's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward. 
 
-Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this potentially monotonous process of self-marketing becomes something rather exciting. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this new chapter.
+Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this potentially monotonous process of self-marketing becomes something rather exciting. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this new project.
 
 Advantages of Rust:
 - Compiles into machine code
 - High performance 
-  - C/C++-level performance with stronger memory and concurrency safety.
-  - (And with that syntactic sugar I crave (so sweet))
+  - C/C++-level performance with stronger memory and concurrency safety. (with syntactic sugar)
 - Safer conduct 
   - Memory safety without garbage collection
   - Pushes several run-time errors into the compile time checks
@@ -51,9 +49,9 @@ Advantages of Rust:
   - Thread safety
 
 Pushes many common bugs from runtime to compile time errors: 
-- e.g. Prevents these bugs: use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
+- e.g. use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
 
-Those advantages are excelling for:
+Those advantages are excellent for:
   - System Programming
   - Games (Bevy)
   - Embedded Programming
@@ -61,10 +59,8 @@ Those advantages are excelling for:
   - Socket programming
 
 Some disadvantages:
-  - Steeper learning curve 
-    - (Oh baby)
+  - Steeper learning curve (- is that a bug or a feature)
   - Longer compile time 
-    - (Sure, but pairs well with espresso breaks)
 
 In short, it offers: 
   - C/C++-level performance with stronger memory and concurrency safety. 
@@ -91,12 +87,12 @@ In short, it offers:
 
 ## Project Orchestration (Flexible)
 
-I'm all about flexible orchestration. In my degree - I often opted for solo projects whenever I could. One of the major reasons - is because it gives me much more dynamism without bureaucracy, and in school, it was my dime. It's like Agile methodology: having a plan matters, but so does listening to signals, and pivoting to high value targets. (Dijkstra comes to mind).
+I'm all about flexible but measured orchestration. In my degree - I often opted for solo projects whenever I could. One of the major reasons is because it gives me much more dynamism without bureaucracy, and in school, it was my dime, my investment (and I was part-time for much of it). It's like Agile methodology: having a plan matters, but so does listening to signals, and pivoting to high value targets. (Dijkstra comes to mind).
 
-I will try and maintain this sort of loose excuse for a project until such time that I'm either employed or working full-time on a private project implementation. In the meantime, I am trying to do at least 1 meaningful commit per day.
-- Some exception may be given to days I focus on reading or math practice with no clear or meaningful output here - however the point is to translate those efforts into some demonstrable value here.
+I will try and maintain this loose excuse for a project until such time that I'm either employed or working full-time on a private project implementation. In the meantime, I am trying to do at least 1 meaningful commit per day.
+- Some exception may be given to days I focus on reading or math practice with no clear or meaningful commit here - however the point is to translate those efforts into some demonstrable value here.
 
-I'm laying out my steps here - you can consider the pending ones as flexible nodes for exposures I'm interested in.
+I'm laying out my steps here - you can consider the pending ones as flexible nodes for exposures I'm interested in attaining.
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
@@ -290,3 +286,5 @@ This side quest will contain to different objectives:
     </td>
   </tr>
 </table>
+
+  <!-- ![Demo](https://mir-s3-cdn-cf.behance.net/project_modules/source/fe36cc42774743.57ee5f329fae6.gif) -->
