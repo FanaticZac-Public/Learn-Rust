@@ -4,7 +4,7 @@
   <img src="./images/rust-images/rust-panics.svg" width="30%">
 </div>
 
-# Learning Rust
+# Learning Rust 
 
 A professional learning record of Rust - which will evolve into applications focused on practicing physics, algorithms, game development, socket programming, and beyond - in Rust.
 
@@ -20,15 +20,17 @@ A professional learning record of Rust - which will evolve into applications foc
   - Review all course material from degree (and work it in where possible)
 - For this git project to be my reference and career demonstration
 
-<!-- > [!TIP]
-> The 'Kill many birds with 1 stone throw' philosophy maximizes productivity  
-> - (1 ACTION FOR 2 OR MORE RESULTS)
-> - This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Bevy game) -->
+> [!TIP]
+> Productivity Tip: Kill many birds with 1 stone
+> This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Rust/Bevy game)
 
 ## Hello, World!
 
 My name is Zach, I'm a Software Developer based in British Columbia, Canada. I hold a Bachelor of Science degree in Applied Computer Science (Game Development specialty) from BCIT.
-> [!NOTE] I too courses in Network Security Applications set as well. 💪
+
+> [!NOTE] 
+> I took 4/5 courses from Network Security Applications set also. 💪
+> <br> Built a C2 botnet as the major project for that set. 🤖🕸️
 
 ### Repository Purpose
 
@@ -110,14 +112,14 @@ I'm laying out my steps here - you can consider the pending ones as flexible nod
       >
     </td>
     <td>
-      <strong style="color: limegreen;">Done</strong> - but there are some lessons I'm going to redo - and some cheat sheets revisions and super summaries to do.
+      <strong>Done</strong> - but cleaning up and refining while completing next steps
     </td>
   </tr>
 </table>
 
-My initial objective is to read through the entire entire ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and do all the primary exercises to become familiar with the language and it's core mechanisms that have given Rust it's reputation for safety and performance with (relatively) same higher language syntactic sugar I enjoy.
+My initial objective is to read through the ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and do all the primary exercises to become familiar with the language and it's core novel mechanisms that have give Rust it's reputation for safety and performance.
 
-I'm most interested in getting past this part quickly so i can build real things, especially with Bevy, but also other applications. Ill add resource links below to my practice, schedule, exercise ideas, and so on. I'll be updating as I go - so this repository is a large catch all for a bunch of things that I'm willing to share - and is less about producing a thing. It's an educational resource I can publicize, and so inherently dynamic, flexible, amorphous.
+I'm most interested in getting past this part quickly so i can build real things, especially with Bevy, but also other applications. Ill add resource links below to my practice, schedule, exercise/utility ideas, and so on. I'll be updating as I go - so this repository is a large catch all for a bunch of things that I'm willing to share - and is less about producing 'a thing'. It's an educational resource I can publicize, and so inherently dynamic, flexible, amorphous.
 
 #### Personal Resources
 
@@ -144,10 +146,8 @@ This is a more rough brain stormy project options plan (at this point I don't ha
 
 - [Template-Project](./tutorial/Rust%20Prog%20Lang/template-project/) -->
 #### Read-through/Cheat-Sheet Strategy
-- Largely my strategy with the section has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to analyze later) as I'm reading (omitting fluff).
-  - Then coming back and rereading the chapter doing the super-summaries (code only section, links, and sometimes a 1-2 paragraph sub-chapter section)
-- Note: it's not terribly consistent 
-  - later chapters have better organizational splits (but time will tell whether I found it worth it to go back and edit early chapters more (fairly pedantic)- I'd rather move forward to Bevy and other projects likely) but every re-read is a refinement
+- My implementation has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to analyze later) as I'm reading, then coming back and rereading the important chapters (or while doing Rustlings (next step)) and doing the super-summaries aka code only section, links, and sometimes a 1-2 paragraph summary 
+  - Note: Not always consistent but I just want quick references and to non-pedantically focus on critical understandings.
 
 ### These are my cheat sheets for each of the 21 chapters:
 Each has a `Super Summary` section that is mostly the code with annotations - as concise as possible. (Work in Progress)
@@ -191,7 +191,7 @@ Each has a `Super Summary` section that is mostly the code with annotations - as
 
 ---
 
-### Step 2 - Rustlings - Exercises/Quizzes
+### Side Quest 1: Rustlings - Exercises/Quizzes
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
@@ -210,11 +210,12 @@ Each has a `Super Summary` section that is mostly the code with annotations - as
     </td>
   </tr>
 </table>
-After completing first read of 'The Rust Programming Language' book, I feel I've touched on most topics related to the Rust programming language, and completed majority of the primary exercises, however there's no replacement for direct problem solving.
 
-Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. 
+To reinforce the book's learning outcomes while fresh of mind - I to commit to some practicing the basics further - drawing from the book (while I also refine the cheat sheets).
 
-I'm going to run through these now (while i review my cheat sheets along-side)
+Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first - and it's better for memory to practice recall after anyway. 
+
+I'm going to run through these now.
 
 I've created the project in /projects/Rustlings and notes are here:
 - [My Rustlings Notes](./practice/Rustlings/Rustlings_Notes.md)
@@ -224,28 +225,31 @@ The official website for Rustlings is here:
 - [Rustlings Git](https://github.com/rust-lang/rustlings)
 
 ---
-### Side Quests - Before Starting Bevy 
 
-I want a section here for some other tasks I will commit to with regard to practicing the basics further - drawing from the book.
+### Side Quest 2: Test out different targets with Rust
 
-This side quest will contain to different objectives:
-- Practice and exercises (while the concepts are still fresh in my mind)
-- Exploring working with rust on different targets and frameworks (for help illuminating further objectives)
+Before Starting Bevy - I want to play around (while i practice) to see how difficult it is to build applications on different targets, platforms, and few different frameworks.
+
+> [!CRITICAL] 
+> BRAINSTORM:
+
+- Practice Rust basics and/or saved exercises while:
+- Exploring working with rust on different targets and frameworks (for help illuminating future project estimates and outlets)
   1. WebAssembly
   2. Mobile
   3. Embedded
-  4. Desktop
+  4. Desktop (UI)
+  5. Web
 
-- It's also become apparent that git will be problematic for devising some applications - since I'm a code hoarder at heart and I'll need to focus on orienting much of my actual project work as  demos (or working utils) and need to investigate via these endpoints how I'd like to do that.
+<!-- - Git will be problematic for devising some applications - since I'm a code hoarder at heart and I'll need to focus on orienting much of my actual project work as  demos (or working utils) and need to investigate via these endpoints how I'd like to do that. -->
 
-- Perhaps 1 mini application using:
-  - at least 1 or more sections of the book as priority inspiration. 
-  - 1 complex data structure algorithm (not from the book)
-  - At least 1 different target from the target list (above)
-  - Some personal demonstration - and also including some 
+- E.g. Perhaps 1 mini application for each target using:
+  - at least 1 (or more) sections of the book as priority inspiration. 
+  - 1 review/assignment/task (algorithm/application/demonstration)
+  - (Maybe) - Personal video demonstration (marketing 🙄)
 
 ---
-### Step 3 - Bevy Tutorial
+### Step 2 - Bevy Tutorial / (My own) Game Engine project
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -267,7 +271,7 @@ This side quest will contain to different objectives:
 </table>
 
 ---
-### Step 4 - Physics Simulations with Bevy via 11 Physics Review
+### Step 3 - Physics Simulations with Bevy via 11 Physics course material aka review
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -287,4 +291,4 @@ This side quest will contain to different objectives:
   </tr>
 </table>
 
-  <!-- ![Demo](https://mir-s3-cdn-cf.behance.net/project_modules/source/fe36cc42774743.57ee5f329fae6.gif) -->
+  ![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
