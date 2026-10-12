@@ -1,5 +1,3 @@
-
-
 # Chapter 12 - An I/O Project: Building a Command Line Program - Cheat Sheet - Quick Reference
 
 Topics Covered:
@@ -16,11 +14,13 @@ Topics Covered:
 Rust’s speed, safety, single binary output, and cross-platform support make it an ideal language for creating command line tools
 
 This chapter recreates grep command
+
 - grep: (globally search a regular expression and print).
 
 One Rust community member, Andrew Gallant, has already created a fully featured, very fast version of grep, called ripgrep
 
-## This chapter contains sub-sections below: 
+## This chapter contains sub-sections below:
+
 - [Accepting Command Line Arguments](./Accepting_Command_Line_Arguments.md)
 - [Reading a File](./Reading_a_File.md)
 - [Refactoring to Improve Modularity and Error Handling](./Improve_Modularity_and_Error_Handling.md)
@@ -28,10 +28,9 @@ One Rust community member, Andrew Gallant, has already created a fully featured,
 - [Working with Environment Variables](./Working_with_Environment_Variables.md)
 - [Redirecting Errors to Standard Error](./Redirecting_Errors_to_Standard_Error.md)
 
-
 ## Post Summary
 
-This chapter recapped some of the major concepts you’ve learned so far and covered how to perform common I/O operations in Rust. By using command line arguments, files, environment variables, and the eprintln! macro for printing errors, you’re now prepared to write command line applications. Combined with the concepts in previous chapters, your code will be well organized, store data effectively in the appropriate data structures, handle errors nicely, and be well tested.
+By using command line arguments, files, environment variables, and the eprintln! macro for printing errors, you’re now prepared to write command line applications. Combined with the concepts in previous chapters, your code will be well organized, store data effectively in the appropriate data structures, handle errors nicely, and be well tested.
 
 ## Other / Related Links
 

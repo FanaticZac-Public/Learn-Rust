@@ -1,6 +1,61 @@
-
-
 # Improving Our I/O Project
+
+## Super Summary
+
+```rust
+// lib.rs
+// Used iterators and closure on the filter with move
+
+// now with iterator adapter
+pub fn search<'a>(query: &str, contents: &'a str) -> impl Iterator<Item = &'a str> {
+    contents
+        .lines()
+        .filter(move |line| line.contains(&query))
+}
+
+// now with iterator adapter
+pub fn search_case_insensitive<'a>(query: &str, contents: &'a str) -> impl Iterator<Item = &'a str> {
+    contents
+        .lines()
+        .filter(move |line| line.to_lowercase().contains(&query.to_lowercase()))
+
+}
+```
+
+
+```rust
+// main.rs
+// Adjusted Config::build to use iterator and .next() consuming function
+
+impl Config {
+    // fn build(args: &[String]) -> Result<Config, &'static str> {
+    // Changed to factor in the iterator directly
+    fn build(mut args: impl Iterator<Item = String>) -> Result<Config, &'static str> {
+
+        args.next();
+
+        let query = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a query string"),
+        };
+
+        let file_path = match args.next() {
+            Some(arg) => arg,
+            None => return Err("Didn't get a file path"),
+        };
+
+        let ignore_case = env::var("IGNORE_CASE").is_ok();
+
+        Ok(Config {
+            query,
+            file_path,
+            ignore_case,
+        })
+    }
+}
+```
+
+## Improving Our I/O Project
 
 Let’s look at how iterators can improve our implementation of the Config::build function and the search function.
 

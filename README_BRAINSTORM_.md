@@ -26,7 +26,7 @@ For chapter 9 and beyond - going to ensure perfect practice first time.
 For 1-8 - going to go back and review with cheat-sheet creation and assess. Will mark below whether I'm confident with the learning outcomes - remaining requires review or extra practice.
 
 
-## Exercise Options
+## Exercise Options (needs more exposure to:)
 - Create you own version of the walkthroughs in ch07 (Packages, Crates, and Modules)
     - Most of it was common, except it didn't explore the 2 crate types enough, their typical
 - I need to write (or find) an acceptable benchmark utility
@@ -38,6 +38,7 @@ For 1-8 - going to go back and review with cheat-sheet creation and assess. Will
 - Make your own macros (find good use-case)
 - Enable clippy - and adjust lints in the compiler to enforce.
 - Play around with bit shifting in Rust
+- Writing a function that takes closure as argument
 
 ## Specific Topics / Notes to review - in context of Rust
 - Ownership (elaborate later as going back to do the cheat sheets)

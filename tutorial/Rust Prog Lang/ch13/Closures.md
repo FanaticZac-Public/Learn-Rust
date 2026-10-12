@@ -1,5 +1,167 @@
-
 # Closures
+
+```rust
+//-------------- Closures: Capturing the Environment --------------
+// Rust’s closures are anonymous functions you can save in a variable or pass as arguments to other functions. 
+// Unlike functions, closures can capture values from the scope in which they’re defined. 
+fn giveaway(&self, user_preference: Option<ShirtColor>) -> ShirtColor {
+    user_preference.unwrap_or_else(|| self.most_stocked())
+}
+// This no param closure is calling param from outer scope 
+// boy did the page convolute this section. 
+// Function require parameters, closures are anonymous functions that can grab variables from same scope.
+
+//-------------- Inferring and Annotating Closure Types --------------
+// Closures don’t usually require you to annotate the types of the parameters or the return value like fn functions do. 
+// Verbose example with types
+let expensive_closure = |num: u32| -> u32 {
+        println!("calculating slowly...");
+        thread::sleep(Duration::from_secs(2));
+        num
+    };
+// Options for type annotations: 
+fn  add_one_v1   (x: u32) -> u32 { x + 1 }
+let add_one_v2 = |x: u32| -> u32 { x + 1 };
+let add_one_v3 = |x|             { x + 1 };
+let add_one_v4 = |x|               x + 1  ;
+
+// But you can just definite it like function in a variable
+// However it's inferred type, not dynamic. 
+// Compiler can see by your usage what type it should be. 
+// But if you use it for different types, it gets confused.
+let example_closure = |x| x;
+
+let s = example_closure(String::from("hello")); //ok
+let n = example_closure(5); // another type - compiler confused (is it for Strings or ints?)
+// error[E0308]: mismatched types
+
+//-------------- Capturing References or Moving Ownership --------------
+// Closures can capture values from their environment in three ways, which directly map to the three ways a function can take a parameter: 
+// borrowing immutably, 
+// borrowing mutably, 
+// taking ownership. 
+fn main() {
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
+    // Before defining closure: [1, 2, 3]
+
+    let only_borrows = || println!("From closure: {list:?}");
+    // From closure: [1, 2, 3]
+
+    println!("Before calling closure: {list:?}");
+    // Before calling closure: [1, 2, 3]
+
+    only_borrows();
+    println!("After calling closure: {list:?}");
+    // After calling closure: [1, 2, 3]
+}
+
+// mutable example
+fn main() {
+    let mut list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
+    // Before defining closure: [1, 2, 3]
+
+    let mut borrows_mutably = || list.push(7);
+
+    borrows_mutably();
+    println!("After calling closure: {list:?}");
+    // After calling closure: [1, 2, 3, 7]
+}
+
+// To force ownership use the 'move' keyword:
+use std::thread;
+
+fn main() {
+    let list = vec![1, 2, 3];
+    println!("Before defining closure: {list:?}");
+
+    // the compiler requires that list be moved into the closure given to the new thread so that the reference will be valid (as threads are independent, you could get dangle).
+    thread::spawn(move || println!("From thread: {list:?}"))
+        .join()
+        .unwrap();
+}
+
+//-------------- Moving Captured Values Out of Closures --------------
+// Closures will automatically implement one, two, or all three of these Fn traits, in an additive fashion, depending on how the closure’s body handles the values:
+// "FnOnce" applies to closures that can be called once. All closures implement at least this trait because all closures can be called. 
+// "FnMut" applies to closures that don’t move captured values out of their body but might mutate the captured values. These closures can be called more than once.
+// "Fn" applies to closures that don’t move captured values out of their body and don’t mutate captured values, as well as closures that capture nothing from their environment. These closures can be called more than once without mutating their environment, which is important in cases such as calling a closure multiple times concurrently.
+
+// Using FnOnce in the trait bound expresses the constraint that unwrap_or_else will not call f more than once.
+impl<T> Option<T> {
+    pub fn unwrap_or_else<F>(self, f: F) -> T
+    where
+        F: FnOnce() -> T 
+    {
+        match self {
+            Some(x) => x,
+            None => f(),
+        }
+    }
+}
+
+// Example FnMut
+// The reason sort_by_key is defined to take an FnMut closure is that it calls the closure multiple times: once for each item in the slice. 
+// The closure |r| r.width doesn’t capture, mutate, or move anything out from its environment, so it meets the trait bound requirements.
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+fn main() {
+    let mut list = [
+        Rectangle { width: 10, height: 1 },
+        Rectangle { width: 3, height: 5 },
+        Rectangle { width: 7, height: 12 },
+    ];
+
+    list.sort_by_key(|r| r.width);
+    println!("{list:#?}");
+    // [
+    //     Rectangle {
+    //         width: 3,
+    //         height: 5,
+    //     },
+    //     Rectangle {
+    //         width: 7,
+    //         height: 12,
+    //     },
+    //     Rectangle {
+    //         width: 10,
+    //         height: 1,
+    //     },
+    // ]
+}
+
+// Fn trait - applies to closures that don’t move captured values out of their body and don’t mutate captured values, as well as closures that capture nothing from their environment. 
+// it's just editing a value of a mutable variable (not modifying it like the array example, or returning anything)
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
+}
+
+fn main() {
+    let mut list = [
+        Rectangle { width: 10, height: 1 },
+        Rectangle { width: 3, height: 5 },
+        Rectangle { width: 7, height: 12 },
+    ];
+
+    let mut num_sort_operations = 0;
+    list.sort_by_key(|r| {
+        num_sort_operations += 1;
+        r.width
+    }); 
+    println!("{list:#?}, sorted in {num_sort_operations} operations");
+}
+
+```
+
+
+## Closures
 
 Rust’s closures are anonymous functions you can save in a variable or pass as arguments to other functions.
 

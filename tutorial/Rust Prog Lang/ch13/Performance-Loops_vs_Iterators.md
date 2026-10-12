@@ -1,4 +1,4 @@
-
+No Super Summary required - no code, but essentially performance is good because Iterators are one of Rust’s zero-cost abstractions.
 
 
 # Performance in Loops vs. Iterators

@@ -1,4 +1,4 @@
-
+## Extending Cargo with Custom Commands
 
 ## Extending Cargo with Custom Commands
 

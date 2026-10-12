@@ -1,8 +1,131 @@
 # Iterators in Rust
 
-This cheat sheet section is made up of 2 sub-sections of Chapter 13 (Functional Language Features: Iterators and Closures) of The Rust Programming Language
-- Processing a Series of Items with Iterators
-- Performance in Loops vs. Iterators
+## Super Summary
+
+```rust
+//-------------- Processing a Series of Items with Iterators --------------
+let v1 = vec![1, 2, 3];
+
+let v1_iter = v1.iter(); // creating iterator
+
+for val in v1_iter {
+    println!("Got: {val}");
+}
+// Got: 1
+// Got: 2
+// Got: 3
+
+// ---- The Iterator Trait and the next Method ----
+// How next is actually defined in the standard library
+pub trait Iterator {
+type Item;
+
+fn next(&mut self) -> Option<Self::Item>;
+}
+// The point is that the next method mutates the collection, and returns the next item in the collection,
+// In other words, this code consumes, or uses up, the iterator. 
+#[test]
+fn iterator_demonstration() {
+    let v1 = vec![1, 2, 3];
+
+    let mut v1_iter = v1.iter(); // must be mutable for next()
+
+    assert_eq!(v1_iter.next(), Some(&1));
+    assert_eq!(v1_iter.next(), Some(&2));
+    assert_eq!(v1_iter.next(), Some(&3));
+    assert_eq!(v1_iter.next(), None);
+    // Each call to next eats up an item from the iterator.
+    // The iter method produces an iterator over immutable references. 
+    // If we want to create an iterator that takes ownership of v1 and returns owned values, we can call into_iter instead of iter.
+}
+
+// ---- Methods That Consume the Iterator ----
+// Methods that call next are called "consuming adapters" because calling them uses up the iterator. 
+// One example is the sum method
+#[test]
+fn iterator_sum() {
+    let v1 = vec![1, 2, 3];
+
+    let v1_iter = v1.iter();
+
+    let total: i32 = v1_iter.sum();
+
+    assert_eq!(total, 6);
+}
+
+// ---- Methods That Produce Other Iterators ----
+// "Iterator adapters" are methods defined on the Iterator trait that don’t consume the iterator. 
+// they produce different iterators by changing some aspect of the original iterator.
+let v1: Vec<i32> = vec![1, 2, 3];
+
+v1.iter().map(|x| x + 1); //the closure we’ve specified never gets called. 
+// Iterator adapters are lazy, and we need to consume the iterator here.
+
+// To use: (note <_> specifies type Vec but not what type of Vec)
+// We must call collect to use up the iterator
+let v2: Vec<_> = v1.iter().map(|x| x + 1).collect();
+assert_eq!(v2, vec![2, 3, 4]);
+// You can chain multiple calls to iterator adapters to perform complex actions in a readable way.
+
+// ---- Closures That Capture Their Environment ----
+// For this example, we’ll use the filter method that takes a closure.
+#[derive(PartialEq, Debug)]
+struct Shoe {
+    size: u32,
+    style: String,
+}
+
+// function takes ownership of a vector of shoes and a shoe size as parameters,returns a vector containing only shoes of the specified size.
+fn shoes_in_size(shoes: Vec<Shoe>, shoe_size: u32) -> Vec<Shoe> {
+    // we call into_iter to create an iterator that takes ownership of the vector
+    // we call filter to adapt that iterator into a new iterator that only contains elements for which the closure returns true.
+    shoes.into_iter().filter(|s| s.size == shoe_size).collect()
+
+    // The closure captures the shoe_size parameter from the environment and compares the value with each shoe’s size, keeping only shoes of the size specified. 
+    // Finally, calling collect gathers the values returned by the adapted iterator into a vector that’s returned by the function.
+}
+
+
+```
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+   <strong>
+    Some examples not from the book:
+    </strong> 
+    </td>
+  </tr>
+</table>
+
+```rust
+// In rustlings:
+// Example using flat_map() to get all values
+fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Progress) -> usize {
+    // `collection` is a slice of hash maps.
+    // collection = [{ "variables1": Complete, "from_str": None, … },
+    //               { "variables2": Complete, … }, … ]
+
+    // MINE
+    // collection.iter().map(|map| map.values().filter(|&&x| x == value).count()).sum()
+    // BUT BETTER
+    collection
+        .iter()
+        .flat_map(|map| map.values()) // flat map chains maps together
+        .filter(|&&x| x == value)
+        .count()
+}
+```
 
 ## Processing a Series of Items with Iterators
 
@@ -169,6 +292,8 @@ mod tests {
     }
 }
 ```
+
+
 
 
 

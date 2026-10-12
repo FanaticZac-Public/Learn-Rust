@@ -4,7 +4,7 @@
   <img src="./images/rust-images/rust-panics.svg" width="30%">
 </div>
 
-# Learning Rust 
+# Learning Rust
 
 A professional learning record of Rust - which will evolve into applications focused on practicing physics, algorithms, game development, socket programming, and beyond - in Rust.
 
@@ -22,13 +22,13 @@ A professional learning record of Rust - which will evolve into applications foc
 
 > [!TIP]
 > Productivity Tip: Kill many birds with 1 stone
-> This Project = (learn rust | practice compSci | market for the jobs I want | prelude to Rust/Bevy game)
+> <br>This Project = (learn rust | practice compSci | market myself | prep for Bevy)
 
 ## Hello, World!
 
-My name is Zach, I'm a Software Developer based in British Columbia, Canada. I hold a Bachelor of Science degree in Applied Computer Science (Game Development specialty) from BCIT.
+My name is Zach, I'm a Software Developer based in Vancouver, British Columbia, Canada. I hold a Bachelor of Science degree in Applied Computer Science (Game Development set) from BCIT.
 
-> [!NOTE] 
+> [!NOTE]
 > I took 4/5 courses from Network Security Applications set also. 💪
 > <br> Built a C2 botnet as the major project for that set. 🤖🕸️
 
@@ -36,42 +36,47 @@ My name is Zach, I'm a Software Developer based in British Columbia, Canada. I h
 
 I didn't market myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), I don't like dumping my previous instructors resources on git or enjoy the prospect of dumping my old assignments on git after-the-fact is... lame.
 
-So that's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward. 
+So that's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward.
 
 Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this potentially monotonous process of self-marketing becomes something rather exciting. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this new project.
 
 Advantages of Rust:
+
 - Compiles into machine code
-- High performance 
+- High performance
   - C/C++-level performance with stronger memory and concurrency safety. (with syntactic sugar)
-- Safer conduct 
+- Safer conduct
   - Memory safety without garbage collection
   - Pushes several run-time errors into the compile time checks
-  - Ownership and borrowing 
+  - Ownership and borrowing
   - Thread safety
 
-Pushes many common bugs from runtime to compile time errors: 
+Pushes many common bugs from runtime to compile time errors:
+
 - e.g. use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
 
 Those advantages are excellent for:
-  - System Programming
-  - Games (Bevy)
-  - Embedded Programming
-  - Web Assembly
-  - Socket programming
+
+- System Programming
+- Games (Bevy)
+- Embedded Programming
+- Web Assembly
+- Socket programming
 
 Some disadvantages:
-  - Steeper learning curve (- is that a bug or a feature)
-  - Longer compile time 
 
-In short, it offers: 
-  - C/C++-level performance with stronger memory and concurrency safety. 
-  - And a plethora of practical use-cases for my interests
+- Steeper learning curve (bug... or a feature?)
+- Longer compile time (cross that bridge when ...)
+
+In short, it offers:
+
+- C/C++-level performance with stronger memory and concurrency safety.
+- And a plethora of practical use-cases for my interests
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="66" valign="middle">
+    <td width="50" valign="middle">
       <img
         src="./images/ed-images/ed_hack_1.png"
         width="40"
@@ -89,26 +94,41 @@ In short, it offers:
 
 ## Project Orchestration (Flexible)
 
-I'm all about flexible but measured orchestration. In my degree - I often opted for solo projects whenever I could. One of the major reasons is because it gives me much more dynamism without bureaucracy, and in school, it was my dime, my investment (and I was part-time for much of it). It's like Agile methodology: having a plan matters, but so does listening to signals, and pivoting to high value targets. (Dijkstra comes to mind).
+![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
+
+I'm all about flexible but measured orchestration. In my degree - I often opted for solo projects whenever possible. A major reasons is because it gives more dynamism without bureaucracy - and I want to work on each inch of a project (not just a subset), even if my projects had lower quality result with 1 persons labour. My personal exposure to the material were arguably more robust - and I had to make project decisions more akin to industry with regard to my time.
+
+Like Agile methodology: having a plan matters, but so does listening to signals, and pivoting to high value targets (Dijkstra comes to mind). Making good and quick project decisions under a deadline, choosing compromises, pivoting to great features at the expense of others, and solving problems you didn't expect to encounter - is the humanity in software development. Flexibility and creativity is the source of the Eureka! moments that were a particular highlight in my major projects. But I digress.
 
 I will try and maintain this loose excuse for a project until such time that I'm either employed or working full-time on a private project implementation. In the meantime, I am trying to do at least 1 meaningful commit per day.
-- Some exception may be given to days I focus on reading or math practice with no clear or meaningful commit here - however the point is to translate those efforts into some demonstrable value here.
 
-I'm laying out my steps here - you can consider the pending ones as flexible nodes for exposures I'm interested in attaining.
+- Some exception may be given to days I focus on reading or math practice with no clear or meaningful commit here - however the point is to translate those efforts into some demonstrable value here - with Rust.
+
+My steps are laid out below - you can consider the pending ones as flexible nodes for exposures I'm interested in attaining - but who knows where this rabbit hole actually goes.
+
+### Resource Links
+
+Resource links for my practice, schedule, exercise/utility ideas, and so on. I'll be updating as I go. This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is less about producing 'a thing'. It's an educational resource I can publicize, and so inherently dynamic, flexible, amorphous.
+
+- [Rust - Brainstorm](./README_BRAINSTORM_.md)
+  - Rough brain stormy project options plan - At this point I don't have a scrum/kanban board for this solo project.
+    Some quick references that are relevant to me and this leg of the project:
+- [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
+- [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based)
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="66"  valign="middle"  cellpadding="0"
+    <td width="50"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
-        src="./images/rust-images/rust-does_not_compile.svg"
+        src="./images/rust-images/rust-not_desired_behavior.svg"
         width="40"
         height="40"
         alt="Rust - Does note compile crab"
-        align="center"
+        align="right"
       >
     </td>
     <td>
@@ -119,38 +139,28 @@ I'm laying out my steps here - you can consider the pending ones as flexible nod
 
 My initial objective is to read through the ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and do all the primary exercises to become familiar with the language and it's core novel mechanisms that have give Rust it's reputation for safety and performance.
 
-I'm most interested in getting past this part quickly so i can build real things, especially with Bevy, but also other applications. Ill add resource links below to my practice, schedule, exercise/utility ideas, and so on. I'll be updating as I go - so this repository is a large catch all for a bunch of things that I'm willing to share - and is less about producing 'a thing'. It's an educational resource I can publicize, and so inherently dynamic, flexible, amorphous.
-
-#### Personal Resources
-
-Quick references that are relevant to me and this leg of the project.
-
-- [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
-- [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based)
-
+<!-- #### Personal Resources -->
 <!-- Here's something special. Unlike the cheat sheet below which is more exhaustive to overall syntax related to Rust, I wanted to create a document that digs down specifically on the advantages of the Rust languages, in a shorter form document (for my mindfulness and as reference for others).
 
 - [Rust - Primary Advantages](./notebooks/01-rust-primary-advantages) -->
 
 #### Cheat Sheets - Quick Reference
 
-These mostly contain factual statements or code samples from the book without the fluff - for quick reference by me - but I also added more where I had extra questions, wanted more samples, or ran tangential experiments. 
-
 If you have already read the rust book (or have professional coding experience) - might be a faster way to explore Rust (or least skim it's benefits - like safety enforcement - big time). At any rate - it's a record of my learning progress.
-
-This is a more rough brain stormy project options plan (at this point I don't have a scrum/kanban board) for this solo project.
-
-- [README_Tutorial](./tutorial/Rust%20Prog%20Lang/README_Tutorial_.md)
 
 <!-- This is the template project for working on big picture organization (package, modules, structure), understand lib.rs, main.rs, bin/, and a larger projects shape and standards throughout.
 
 - [Template-Project](./tutorial/Rust%20Prog%20Lang/template-project/) -->
-#### Read-through/Cheat-Sheet Strategy
-- My implementation has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to analyze later) as I'm reading, then coming back and rereading the important chapters (or while doing Rustlings (next step)) and doing the super-summaries aka code only section, links, and sometimes a 1-2 paragraph summary 
-  - Note: Not always consistent but I just want quick references and to non-pedantically focus on critical understandings.
+
+##### Read-through/Cheat-Sheet Strategy
+
+My implementation has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to analyze later) as I'm reading - and I also added more where I had extra questions, wanted more samples, or ran tangential experiments. Then coming back I reread important chapters (or while doing Rustlings (next step)) completed the super-summaries aka code only section (with comments), added links, and sometimes a 1-2 paragraph chapter summary.
+
+- Note: Not always consistent but I just want quick references to look at, and to not have pedantically focused on critical understandings while summarizing or reviewing.
 
 ### These are my cheat sheets for each of the 21 chapters:
-Each has a `Super Summary` section that is mostly the code with annotations - as concise as possible. (Work in Progress)
+
+Each has a **Super Summary** section that is mostly the code with annotations - as concise as possible. (Work in Progress)
 
 1. [My Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md) - DONE
 2. [My Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) - DONE - but fix writing later.
@@ -177,32 +187,33 @@ Each has a `Super Summary` section that is mostly the code with annotations - as
 <!-- #### Final Checklist for all chapters
 - [ ] Check - CODE EXAMPLES (add more if wanting)
 - [ ] Check - Writing makes sense (each section with a header - has a summary that equates to understanding in the code or other section of 'super summary)
-- [ ] Check - Formatting 
-- [ ] Check - Create links for 'by subject' 
+- [ ] Check - Formatting
+- [ ] Check - Create links for 'by subject'
 - [ ] Check - Added section to my primary advantages guide (if worthy)
 - [ ] Check - That all summaries are added to the cheat sheet main
 - [ ] Check - Super Summary added to each chapter.
 - [ ] Check - Should move definitions in sub-chapter to chapter main page.
 
-- [ ] Do a special interest sheet. 
-  - Collect the borrowing rules (ch04) 
+- [ ] Do a special interest sheet.
+  - Collect the borrowing rules (ch04)
   - Basically 1 paragraph of each sub-chapter (no code)
     - To add to the Super Summary section. -->
 
 ---
 
 ### Side Quest 1: Rustlings - Exercises/Quizzes
+
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="66"  valign="middle"  cellpadding="0"
+    <td width="50"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
         src="./images/rust-images/rust-does_not_compile.svg"
         width="40"
         height="40"
         alt="Rust - Does note compile crab"
-        align="center"
+        align="right"
       >
     </td>
     <td>
@@ -211,16 +222,14 @@ Each has a `Super Summary` section that is mostly the code with annotations - as
   </tr>
 </table>
 
-To reinforce the book's learning outcomes while fresh of mind - I to commit to some practicing the basics further - drawing from the book (while I also refine the cheat sheets).
+To reinforce the book's learning outcomes while fresh of mind - I'm committing to some further practicing of the basics - drawing from the book (while I also refine the cheat sheets).
 
-Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first - and it's better for memory to practice recall after anyway. 
+Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. Doing tests after completing the entire book rather than when having just read the relevant section is better for testing memory recall anyway.
 
-I'm going to run through these now.
-
-I've created the project in /projects/Rustlings and notes are here:
-- [My Rustlings Notes](./practice/Rustlings/Rustlings_Notes.md)
+🦀(Allowed myself to use my cheat sheets or official API reference)🦀
 
 The official website for Rustlings is here:
+
 - [Official Rustlings Page](https://rustlings.rust-lang.org/)
 - [Rustlings Git](https://github.com/rust-lang/rustlings)
 
@@ -230,8 +239,8 @@ The official website for Rustlings is here:
 
 Before Starting Bevy - I want to play around (while i practice) to see how difficult it is to build applications on different targets, platforms, and few different frameworks.
 
-> [!CRITICAL] 
-> BRAINSTORM:
+> [!Warning]
+> BRAINSTORM AHEAD:
 
 - Practice Rust basics and/or saved exercises while:
 - Exploring working with rust on different targets and frameworks (for help illuminating future project estimates and outlets)
@@ -244,24 +253,25 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
 <!-- - Git will be problematic for devising some applications - since I'm a code hoarder at heart and I'll need to focus on orienting much of my actual project work as  demos (or working utils) and need to investigate via these endpoints how I'd like to do that. -->
 
 - E.g. Perhaps 1 mini application for each target using:
-  - at least 1 (or more) sections of the book as priority inspiration. 
+  - at least 1 (or more) sections of the book as priority inspiration.
   - 1 review/assignment/task (algorithm/application/demonstration)
   - (Maybe) - Personal video demonstration (marketing 🙄)
 
 ---
-### Step 2 - Bevy Tutorial / (My own) Game Engine project
+
+### Step 2 - (Bevy Tutorial OR (My own) Game Engine project?...)
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="66"  valign="middle"  cellpadding="0"
+    <td width="50"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
           src="./images/rust-images/rust-panics.svg"
         width="40"
         height="40"
         alt="Rust - Panic crab"
-        align="center"
+        align="right"
       >
     </td>
     <td>
@@ -271,18 +281,19 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
 </table>
 
 ---
+
 ### Step 3 - Physics Simulations with Bevy via 11 Physics course material aka review
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="66"  valign="middle"  >
+    <td width="50"  valign="middle"  >
       <img
           src="./images/rust-images/rust-panics.svg"
         width="40"
         height="40"
         alt="Rust - Panic crab"
-        align="center"
+        align="right"
       >
     </td>
     <td>
@@ -291,4 +302,4 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
   </tr>
 </table>
 
-  ![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
+
