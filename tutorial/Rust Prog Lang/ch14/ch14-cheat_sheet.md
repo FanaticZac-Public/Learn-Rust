@@ -18,6 +18,25 @@ Chapter 14 discusses:
 - [Installing Binaries with 'cargo install'](./Installing_Binaries.md)
 - [Extending Cargo with Custom Commands](./Custom_Cargo_Commands.md)
 
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+ <strong>
+Note: </strong>  For this chapter there's only console commands - and it's more informative and instructive over syntactic, so I didn't bother creating "Super Summaries".. for now. 
+    </td>
+  </tr>
+</table>
+ 
 ## Related Links
 
 - [The Cargo Book](https://doc.rust-lang.org/cargo/)

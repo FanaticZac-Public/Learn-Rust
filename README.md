@@ -76,7 +76,7 @@ In short, it offers:
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50" valign="middle">
+    <td width="66" valign="middle">
       <img
         src="./images/ed-images/ed_hack_1.png"
         width="40"
@@ -110,21 +110,19 @@ My steps are laid out below - you can consider the pending ones as flexible node
 
 Resource links for my practice, schedule, exercise/utility ideas, and so on. I'll be updating as I go. This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is less about producing 'a thing'. It's an educational resource I can publicize, and so inherently dynamic, flexible, amorphous.
 
-- [Rust - Brainstorm](./README_BRAINSTORM_.md)
-  - Rough brain stormy project options plan - At this point I don't have a scrum/kanban board for this solo project.
-    Some quick references that are relevant to me and this leg of the project:
 - [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
 - [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based)
+- [Rust - Brainstorm](./README_BRAINSTORM_.md) - Rough ideas list for this project
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50"  valign="middle"  cellpadding="0"
+    <td width="66"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
-        src="./images/rust-images/rust-not_desired_behavior.svg"
+        src="./images/ed-images/ed_hack_11.png"
         width="40"
         height="40"
         alt="Rust - Does note compile crab"
@@ -132,10 +130,12 @@ Resource links for my practice, schedule, exercise/utility ideas, and so on. I'l
       >
     </td>
     <td>
-      <strong>Done</strong> - but cleaning up and refining while completing next steps
+      <strong><span style="color: limegreen;">Done</span><br></strong> Still cleaning/refining retroactively alongside next steps
     </td>
   </tr>
 </table>
+
+<!-- <details open>  -->
 
 My initial objective is to read through the ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and do all the primary exercises to become familiar with the language and it's core novel mechanisms that have give Rust it's reputation for safety and performance.
 
@@ -152,35 +152,35 @@ If you have already read the rust book (or have professional coding experience) 
 
 - [Template-Project](./tutorial/Rust%20Prog%20Lang/template-project/) -->
 
-##### Read-through/Cheat-Sheet Strategy
+#### Read-through/Cheat-Sheet Strategy
 
 My implementation has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to analyze later) as I'm reading - and I also added more where I had extra questions, wanted more samples, or ran tangential experiments. Then coming back I reread important chapters (or while doing Rustlings (next step)) completed the super-summaries aka code only section (with comments), added links, and sometimes a 1-2 paragraph chapter summary.
 
 - Note: Not always consistent but I just want quick references to look at, and to not have pedantically focused on critical understandings while summarizing or reviewing.
 
-### These are my cheat sheets for each of the 21 chapters:
+#### These are my cheat sheets for each of the 21 chapters:
 
-Each has a **Super Summary** section that is mostly the code with annotations - as concise as possible. (Work in Progress)
+Most have a **Super Summary** section that is mostly the code with annotations - as concise as possible - for quick reference. (Work in Progress)
 
-1. [My Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md) - DONE
-2. [My Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) - DONE - but fix writing later.
-3. [My Cheat Sheet - ch03 - Common Programming Concepts](./tutorial/Rust%20Prog%20Lang/ch03/ch03-cheat_sheet.md) - DONE
-4. [My Cheat Sheet - ch04 - Understanding Ownership](./tutorial/Rust%20Prog%20Lang/ch04/ch04-cheat_sheet.md) - Done
-5. [My Cheat Sheet - ch05 - Using Structs to Structure Related Data](./tutorial/Rust%20Prog%20Lang/ch05/ch05-cheat_sheet.md) - DONE
-6. [My Cheat Sheet - ch06 - Enums and Pattern Matching](./tutorial/Rust%20Prog%20Lang/ch06/ch06-cheat_sheet.md) - Done
-7. [My Cheat Sheet - ch07 - Packages, Crates, and Modules](./tutorial/Rust%20Prog%20Lang/ch07/ch07-cheat_sheet) - Needs special attention
-8. [My Cheat Sheet - ch08 - Common Collections](./tutorial/Rust%20Prog%20Lang/ch08/ch08-cheat_sheet.md) - Done
-9. [My Cheat Sheet - ch09 - Error Handling](./tutorial/Rust%20Prog%20Lang/ch09/ch9-cheat_sheet.md) - DONE
+1. [My Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md)
+2. [My Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) <!-- - DONE - but fix writing later. -->
+3. [My Cheat Sheet - ch03 - Common Programming Concepts](./tutorial/Rust%20Prog%20Lang/ch03/ch03-cheat_sheet.md) <!-- - DONE -->
+4. [My Cheat Sheet - ch04 - Understanding Ownership](./tutorial/Rust%20Prog%20Lang/ch04/ch04-cheat_sheet.md) <!-- - Done -->
+5. [My Cheat Sheet - ch05 - Using Structs to Structure Related Data](./tutorial/Rust%20Prog%20Lang/ch05/ch05-cheat_sheet.md) <!-- - DONE -->
+6. [My Cheat Sheet - ch06 - Enums and Pattern Matching](./tutorial/Rust%20Prog%20Lang/ch06/ch06-cheat_sheet.md) <!-- - Done -->
+7. [My Cheat Sheet - ch07 - Packages, Crates, and Modules](./tutorial/Rust%20Prog%20Lang/ch07/ch07-cheat_sheet) <!-- - Needs special attention -->
+8. [My Cheat Sheet - ch08 - Common Collections](./tutorial/Rust%20Prog%20Lang/ch08/ch08-cheat_sheet.md) <!-- - Done -->
+9. [My Cheat Sheet - ch09 - Error Handling](./tutorial/Rust%20Prog%20Lang/ch09/ch9-cheat_sheet.md) <!-- - DONE -->
 10. [My Cheat Sheet - ch10 - Generic Types, Traits, and Lifelines](./tutorial/Rust%20Prog%20Lang/ch10/ch10-cheat_sheet.md)
-11. [My Cheat Sheet - ch11 - Writing Tests](./tutorial/Rust%20Prog%20Lang/ch11/ch11-cheat-sheet.md) - DONE
+11. [My Cheat Sheet - ch11 - Writing Tests](./tutorial/Rust%20Prog%20Lang/ch11/ch11-cheat-sheet.md) <!-- - DONE -->
 12. [My Cheat Sheet - ch12 - An I/O Project: Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
-13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) - DONE - but fix writing later / review
-14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) - Done, but needs more work for final cheat-sheet
-15. [My Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) - Done, but worth a re-read for sure (particularly RefCell)
-16. [My Cheat Sheet - ch16 - Fearless Concurrency](./tutorial/Rust%20Prog%20Lang/ch16/ch16-cheat_sheet.md) - Done
-17. [My Cheat Sheet - ch17 - Fundamentals of Asynchronous Programming: Async, Await, Futures, and Streams](./tutorial/Rust%20Prog%20Lang/ch17/ch17-cheat_sheet.md) - Done (worth re-read)
-18. [My Cheat Sheet - ch18 - Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md) - Done (worth re-read)
-19. [My Cheat Sheet - ch19 - Patterns and Matching](./tutorial/Rust%20Prog%20Lang/ch19/ch19-cheat_sheet.md) - Done
+13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) <!-- - DONE - but fix writing later / review -->
+14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) <!-- - Done, but needs more work for final cheat-sheet -->
+15. [My Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) <!-- - Done, but worth a re-read for sure (particularly RefCell) -->
+16. [My Cheat Sheet - ch16 - Fearless Concurrency](./tutorial/Rust%20Prog%20Lang/ch16/ch16-cheat_sheet.md) <!-- - Done -->
+17. [My Cheat Sheet - ch17 - Fundamentals of Asynchronous Programming](./tutorial/Rust%20Prog%20Lang/ch17/ch17-cheat_sheet.md) <!-- - Done (worth re-read) -->
+18. [My Cheat Sheet - ch18 - Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md) <!-- - Done (worth re-read) -->
+19. [My Cheat Sheet - ch19 - Patterns and Matching](./tutorial/Rust%20Prog%20Lang/ch19/ch19-cheat_sheet.md) <!-- - Done -->
 20. [My Cheat Sheet - ch20 - Advanced Features](./tutorial/Rust%20Prog%20Lang/ch20/ch20-cheat_sheet.md)
 21. [My Cheat Sheet - ch21 - Final Project: Building a Multithreaded Web Server](./tutorial/Rust%20Prog%20Lang/ch21/ch21-cheat_sheet.md)
 
@@ -199,17 +199,19 @@ Each has a **Super Summary** section that is mostly the code with annotations - 
   - Basically 1 paragraph of each sub-chapter (no code)
     - To add to the Super Summary section. -->
 
+<!-- </details> -->
+
 ---
 
-### Side Quest 1: Rustlings - Exercises/Quizzes
+### Side Quest: Rustlings - Exercises/Quizzes
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50"  valign="middle"  cellpadding="0"
+    <td width="66"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
-        src="./images/rust-images/rust-does_not_compile.svg"
+        src="./images/rust-images/rust-panics.svg"
         width="40"
         height="40"
         alt="Rust - Does note compile crab"
@@ -217,45 +219,192 @@ Each has a **Super Summary** section that is mostly the code with annotations - 
       >
     </td>
     <td>
-      <strong>Currently in progress</strong>
+      <strong><span style="color: orange;">Currently in progress</span></strong>
     </td>
   </tr>
 </table>
+
+<!-- <details><summary><strong>Rustlings - Details</strong></summary> -->
+
+<!-- <details><summary><strong>Details</strong></summary> -->
 
 To reinforce the book's learning outcomes while fresh of mind - I'm committing to some further practicing of the basics - drawing from the book (while I also refine the cheat sheets).
 
 Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. Doing tests after completing the entire book rather than when having just read the relevant section is better for testing memory recall anyway.
 
-🦀(Allowed myself to use my cheat sheets or official API reference)🦀
+🦀 (Used my cheat sheets or official API reference only) 🦀
 
 The official website for Rustlings is here:
 
 - [Official Rustlings Page](https://rustlings.rust-lang.org/)
 - [Rustlings Git](https://github.com/rust-lang/rustlings)
 
+<!-- </details> -->
+
 ---
 
-### Side Quest 2: Test out different targets with Rust
+### Flexible Side Quests: (In dropdown)
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0">
+      <img
+        src="./images/rust-images/rust-not_desired_behavior.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+      <strong><span style="color: LightSeaGreen ;">“Clickity-clack, take a quest from this stack!”</span></strong>
+    </td>
+  </tr>
+</table>
+
+<details><summary><strong><span style="color: LightSeaGreen ;">Side Quests - Details Dropdown</span></strong></summary>
+
+> [!Caution]
+> BRAINSTORM AHEAD:
+
+#### Side Quest: Test out different targets with Rust
+
+<!-- <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0">
+      <img
+        src="./images/rust-images/rust-not_desired_behavior.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+      <strong>A flexible aside</strong>
+    </td>
+  </tr>
+</table> -->
+
+<!-- <details> <summary><strong>Details</strong></summary> -->
 
 Before Starting Bevy - I want to play around (while i practice) to see how difficult it is to build applications on different targets, platforms, and few different frameworks.
 
-> [!Warning]
-> BRAINSTORM AHEAD:
-
-- Practice Rust basics and/or saved exercises while:
-- Exploring working with rust on different targets and frameworks (for help illuminating future project estimates and outlets)
-  1. WebAssembly
-  2. Mobile
-  3. Embedded
-  4. Desktop (UI)
-  5. Web
+- Familiarize using Rust on different targets and frameworks (to better inform future projects)
+  - WebAssembly
+  - Mobile
+  - Embedded - I have a few ESP01 hanging around
+  - Desktop (UI) - (There several crates for this)
+  - Web
 
 <!-- - Git will be problematic for devising some applications - since I'm a code hoarder at heart and I'll need to focus on orienting much of my actual project work as  demos (or working utils) and need to investigate via these endpoints how I'd like to do that. -->
 
+Incorporate:
+- Rust basics and/or saved exercises
 - E.g. Perhaps 1 mini application for each target using:
   - at least 1 (or more) sections of the book as priority inspiration.
   - 1 review/assignment/task (algorithm/application/demonstration)
   - (Maybe) - Personal video demonstration (marketing 🙄)
+
+<!-- </details> -->
+
+---
+
+#### Side Quest: Build a series of mini-applications
+
+<!-- <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0">
+      <img
+        src="./images/rust-images/rust-not_desired_behavior.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+      <strong>A flexible aside</strong>
+    </td>
+  </tr>
+</table> -->
+
+<!-- <details><summary><strong>See Details (Closed by Default)</strong></summary> -->
+
+Ok - I'm thinking I'm dilly-dallying too much with the textbook and syntax - although I'm getting better I want to build some interesting stuff now. My unfiltered ideas are still in the README_BRAINSTORM, but I'm going to start picking winners and losers and placing them here - this side quest can be a living list if mini-applications and experiments to apply Rust knowledge and build a usable thing or at least something demonstrable. Each is pursued requires at least a 1 page project plan (and I might even do those while judging them):
+
+<!-- Ensure these are links when created - in applications folder -->
+
+- [ ] Build robust multi-thread application template with data passing to mimic a botnet (distributed computing)
+- [ ] Build backend webserver for my Unity WebGL multiplayer game demo using UTP-2.0
+- [ ] Build a textual logic analyzer for parsing and evaluating writing snippets (propositional logic)
+  - Start with just text parsing as a good Rust project
+
+<!-- </details> -->
+
+---
+
+#### Side Quest: Short-Queue of Exercises
+
+<!--
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0">
+      <img
+        src="./images/rust-images/rust-not_desired_behavior.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+      <strong>A flexible aside</strong>
+    </td>
+  </tr>
+</table>
+
+<details><summary><strong>See Details (Closed by Default)</strong></summary> -->
+
+This is a priority (desc) queue of exercises pulled from the brainstorm page that I think are worth doing but not necessarily having a useful deliverable (exercises will be moved out of backlog in Brainstorm readme and placed here):
+
+> [!Tip]
+> These might make good blog posts
+
+<!-- Ensure these are links when created - in practice folder -->
+
+- [ ] Write (or find) an acceptable benchmark utility
+- [ ] investigate keyword 'union' (It's rarely discussed in the text)
+- [ ] Read through [Clippy](https://doc.rust-lang.org/clippy/) - particularly Strict coding styles section
+  - It informs generally about safety and idiomatic Rust
+- [ ] Test out using Cargo workspaces for my practice or project sections
+- [ ] Investigate other common smart pointers
+
+<!-- </details> -->
+
+---
+
+#### Side Quest: Reinforce core Rust API knowledge
+
+<!-- <details><summary><strong>See Details (Closed by Default)</strong></summary> -->
+
+While doing the iterators section of the Rustlings exercises, one of my solutions used the flat_map() method to flatten an array of hashmaps such that I could count the values in all of them across hashmaps in a single concise command. I added it to my notes in [cheat sheet ch13 - iterators](./tutorial/Rust%20Prog%20Lang/ch13/Iterators.md) at end of Super Summary even through the book didn't touch on it because i wanted to example stored for reference.
+
+I may want to similarly extend other Super Summaries with more method investigation of primary APIs. Here's a priority (desc) queue of potential priority areas:
+
+<!-- Ensure docs and links when created - in the notebooks folder -->
+
+- [Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
+
+</details>
 
 ---
 
@@ -264,10 +413,10 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50"  valign="middle"  cellpadding="0"
+    <td width="66"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
-          src="./images/rust-images/rust-panics.svg"
+         src="./images/rust-images/rust-does_not_compile.svg"
         width="40"
         height="40"
         alt="Rust - Panic crab"
@@ -275,10 +424,15 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
       >
     </td>
     <td>
-      <strong>Blocked / Pending</strong>
+         <strong><span style="color: red;">Blocked / Pending</span></strong>
     </td>
   </tr>
 </table>
+
+To be implemented in new repository (linked from here)
+<!-- <details open>
+TODO
+</details> -->
 
 ---
 
@@ -287,9 +441,9 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="50"  valign="middle"  >
+    <td width="66"  valign="middle"  >
       <img
-          src="./images/rust-images/rust-panics.svg"
+          src="./images/rust-images/rust-does_not_compile.svg"
         width="40"
         height="40"
         alt="Rust - Panic crab"
@@ -297,9 +451,45 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
       >
     </td>
     <td>
-      <strong>Blocked / Pending</strong>
+      <strong><span style="color: red;">Blocked / Pending</span></strong>
     </td>
   </tr>
 </table>
 
+To be implemented in new repository (linked from here)
 
+<!-- <details open>
+TODO
+</details> -->
+
+---
+
+### Step 2 - NetSec Courses assignments in Rust
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  >
+      <img
+          src="./images/rust-images/rust-does_not_compile.svg"
+        width="40"
+        height="40"
+        alt="Rust - Panic crab"
+        align="right"
+      >
+    </td>
+    <td>
+      <strong><span style="color: red;">Blocked / Pending</span></strong>
+    </td>
+  </tr>
+</table>
+
+To be implemented in new repository (linked from here)
+
+This would be recreating the work I did in the 4 courses for Network Security Applications, including basics of low-level socket communication, custom reliable protocols with proxy (to mimic poor network communication), and recreating a C2 botnet (with some additions for covert communications - to make it fun).
+
+<!-- <details open>
+TODO
+</details> -->
+
+---

@@ -73,6 +73,7 @@ These are links that I wanted to reference via things i encountered in the book 
 ## Other Learning Links
 
 - [Markdown (MD) Reference](https://www.markdownguide.org/cheat-sheet/)
+- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
 - [SipHash - Rust hashmap default hasher to mitigate DDOS](https://en.wikipedia.org/wiki/SipHash)
   - Discussed end ot ch8 lightly
 - [WebAssembly](https://webassembly.org/)

@@ -28,7 +28,14 @@ enum IntoColorError {
 impl TryFrom<(i16, i16, i16)> for Color {
     type Error = IntoColorError;
 
-    fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {}
+    fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
+        for color in tuple {
+            match color {
+                0..=255 => Ok(Self),
+                _ => Err("Error")
+            }
+        }
+    }
 }
 
 // TODO: Array implementation.
