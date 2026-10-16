@@ -31,7 +31,7 @@ impl TryFrom<(i16, i16, i16)> for Color {
     fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
         for color in tuple {
             match color {
-                0..=255 => Ok(Self),
+                0..=255 => Ok(Self)
                 _ => Err("Error")
             }
         }

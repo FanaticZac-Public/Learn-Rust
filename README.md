@@ -96,15 +96,15 @@ In short, it offers:
 
 ![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
 
-I'm all about flexible but measured orchestration. In my degree - I often opted for solo projects whenever possible. A major reasons is because it gives more dynamism without bureaucracy - and I want to work on each inch of a project (not just a subset), even if my projects had lower quality result with 1 persons labour. My personal exposure to the material were arguably more robust - and I had to make project decisions more akin to industry with regard to my time.
+I'm all about flexible orchestration. During my degree - I often advocated for solo projects whenever possible because it gives more dynamism without bureaucracy - and I want to work on each inch of a project (not just a subset). Even if my projects had more compromises, my personal exposure to the materials was arguably more robust, and I enjoyed making project decisions more akin to industry with regard to the finity of my time. As a consequence, I also take ownership naturally.
 
-Like Agile methodology: having a plan matters, but so does listening to signals, and pivoting to high value targets (Dijkstra comes to mind). Making good and quick project decisions under a deadline, choosing compromises, pivoting to great features at the expense of others, and solving problems you didn't expect to encounter - is the humanity in software development. Flexibility and creativity is the source of the Eureka! moments that were a particular highlight in my major projects. But I digress.
+Like Agile methodology: having a plan matters, but so does listening to signals, and pivoting to high value targets (Dijkstra comes to mind). Making decisions under a deadline, choosing compromises, pivoting to great features at the expense of others, and solving problems you didn't expect to encounter - is the humanity in software development. Flexibility and creativity is the source of the Eureka! moments that were a particular highlight in my major projects. I digress.
 
 I will try and maintain this loose excuse for a project until such time that I'm either employed or working full-time on a private project implementation. In the meantime, I am trying to do at least 1 meaningful commit per day.
 
 - Some exception may be given to days I focus on reading or math practice with no clear or meaningful commit here - however the point is to translate those efforts into some demonstrable value here - with Rust.
 
-My steps are laid out below - you can consider the pending ones as flexible nodes for exposures I'm interested in attaining - but who knows where this rabbit hole actually goes.
+My steps are laid out below - you can consider the pending ones as flexible nodes for practice and exposures I'm interested in pursuing - a short list from the backlog of the ReadMe_Brainstorm document.
 
 ### Resource Links
 
@@ -130,10 +130,23 @@ Resource links for my practice, schedule, exercise/utility ideas, and so on. I'l
       >
     </td>
     <td>
-      <strong><span style="color: limegreen;">Done</span><br></strong> Still cleaning/refining retroactively alongside next steps
+            <svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="24"
+     role="img" aria-label=“Done”>
+<text x="0" y="20"
+      fill="#32cd32"
+      font-size="15"
+      font-weight="bold">
+  Done
+</text>
+</svg>
+<br>
+Still cleaning/refining retroactively alongside next steps
     </td>
   </tr>
 </table>
+
+
 
 <!-- <details open>  -->
 
@@ -154,35 +167,38 @@ If you have already read the rust book (or have professional coding experience) 
 
 #### Read-through/Cheat-Sheet Strategy
 
-My implementation has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to analyze later) as I'm reading - and I also added more where I had extra questions, wanted more samples, or ran tangential experiments. Then coming back I reread important chapters (or while doing Rustlings (next step)) completed the super-summaries aka code only section (with comments), added links, and sometimes a 1-2 paragraph chapter summary.
+My implementation has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to analyze later) as I'm reading - and I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
 
-- Note: Not always consistent but I just want quick references to look at, and to not have pedantically focused on critical understandings while summarizing or reviewing.
+Then coming back I reread important chapters while doing Rustlings (next step) or other work, completed the super-summaries aka code only section (with comments), added links, and sometimes a 1-2 paragraph chapter summary.
+
+- Note: Not always consistent but 
+I just want quick references to look at - and to avoid pedantically wasting too much time for the sake of others.
 
 #### These are my cheat sheets for each of the 21 chapters:
 
 Most have a **Super Summary** section that is mostly the code with annotations - as concise as possible - for quick reference. (Work in Progress)
 
-1. [My Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md)
-2. [My Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) <!-- - DONE - but fix writing later. -->
-3. [My Cheat Sheet - ch03 - Common Programming Concepts](./tutorial/Rust%20Prog%20Lang/ch03/ch03-cheat_sheet.md) <!-- - DONE -->
-4. [My Cheat Sheet - ch04 - Understanding Ownership](./tutorial/Rust%20Prog%20Lang/ch04/ch04-cheat_sheet.md) <!-- - Done -->
-5. [My Cheat Sheet - ch05 - Using Structs to Structure Related Data](./tutorial/Rust%20Prog%20Lang/ch05/ch05-cheat_sheet.md) <!-- - DONE -->
-6. [My Cheat Sheet - ch06 - Enums and Pattern Matching](./tutorial/Rust%20Prog%20Lang/ch06/ch06-cheat_sheet.md) <!-- - Done -->
-7. [My Cheat Sheet - ch07 - Packages, Crates, and Modules](./tutorial/Rust%20Prog%20Lang/ch07/ch07-cheat_sheet) <!-- - Needs special attention -->
-8. [My Cheat Sheet - ch08 - Common Collections](./tutorial/Rust%20Prog%20Lang/ch08/ch08-cheat_sheet.md) <!-- - Done -->
-9. [My Cheat Sheet - ch09 - Error Handling](./tutorial/Rust%20Prog%20Lang/ch09/ch9-cheat_sheet.md) <!-- - DONE -->
-10. [My Cheat Sheet - ch10 - Generic Types, Traits, and Lifelines](./tutorial/Rust%20Prog%20Lang/ch10/ch10-cheat_sheet.md)
-11. [My Cheat Sheet - ch11 - Writing Tests](./tutorial/Rust%20Prog%20Lang/ch11/ch11-cheat-sheet.md) <!-- - DONE -->
-12. [My Cheat Sheet - ch12 - An I/O Project: Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
-13. [My Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) <!-- - DONE - but fix writing later / review -->
-14. [My Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) <!-- - Done, but needs more work for final cheat-sheet -->
-15. [My Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) <!-- - Done, but worth a re-read for sure (particularly RefCell) -->
-16. [My Cheat Sheet - ch16 - Fearless Concurrency](./tutorial/Rust%20Prog%20Lang/ch16/ch16-cheat_sheet.md) <!-- - Done -->
-17. [My Cheat Sheet - ch17 - Fundamentals of Asynchronous Programming](./tutorial/Rust%20Prog%20Lang/ch17/ch17-cheat_sheet.md) <!-- - Done (worth re-read) -->
-18. [My Cheat Sheet - ch18 - Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md) <!-- - Done (worth re-read) -->
-19. [My Cheat Sheet - ch19 - Patterns and Matching](./tutorial/Rust%20Prog%20Lang/ch19/ch19-cheat_sheet.md) <!-- - Done -->
-20. [My Cheat Sheet - ch20 - Advanced Features](./tutorial/Rust%20Prog%20Lang/ch20/ch20-cheat_sheet.md)
-21. [My Cheat Sheet - ch21 - Final Project: Building a Multithreaded Web Server](./tutorial/Rust%20Prog%20Lang/ch21/ch21-cheat_sheet.md)
+1. [Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md)
+2. [Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) <!-- - DONE - but fix writing later. -->
+3. [Cheat Sheet - ch03 - Common Programming Concepts](./tutorial/Rust%20Prog%20Lang/ch03/ch03-cheat_sheet.md) <!-- - DONE -->
+4. [Cheat Sheet - ch04 - Understanding Ownership](./tutorial/Rust%20Prog%20Lang/ch04/ch04-cheat_sheet.md) <!-- - Done -->
+5. [Cheat Sheet - ch05 - Using Structs to Structure Related Data](./tutorial/Rust%20Prog%20Lang/ch05/ch05-cheat_sheet.md) <!-- - DONE -->
+6. [Cheat Sheet - ch06 - Enums and Pattern Matching](./tutorial/Rust%20Prog%20Lang/ch06/ch06-cheat_sheet.md) <!-- - Done -->
+7. [Cheat Sheet - ch07 - Packages, Crates, and Modules](./tutorial/Rust%20Prog%20Lang/ch07/ch07-cheat_sheet) <!-- - Needs special attention -->
+8. [Cheat Sheet - ch08 - Common Collections](./tutorial/Rust%20Prog%20Lang/ch08/ch08-cheat_sheet.md) <!-- - Done -->
+9. [Cheat Sheet - ch09 - Error Handling](./tutorial/Rust%20Prog%20Lang/ch09/ch9-cheat_sheet.md) <!-- - DONE -->
+10. [Cheat Sheet - ch10 - Generic Types, Traits, and Lifelines](./tutorial/Rust%20Prog%20Lang/ch10/ch10-cheat_sheet.md)
+11. [Cheat Sheet - ch11 - Writing Tests](./tutorial/Rust%20Prog%20Lang/ch11/ch11-cheat-sheet.md) <!-- - DONE -->
+12. [Cheat Sheet - ch12 - An I/O Project: Command Line Program](./tutorial/Rust%20Prog%20Lang/ch12/ch12-cheat_sheet.md)
+13. [Cheat Sheet - ch13 - Functional Language Features: Iterators and Closures](./tutorial/Rust%20Prog%20Lang/ch13/ch13-cheat_sheet.md) <!-- - DONE - but fix writing later revie -->
+14. [Cheat Sheet - ch14 - More About Cargo and Crates.io](./tutorial/Rust%20Prog%20Lang/ch14/ch14-cheat_sheet.md) <!-- - Done, but needs more work for final cheat-sheet -->
+15. [Cheat Sheet - ch15 - Smart Pointers](./tutorial/Rust%20Prog%20Lang/ch15/ch15-cheat_sheet.md) <!-- - Done, but worth a re-read for sure (particularly RefCell) -->
+16. [Cheat Sheet - ch16 - Fearless Concurrency](./tutorial/Rust%20Prog%20Lang/ch16/ch16-cheat_sheet.md) <!-- - Done -->
+17. [Cheat Sheet - ch17 - Fundamentals of Asynchronous Programming](./tutorial/Rust%20Prog%20Lang/ch17/ch17-cheat_sheet.md) <!-- - Done (worth re-read) -->
+18. [Cheat Sheet - ch18 - Object Oriented Programming Features](./tutorial/Rust%20Prog%20Lang/ch18/ch18-cheat_sheet.md) <!-- - Done (worth re-read) -->
+19. [Cheat Sheet - ch19 - Patterns and Matching](./tutorial/Rust%20Prog%20Lang/ch19/ch19-cheat_sheet.md) <!-- - Done -->
+20. [Cheat Sheet - ch20 - Advanced Features](./tutorial/Rust%20Prog%20Lang/ch20/ch20-cheat_sheet.md)
+21. [Cheat Sheet - ch21 - Final Project: Building a Multithreaded Web Server](./tutorial/Rust%20Prog%20Lang/ch21/ch21-cheat_sheet.md)
 
 <!-- #### Final Checklist for all chapters
 - [ ] Check - CODE EXAMPLES (add more if wanting)
@@ -219,7 +235,16 @@ Most have a **Super Summary** section that is mostly the code with annotations -
       >
     </td>
     <td>
-      <strong><span style="color: orange;">Currently in progress</span></strong>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="24"
+     role="img" aria-label="Currently in progress">
+<text x="0" y="20"
+      fill="#FFA500"
+      font-size="15"
+      font-weight="bold">
+  Currently in progress
+</text>
+</svg>
     </td>
   </tr>
 </table>
@@ -243,7 +268,7 @@ The official website for Rustlings is here:
 
 ---
 
-### Flexible Side Quests: (In dropdown)
+### Flexible Side Quests: 
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -259,12 +284,33 @@ The official website for Rustlings is here:
       >
     </td>
     <td>
-      <strong><span style="color: LightSeaGreen ;">“Clickity-clack, take a quest from this stack!”</span></strong>
+    <svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="24"
+     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
+<text x="0" y="20"
+      fill="#20b2aa"
+      font-size="15"
+      font-weight="bold">
+  Clickity-clack, take a quest from this stack!
+</text>
+</svg>
     </td>
   </tr>
 </table>
 
-<details><summary><strong><span style="color: LightSeaGreen ;">Side Quests - Details Dropdown</span></strong></summary>
+<details>
+<summary>
+ <svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="22"
+     role="img" aria-label="Side Quests - Details Dropdown">
+<text x="0" y="20"
+      fill="#20b2aa"
+      font-size="14"
+      font-weight="bold">
+Side Quests - Details Dropdown
+</text>
+</svg>
+</summary>
 
 > [!Caution]
 > BRAINSTORM AHEAD:
@@ -304,6 +350,7 @@ Before Starting Bevy - I want to play around (while i practice) to see how diffi
 <!-- - Git will be problematic for devising some applications - since I'm a code hoarder at heart and I'll need to focus on orienting much of my actual project work as  demos (or working utils) and need to investigate via these endpoints how I'd like to do that. -->
 
 Incorporate:
+
 - Rust basics and/or saved exercises
 - E.g. Perhaps 1 mini application for each target using:
   - at least 1 (or more) sections of the book as priority inspiration.
@@ -413,10 +460,9 @@ I may want to similarly extend other Super Summaries with more method investigat
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
-    <td width="66"  valign="middle"  cellpadding="0"
-  cellspacing="0">
+    <td width="66"  valign="middle"  >
       <img
-         src="./images/rust-images/rust-does_not_compile.svg"
+          src="./images/rust-images/rust-does_not_compile.svg"
         width="40"
         height="40"
         alt="Rust - Panic crab"
@@ -424,12 +470,23 @@ I may want to similarly extend other Super Summaries with more method investigat
       >
     </td>
     <td>
-         <strong><span style="color: red;">Blocked / Pending</span></strong>
+        <svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="24"
+     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
+<text x="0" y="20"
+      fill="#FF0000"
+      font-size="15"
+      font-weight="bold">
+  Blocked / Pending
+</text>
+</svg>
     </td>
   </tr>
 </table>
 
+
 To be implemented in new repository (linked from here)
+
 <!-- <details open>
 TODO
 </details> -->
@@ -451,10 +508,20 @@ TODO
       >
     </td>
     <td>
-      <strong><span style="color: red;">Blocked / Pending</span></strong>
+        <svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="24"
+     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
+<text x="0" y="20"
+      fill="#FF0000"
+      font-size="15"
+      font-weight="bold">
+  Blocked / Pending
+</text>
+</svg>
     </td>
   </tr>
 </table>
+
 
 To be implemented in new repository (linked from here)
 
@@ -479,10 +546,20 @@ TODO
       >
     </td>
     <td>
-      <strong><span style="color: red;">Blocked / Pending</span></strong>
+        <svg xmlns="http://www.w3.org/2000/svg"
+     width="400" height="24"
+     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
+<text x="0" y="20"
+      fill="#FF0000"
+      font-size="15"
+      font-weight="bold">
+  Blocked / Pending
+</text>
+</svg>
     </td>
   </tr>
 </table>
+
 
 To be implemented in new repository (linked from here)
 
