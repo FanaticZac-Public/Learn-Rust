@@ -29,11 +29,17 @@ impl TryFrom<(i16, i16, i16)> for Color {
     type Error = IntoColorError;
 
     fn try_from(tuple: (i16, i16, i16)) -> Result<Self, Self::Error> {
-        for color in tuple {
-            match color {
-                0..=255 => Ok(Self)
-                _ => Err("Error")
-            }
+        if (0..=255).contains(&tuple.0)
+            && (0..=255).contains(&tuple.1)
+            && (0..=255).contains(&tuple.2)
+        {
+            Ok(Self {
+                red: tuple.0 as u8,
+                green: tuple.1 as u8,
+                blue: tuple.2 as u8,
+            })
+        } else {
+            Err(IntoColorError::IntConversion)
         }
     }
 }
@@ -42,7 +48,22 @@ impl TryFrom<(i16, i16, i16)> for Color {
 impl TryFrom<[i16; 3]> for Color {
     type Error = IntoColorError;
 
-    fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {}
+    fn try_from(arr: [i16; 3]) -> Result<Self, Self::Error> {
+        if arr.len() != 3 {
+            return Err(IntoColorError::BadLen);
+        }
+
+        if (0..=255).contains(&arr[0]) && (0..=255).contains(&arr[1]) && (0..=255).contains(&arr[2])
+        {
+            Ok(Self {
+                red: arr[0] as u8,
+                green: arr[1] as u8,
+                blue: arr[2] as u8,
+            })
+        } else {
+            Err(IntoColorError::IntConversion)
+        }
+    }
 }
 
 // TODO: Slice implementation.
@@ -50,7 +71,24 @@ impl TryFrom<[i16; 3]> for Color {
 impl TryFrom<&[i16]> for Color {
     type Error = IntoColorError;
 
-    fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {}
+    fn try_from(slice: &[i16]) -> Result<Self, Self::Error> {
+        if slice.len() != 3 {
+            return Err(IntoColorError::BadLen);
+        }
+
+        if (0..=255).contains(&slice[0]) && 
+            (0..=255).contains(&slice[1]) && 
+            (0..=255).contains(&slice[2])
+        {
+            Ok(Self {
+                red: slice[0] as u8,
+                green: slice[1] as u8,
+                blue: slice[2] as u8,
+            })
+        } else {
+            Err(IntoColorError::IntConversion)
+        }
+    }
 }
 
 fn main() {

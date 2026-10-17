@@ -110,9 +110,13 @@ My steps are laid out below - you can consider the pending ones as flexible node
 
 Resource links for my practice, schedule, exercise/utility ideas, and so on. I'll be updating as I go. This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is less about producing 'a thing'. It's an educational resource I can publicize, and so inherently dynamic, flexible, amorphous.
 
+#### My Resources
 - [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
 - [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based)
 - [Rust - Brainstorm](./README_BRAINSTORM_.md) - Rough ideas list for this project
+
+#### Rust Resources (3rd Party guides)
+- TODO: I want API method lists (this isn't in the book) 
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
@@ -130,16 +134,7 @@ Resource links for my practice, schedule, exercise/utility ideas, and so on. I'l
       >
     </td>
     <td>
-            <svg xmlns="http://www.w3.org/2000/svg"
-     width="400" height="24"
-     role="img" aria-label=“Done”>
-<text x="0" y="20"
-      fill="#32cd32"
-      font-size="15"
-      font-weight="bold">
   Done
-</text>
-</svg>
 <br>
 Still cleaning/refining retroactively alongside next steps
     </td>
@@ -227,7 +222,7 @@ Most have a **Super Summary** section that is mostly the code with annotations -
     <td width="66"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
-        src="./images/rust-images/rust-panics.svg"
+        src="./images/ed-images/ed_hack_11.png"
         width="40"
         height="40"
         alt="Rust - Does note compile crab"
@@ -235,19 +230,11 @@ Most have a **Super Summary** section that is mostly the code with annotations -
       >
     </td>
     <td>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="400" height="24"
-     role="img" aria-label="Currently in progress">
-<text x="0" y="20"
-      fill="#FFA500"
-      font-size="15"
-      font-weight="bold">
-  Currently in progress
-</text>
-</svg>
+  Done
     </td>
   </tr>
 </table>
+
 
 <!-- <details><summary><strong>Rustlings - Details</strong></summary> -->
 
@@ -264,6 +251,8 @@ The official website for Rustlings is here:
 - [Official Rustlings Page](https://rustlings.rust-lang.org/)
 - [Rustlings Git](https://github.com/rust-lang/rustlings)
 
+#### UPDATE: FINISHED
+![Finished Screenshot](./images/rust-images/Screenshot%20from%202026-10-16%2021-02-17.png)
 <!-- </details> -->
 
 ---
@@ -284,32 +273,14 @@ The official website for Rustlings is here:
       >
     </td>
     <td>
-    <svg xmlns="http://www.w3.org/2000/svg"
-     width="400" height="24"
-     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
-<text x="0" y="20"
-      fill="#20b2aa"
-      font-size="15"
-      font-weight="bold">
   Clickity-clack, take a quest from this stack!
-</text>
-</svg>
     </td>
   </tr>
 </table>
 
 <details>
 <summary>
- <svg xmlns="http://www.w3.org/2000/svg"
-     width="400" height="22"
-     role="img" aria-label="Side Quests - Details Dropdown">
-<text x="0" y="20"
-      fill="#20b2aa"
-      font-size="14"
-      font-weight="bold">
 Side Quests - Details Dropdown
-</text>
-</svg>
 </summary>
 
 > [!Caution]
@@ -362,6 +333,25 @@ Incorporate:
 ---
 
 #### Side Quest: Build a series of mini-applications
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0">
+      <img
+        src="./images/rust-images/rust-panics.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+  Currently in progress
+    </td>
+  </tr>
+</table>
 
 <!-- <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
@@ -470,16 +460,7 @@ I may want to similarly extend other Super Summaries with more method investigat
       >
     </td>
     <td>
-        <svg xmlns="http://www.w3.org/2000/svg"
-     width="400" height="24"
-     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
-<text x="0" y="20"
-      fill="#FF0000"
-      font-size="15"
-      font-weight="bold">
   Blocked / Pending
-</text>
-</svg>
     </td>
   </tr>
 </table>
@@ -508,16 +489,7 @@ TODO
       >
     </td>
     <td>
-        <svg xmlns="http://www.w3.org/2000/svg"
-     width="400" height="24"
-     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
-<text x="0" y="20"
-      fill="#FF0000"
-      font-size="15"
-      font-weight="bold">
   Blocked / Pending
-</text>
-</svg>
     </td>
   </tr>
 </table>
@@ -546,16 +518,7 @@ TODO
       >
     </td>
     <td>
-        <svg xmlns="http://www.w3.org/2000/svg"
-     width="400" height="24"
-     role="img" aria-label=“Clickity-clack, take a quest from this stack!”>
-<text x="0" y="20"
-      fill="#FF0000"
-      font-size="15"
-      font-weight="bold">
   Blocked / Pending
-</text>
-</svg>
     </td>
   </tr>
 </table>
