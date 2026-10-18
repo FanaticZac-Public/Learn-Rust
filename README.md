@@ -120,7 +120,7 @@ Resource links for my practice, schedule, exercise/utility ideas, and so on. I'l
 
 ### Step 1 - The Rust Programming Language - Book Read Through
 
-<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+<table cellpadding="0" cellspacing="0"  bgcolor="#2d961f" color="#333"  border="1"
   frame="box"   rules="none">
   <tr>
     <td width="66"  valign="middle"  cellpadding="0"
@@ -134,9 +134,13 @@ Resource links for my practice, schedule, exercise/utility ideas, and so on. I'l
       >
     </td>
     <td>
+    <font color="#111">
+    <strong>
   Done
 <br>
 Still cleaning/refining retroactively alongside next steps
+</strong>
+</font>
     </td>
   </tr>
 </table>
@@ -212,11 +216,13 @@ Most have a **Super Summary** section that is mostly the code with annotations -
 
 <!-- </details> -->
 
+#### UPDATE: FINISHED
+- But will likely refine more in the future, we'll see.
 ---
 
 ### Side Quest: Rustlings - Exercises/Quizzes
 
-<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+<table cellpadding="0" cellspacing="0"  bgcolor="#2d961f"   border="1"
   frame="box"   rules="none">
   <tr>
     <td width="66"  valign="middle"  cellpadding="0"
@@ -230,7 +236,13 @@ Most have a **Super Summary** section that is mostly the code with annotations -
       >
     </td>
     <td>
+    <font color="#111">
+    <strong>
   Done
+<br>
+Still cleaning/refining retroactively alongside next steps
+</strong>
+</font>
     </td>
   </tr>
 </table>
@@ -254,6 +266,48 @@ The official website for Rustlings is here:
 #### UPDATE: FINISHED
 ![Finished Screenshot](./images/rust-images/Screenshot%20from%202026-10-16%2021-02-17.png)
 <!-- </details> -->
+
+---
+
+### Step 2 - Network Security Applications Review/Assignments in Rust
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#e9a700"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0">
+      <img
+        src="./images/rust-images/rust-panics.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+        <font color="#111">
+    <strong>
+  Currently in progress
+</strong>
+</font>
+    </td>
+  </tr>
+</table>
+
+Ok - so I'm choosing this as next step for a few reasons:
+- The game demos I'm wanting to make in the future require interesting multiplayer dynamics - so networking in Rust is paramount to the planning process later
+- I have a personal private project which includes socket programming (I'll discuss more in the ReadMe for this project)
+- Socket programming is a low-level programming practice with good use of advance techniques around concurrency, parallelism, distributed computing concerns - and so if often done in C in the wild (but Rust is better and is a direct competitor).
+- This skill and these demos expand into games, embedded programming (such as some electronics I'd like to communicate with with), and other useful Rust avenues for the future.
+
+Essential this leg of the project will constitute me reviewing all the documentation, and completing all my favorite assignments from the Network Security Applications specialty courses as part of the BScACS Degree at BCIT - but in Rust!
+
+And so this will be my first 'project' or application set with Rust after familiarizing myself with the language (and reviewing all my NetSet Course materials).
+
+For this project, I have created a specific project ReadMe here:
+- [NetSec Review Project](./projects/NetSec-Review/NetSec-Review_ReadMe.md)
+
+And project commenceth!
 
 ---
 
@@ -340,25 +394,6 @@ Incorporate:
     <td width="66"  valign="middle"  cellpadding="0"
   cellspacing="0">
       <img
-        src="./images/rust-images/rust-panics.svg"
-        width="40"
-        height="40"
-        alt="Rust - Does note compile crab"
-        align="right"
-      >
-    </td>
-    <td>
-  Currently in progress
-    </td>
-  </tr>
-</table>
-
-<!-- <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
-  frame="box"   rules="none">
-  <tr>
-    <td width="66"  valign="middle"  cellpadding="0"
-  cellspacing="0">
-      <img
         src="./images/rust-images/rust-not_desired_behavior.svg"
         width="40"
         height="40"
@@ -370,7 +405,7 @@ Incorporate:
       <strong>A flexible aside</strong>
     </td>
   </tr>
-</table> -->
+</table>
 
 <!-- <details><summary><strong>See Details (Closed by Default)</strong></summary> -->
 
@@ -380,8 +415,11 @@ Ok - I'm thinking I'm dilly-dallying too much with the textbook and syntax - alt
 
 - [ ] Build robust multi-thread application template with data passing to mimic a botnet (distributed computing)
 - [ ] Build backend webserver for my Unity WebGL multiplayer game demo using UTP-2.0
-- [ ] Build a textual logic analyzer for parsing and evaluating writing snippets (propositional logic)
+- [ ] Textual Logic Analyzer for parsing and evaluating writing snippets (using propositional logic)
   - Start with just text parsing as a good Rust project
+  - Can identify statements and reverse into correct Q&A formatting for:
+- [ ] FlashCards backend - I just want to a system to run through memorization tasks
+  - This could likely have overlap with Textual Logic Analyzer
 
 <!-- </details> -->
 
@@ -389,7 +427,7 @@ Ok - I'm thinking I'm dilly-dallying too much with the textbook and syntax - alt
 
 #### Side Quest: Short-Queue of Exercises
 
-<!--
+
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
   <tr>
@@ -409,7 +447,7 @@ Ok - I'm thinking I'm dilly-dallying too much with the textbook and syntax - alt
   </tr>
 </table>
 
-<details><summary><strong>See Details (Closed by Default)</strong></summary> -->
+<!-- <details><summary><strong>See Details (Closed by Default)</strong></summary> -->
 
 This is a priority (desc) queue of exercises pulled from the brainstorm page that I think are worth doing but not necessarily having a useful deliverable (exercises will be moved out of backlog in Brainstorm readme and placed here):
 
@@ -445,35 +483,6 @@ I may want to similarly extend other Super Summaries with more method investigat
 
 ---
 
-### Step 2 - (Bevy Tutorial OR (My own) Game Engine project?...)
-
-<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
-  frame="box"   rules="none">
-  <tr>
-    <td width="66"  valign="middle"  >
-      <img
-          src="./images/rust-images/rust-does_not_compile.svg"
-        width="40"
-        height="40"
-        alt="Rust - Panic crab"
-        align="right"
-      >
-    </td>
-    <td>
-  Blocked / Pending
-    </td>
-  </tr>
-</table>
-
-
-To be implemented in new repository (linked from here)
-
-<!-- <details open>
-TODO
-</details> -->
-
----
-
 ### Step 3 - Physics Simulations with Bevy via 11 Physics course material aka review
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
@@ -503,7 +512,7 @@ TODO
 
 ---
 
-### Step 2 - NetSec Courses assignments in Rust
+### Step 2 - (Bevy Tutorial OR (My own) Game Engine project?...)
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
   frame="box"   rules="none">
