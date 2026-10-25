@@ -29,9 +29,6 @@ These are links that I wanted to reference via things i encountered in the book 
   - Is for custom main function termination exit codes with function 'report'.
 
 
-
-
-
 ## Rust Reference Shortcuts
 
 - [Rust Reference](https://doc.rust-lang.org/stable/reference/index.html)
@@ -40,7 +37,6 @@ These are links that I wanted to reference via things i encountered in the book 
 - [Rust Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2024)
   - This includes a Miri interpreter for checking unsafe code
   - And Clippy to catch common mistakes and improve your Rust code.
-
 
 ## Package Managers
 
@@ -55,20 +51,29 @@ These are links that I wanted to reference via things i encountered in the book 
 - [Bevy Game Engine](https://bevy.org/)
   - [The Impatient Programmer's Guide to Bevy and Rust](https://aibodh.com/posts/bevy-rust-game-development-chapter-1/)
   - [Git Repo](https://github.com/jamesfebin/ImpatientProgrammerBevyRust)
+- [Unofficial Bevy Cheat Book](https://bevy-cheatbook.github.io/)
 
-## Rust - Free Exercise or tutorial links
+## Rust - Learning Resources - Free Exercises/tutorials or Books (free or paid)
 
 - [Rustlings](https://rustlings.rust-lang.org/) - Recommended in parallel to reading the official Rust book 📚️
+- Mainmatter - Luca Palmieri - https://rust-exercises.com/
+  - [100 Exercises To Learn Rust - Introduction](https://rust-exercises.com/100-exercises/)
+  - Book: 'Zero To Production In Rust' 
+  - [100 Exercises To Learn Rust - Actual Work-Book](https://rust-exercises.com/100-exercises-to-learn-rust.pdf)
+  - [Rust telemetry course](https://rust-exercises.com/telemetry/)
+  - [cargo-chef - Cache Depend., speed up docker](https://github.com/LukeMathWalker/cargo-chef)
+  - [Pavex framework - APIs with Rust.](https://github.com/LukeMathWalker/pavex)
+  - [wiremock - HTTP mocking - black-box Rust for third-party APIs.](https://github.com/LukeMathWalker/wiremock-rs)
+- [Decrusting YT Channel - Jon Gjengset] (https://www.youtube.com/playlist?list=PLqbS7AVVErFirH9armw8yXlE6dacF-A6z)
+  - Basically investigating crates
+
 
 ## Rust - Embedded
 
-## Rust/Bevy - Free Exercise or tutorial links
+## Rust - Bevy - Physics
+- [Physics Simulations in Bevy](https://mo8it.com/blog/physics-simulations-in-bevy/)
+  - This actually goes along with one of my interesting avenues in the future - good primer
 
-- [Rustlings](https://bevy.org/learn/quick-start/introduction/) - Recommended in parallel to reading the official Rust book 📚️
-
-## Rust - Books (Paid)
-
-- [Rust for Rustaceans](https://rust-for-rustaceans.com/) - For developers who’ve mastered the basics
 
 ## Other Learning Links
 
@@ -98,5 +103,3 @@ These are links that I wanted to reference via things i encountered in the book 
     - [syn (Crate)](https://docs.rs/syn/2.0.119/syn/index.html)
   - [args (Function)](https://doc.rust-lang.org/std/env/fn.args.html)
 - [Clippy](https://doc.rust-lang.org/stable/clippy/index.html)
-
-

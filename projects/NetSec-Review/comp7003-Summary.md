@@ -3,18 +3,19 @@
 ## Super Summary (or summary of stuff I'd like to deep dive again)
 
 There tools are worth deep diving again
+
 - Using hping3
 - Using nmap for scanning machines
 - Ncat: Your General-Purpose Network Connector
   - (Swiss Army Knife baby)
+- Review Cyber Kill Chain
+- Review project and strong firewall and IDS system analysis
 
 Anyway - this was good to get refresher on this course and project. Maybe worth
 
 ### Rust related adaptation potentials
-- Potentially making my own christmas tree attack
-- Manually writing my own packet creator in Rust (or finding using one)
-- Using rust to run hping3/nmap/ncat commands as part of a more goal oriented pipeline (For I guess the first 2 parts of the chain in the Cyber Kill Chain)
 
+_MOVED TO REVIEW DOC - 1 PLACE_
 
 ## Comp7003 - Course Review
 
@@ -22,7 +23,9 @@ This course was very intro course to networking layers, devices, etc.. I'm just 
 
 There was a copy of [Lockheed Martin_s Cyber Kill Chain](https://www.lockheedmartin.com/en-us/capabilities/cyber/cyber-kill-chain.html) - including the phases of a hypothetical attack: Reconnaissance, Weaponization, Delivery, Exploitation, Installation, C2 (Command and Control), Actions on Objectives.
 
-### Topics Covered (I'm just putting this here mostly for my own reference):
+### Topics Covered:
+
+(I'm just putting this here mostly for my own reference)
 
 - Daemons
 - ENV Variables
@@ -32,32 +35,32 @@ There was a copy of [Lockheed Martin_s Cyber Kill Chain](https://www.lockheedmar
 - Unix Permissions
 - Overview of cybersecurity
 - Packet headers
-    - Frame
-    - Ethernet 2
-    - How to read hex dumps
-    - Flags
-    - IP 
-    - TCP 
-        - Connection Setup (Three-Way Handshake)
-        - Connection Teardown (Four-Way Handshake)
-    - UDP (Connectionless)
+  - Frame
+  - Ethernet 2
+  - How to read hex dumps
+  - Flags
+  - IP
+  - TCP
+    - Connection Setup (Three-Way Handshake)
+    - Connection Teardown (Four-Way Handshake)
+  - UDP (Connectionless)
 - Ncat: Your General-Purpose Network Connector
 - Basic Password security
 - Routing
-    - ARP Request and Reply Process
-    - ARP Cache and Expiration Time
-    - Transport Layer Protocols
-    - Subnet Masks and Their Role in Routing Decisions
-    - Forwarding Packets to the Destination
-    - Packet Delivery Process
-    - Network Address Translation (NAT)
-    - Advanced Concepts and Further Exploration
-        - ARP Spoofing and Security Measures
-        - Routing Optimization and Network Topology
+  - ARP Request and Reply Process
+  - ARP Cache and Expiration Time
+  - Transport Layer Protocols
+  - Subnet Masks and Their Role in Routing Decisions
+  - Forwarding Packets to the Destination
+  - Packet Delivery Process
+  - Network Address Translation (NAT)
+  - Advanced Concepts and Further Exploration
+    - ARP Spoofing and Security Measures
+    - Routing Optimization and Network Topology
 
 ### My project for this course
 
-My project included setting up 2 VMs (1 attacker, 1 defender) setup with firewall and IDS systems and then scanning performing network scans for vulnerabilities using hping3, then defending against those attacks and detecting them.
+My project included setting up 2 VMs (1 attacker, 1 defender) setup with firewall and IDS systems and then scanning performing network scans for vulnerabilities using hping3, then blocking them and/or testing detecting specific attacks.
 
 #### Victim
 

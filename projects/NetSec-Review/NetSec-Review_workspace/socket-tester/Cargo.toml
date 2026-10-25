@@ -1,0 +1,8 @@
+[package]
+name = "socket-tester"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+domain-socket = { path = "../domain-socket" }
+
