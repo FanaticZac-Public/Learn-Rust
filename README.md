@@ -22,23 +22,23 @@ A professional learning record of Rust - which will evolve into applications foc
 
 > [!TIP]
 > Productivity Tip: Kill many birds with 1 stone
-> <br> | learn rust + practice compSci + market myself + prep for Bevy |
+> <br> ( learn rust + practice compSci + market myself + prep for Bevy )
 
 ## Hello, World!
 
-My name is Zach, I'm a Software Developer based in Vancouver, British Columbia, Canada. I hold a Bachelor of Science in Applied Computer Science (Game Development) from BCIT.
+My name is Zach, I'm based in Vancouver, British Columbia, Canada, and hold a Bachelor of Science in Applied Computer Science (Game Development) from BCIT.
 
 > [!NOTE]
-> I took 4/5 courses from Network Security Applications set also. 💪
-> <br> Built a C2 botnet as the major project for that set. 🤖🕸️
+> Completed 4/5 courses from Network Security Applications set also. 💪
+> <br> Built C2 botnet as major project for that set. 🤖🕸️
 
 ### Repository Purpose
 
-I didn't market myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..). And I don't like dumping my previous instructors resources on git or enjoy the prospect of dumping my old assignments on git after-the-fact is... lame.
+I didn't market myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), but I had fun and did well. I don't like dumping my instructors resources or dumping my old assignments on git after-the-fact.
 
-So that's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great place to also review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward.
+And so that's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great way to review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward.
 
-Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this potentially monotonous process of self-marketing becomes something rather exciting. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this new project.
+Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this potentially monotonous process of self-marketing becomes something rather exciting. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this venture.
 
 Advantages of Rust:
 
@@ -51,7 +51,7 @@ Advantages of Rust:
   - Ownership and borrowing
   - Thread safety
 
-Pushes many common bugs from runtime to compile time errors:
+Pushes many potential bugs from runtime to compile time errors:
 
 - e.g. use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
 
@@ -65,12 +65,12 @@ Those advantages are excellent for:
 
 Some disadvantages:
 
-- Steeper learning curve (bug... or a feature?)
-- Longer compile time 
+- Steeper learning curve (not too bad actually)
+- Longer compile time (! espresso time !)
 
 In short, it offers:
 
-- C/C++-level performance with stronger memory and concurrency safety.
+- C/C++-level performance with strong memory and concurrency safety.
 - And a plethora of practical use-cases for my interests
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
@@ -96,32 +96,32 @@ In short, it offers:
 
 ![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
 
-I really enjoy the flexible orchestration of solo projects. During my degree - I often advocated for individual projects whenever possible because it gives more dynamism and autonomy without bureaucracy - where I get to work on each inch of a project (not just a subset). Even if my project has more compromises, lower superficial quality, my personal exposures to the materials was more robust. As a consequence - I take ownership of my work more naturally.
+I enjoy the flexible orchestration that solo projects award. Academically I often advocated for individual projects whenever possible for the benefit of creative autonomy without bureaucracy, as well as experience of working on each inch of a project rather than a subset. As a consequence - I take ownership of my work more naturally.
 
-Like Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra comes to mind). Making trade-off decisions with a deadline, solving unexpected problems, considering new ideas, and chugging along towards your end goal - is the humanity of software development. Flexibility and creativity fostered "Eureka!" moments in some of my major projects and were a particular highlight of those experiences.
+Akin to Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra). Weighing new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity foster "Eureka!" moments that were a particular highlights of many academic projects. A compass and a map go hand in hand.
 
-By I digress.
+But I digress.
 
 ### Plan
 
-I will try and maintain this loose excuse for a project until such time that I'm either employed or working full-time on a private project implementation. In the meantime, I will try and do at least 1 meaningful commit per day.
+I'll maintain this project whenever I'm not employed or working on a private project implementation. I will try and do at least 1 meaningful commit per day.
 
-- Some exception may be given to days I focus on reading or math practice with no purposeful commit here - however the point is to translate those efforts into some demonstrable value here - with Rust.
+My projects steps are laid out below - you can consider the pending ones as flexible nodes I'm interested in pursuing - a list percolated out of the backlog from the ReadMe_Brainstorm document.
 
-My projects steps are laid out below - you can consider the pending ones as flexible nodes I'm interested in pursuing - a list bore out of the backlog from the ReadMe_Brainstorm document.
+This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. It's not about producing an outcome like in most repositories git. It's an educational resource I can publicize, and so inherently broad, amorphous, experimental, incomplete.
 
 ### Resource Links
 
-I'll be updating these resource for my practice, schedule, exercise/utility ideas, and so on, as I go. This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is not about producing 'a thing' like in most repositories git. It's an educational resource I can publicize, and so inherently broad, amorphous, experimental.
-
-#### My Resources
+I'll be updating these resources for my reference as I go.
 
 - [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
 - [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based)
 <!-- - [Rust - Brainstorm](./README_BRAINSTORM.md) - Rough ideas list for this project -->
 
 ---
+
 ---
+
 ### Step 1 - The Rust Programming Language - Book Read Through
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#2d961f" color="#333"  border="1"
@@ -151,21 +151,19 @@ Still cleaning/refining retroactively alongside next steps -->
 
 <!-- <details open>  -->
 
-My initial objective is to read through the ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and do all the primary exercises to become familiar with the language and it's core novel mechanisms that have give Rust it's reputation for safety and performance.
+My initial objective was to read through the ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and complete all the primary exercises to become familiar with the language and it's core novel mechanisms that have given Rust it's reputation for safety and performance.
 
 #### Read-through/Cheat-Sheet Strategy
 
-My implementation has been to read the (sub)chapters, copying in the quality text from the book line by line as bullet points (easier to cut the fat later) as I'm reading - and I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
+My implementation has been to read the (sub)chapters, making notes, and I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
 
-Then I reread important chapters, and while doing Rustlings (next step), completed the super-summaries aka code only section (with comments), added links, and sometimes a 1-2 paragraph chapter summary.
+While doing Rustlings (next step), completed the super-summaries aka mostly code-only sections, added links, comments, summaries.
 
-- Note: it's not always consistent - but I don't want to waste time for the sake of casual observers.
+#### Cheat sheets for the 21 chapters:
 
-#### These are my cheat sheets for each of the 21 chapters:
+If you have professional coding experience - might be a faster way to explore Rust (skim it's syntax and nuances - like safety enforcement). At any rate - it's a record of my learning progress, and reference resource.
 
-If you have already read the rust book (or have professional coding experience) - might be a faster way to explore Rust (or least skim it's syntax and nuances - like safety enforcement - big time). At any rate - it's a record of my learning progress, and reference resource.
-
-Most have a **Super Summary** section that is mostly the code with annotations - as concise as possible - for quick reference. (Work in Progress)
+**Super Summary** sections are mostly just code with annotations - as concise as possible - for quick reference.
 
 1. [Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md)
 2. [Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) <!-- - DONE - but fix writing later. -->
@@ -209,7 +207,9 @@ Most have a **Super Summary** section that is mostly the code with annotations -
 #### UPDATE: FINISHED
 
 ---
+
 ---
+
 ### Side Quest: Rustlings - Exercises/Quizzes
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#2d961f"   border="1"
@@ -239,11 +239,11 @@ Most have a **Super Summary** section that is mostly the code with annotations -
 
 <!-- <details><summary><strong>Details</strong></summary> -->
 
-To reinforce the book's learning outcomes while fresh in mind - I'm committing to some further practicing of the basics - drawing from the book (while I also refine the cheat sheets).
+To reinforce the book's learning outcomes while fresh in mind - I'd committed to some further practicing of the basics - drawing from the book (while I also refine the cheat sheets somewhat).
 
 Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. Doing tests after completing the entire book is better for memory recall anyway.
 
-🦀 (Used my cheat sheets or official API reference only) 🦀
+<!-- 🦀 (Used my cheat sheets or official API reference only) 🦀 -->
 
 The official website for Rustlings is here:
 
@@ -257,7 +257,9 @@ The official website for Rustlings is here:
 <!-- </details> -->
 
 ---
+
 ---
+
 ### Step 2 - Network Security Applications Review/Assignments in Rust
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#e9a700"   border="1"
@@ -285,14 +287,16 @@ The official website for Rustlings is here:
 
 Ok - so I'm choosing this as next step for a few reasons:
 
-1. Socket programming (NetSec) incorporates low-level programming practices that makes good use of advance techniques around concurrency and parallelism (key strengths in Rust). 
-  - In fact, when i did these courses (which were entirely on Unix based systems), our sample code was always in C (for performance, low-level control, and learning un-abstracted fundamentals). Rust is a direct competitor to C for system level programming (albeit still abstracted), therefore a good place to start and really test the core potential of Rust.
+1. Socket programming (NetSec) incorporates low-level programming practices that makes good use of advance techniques around concurrency and parallelism (key strengths in Rust).
+
+- In fact, when i did these courses (which were entirely on Unix based systems), our sample code was always in C (for performance, low-level control, and learning un-abstracted fundamentals). Rust is a direct competitor to C for system level programming, therefore a good place to start and really test the core potential of Rust.
+
 2. I have a personal private project which includes socket programming (I'll discuss more in the ReadMe for this project)
 3. These skills and API language familiarizes would be helpful not only to running and planning my multiplayer game backends, but exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth networking, and so on.
 
-This leg of the project will constitute me reviewing and super-summarizing all the documentation from my Network Security Applications courses briefly, identifying applications worthy or recreating in Rust, and then completing/devising some useful examples - in Rust!
+This leg of the project will constitute me reviewing and super-summarizing all the documentation from my Network Security Applications courses briefly, identifying potential applications and demos in Rust, and then completing/devising a variety of useful examples - in Rust! (As I grow ever stronger - in Rust! WHWhawhwahwahwahawha...)
 
-I have created a specific project ReadMe here:
+I have created the project entry point ReadMe here:
 
 - [NetSec Review Project](./projects/NetSec-Review/NetSec-Review_ReadMe.md)
 

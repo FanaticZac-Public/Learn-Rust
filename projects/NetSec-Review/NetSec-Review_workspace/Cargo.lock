@@ -3,12 +3,5 @@
 version = 4
 
 [[package]]
-name = "domain-socket"
+name = "ipc"
 version = "0.1.0"
-
-[[package]]
-name = "socket-tester"
-version = "0.1.0"
-dependencies = [
- "domain-socket",
-]

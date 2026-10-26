@@ -53,21 +53,57 @@ Here's where I'm organizing the total potential demo list:
 
 ## Rust Project Demo Library
 
-Here is the library I created for it:
+### Rust project hierarchy - Simplified example for each crate. 
+Remember this is part of a larger 'cargo workspace' 
+- so there's only one target built in NetSec_Review_Workspace
+- each crate has it's own toml but on build there is only one download of dependencies for all crates in workspace (save resources)
+- This is ipc example showing only the 00 demo (numbering only for file names)
+- Check each crates README for specific demo details 
+- binaries contain main functions, libraries contain modules (implementations)
+```
+ipc
+├── Cargo.toml
+└── src
+    ├── bin
+    │   ├── ipc_00_client.rs    // binary for client - 'use ipc::ipc_00::server;' 
+    │   └── ipc_00_server.rs    // binary for server - 'use ipc::ipc_00::client;' 
+    ├── ipc_00
+    │   ├── client.rs     // library module definition for ipc_00::client
+    │   └── server.rs     // library module definition for ipc_00::client
+    ├── ipc_00.rs     // idiomatic linkers for 'pub mod client; pub mod server;'
+    └── lib.rs    // core library 'pub mod ipc_00;'
+```
+- Each crate will have it's own make up like this but various examples starting at '00_' for the basic one, etc.
+- Each will have it's own README
 
-- [domain-sockets](./NetSec-Review_workspace/domain-socket/src/lib.rs)
-  To test the domain sockets as 2 different processes, I need to run 2 different binary applications:
-- [domain-socket-server](./NetSec-Review_workspace/socket-tester/src/bin/domain-socket-server.rs)
-- [domain-socket-client](./NetSec-Review_workspace/socket-tester/src/bin/domain-socket-client.rs)\
-
-To run server:
-
+### To run programs
+- These may have arguments later - check their specific ReadMe for the crate
+- binaries are located in /bin folder. 
+  - Normally binary is just /src/main.rs, 
+    - but i have many examples stored in /bin 
+    - so you have to specify which example to run instead.
 ```console
-cargo run --bin domain-socket-server
+// Server:
+$ cargo run --bin ipc_00_server
+```
+```console
+// Client:
+$ cargo run --bin ipc_00_client
 ```
 
-To run client:
+### Demo Examples by category
 
-```console
-cargo run --bin domain-socket-client
-```
+These READMEs will help parse my demo ideas and will also be the location of descriptions for each one. There are also links directly to the 4 main source code sections for each demo within the README.
+
+> ![NOTE]
+> IPC apps will probably get the most attention for learning rust and playing around with sockets. 
+> This is because it doesn't require an actual network and therefore I don't need to test networking to test logical code problem and various communication related activities.
+> However, everything done in IPC could easily be ported to the other socket examples - it just reduces complexity for anything but purposeful production work. 
+
+- [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC)
+- [TCP](./NetSec-Review_workspace/tcp/README_TCP.md)
+- [UDP](./NetSec-Review_workspace/udp/README_UDP.md)
+- [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)
+- [WebRTC](./NetSec-Review_workspace/webRTC/README_WEBRTC.md)
+- [Raw Sockets](./NetSec-Review_workspace/raw/README_RAW.md) - (experimental / lower-level abstractions)
+
