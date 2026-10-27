@@ -104,14 +104,14 @@ I'll maintain this project whenever I'm not employed or otherwise working on a p
 
 My projects steps are laid out below. You can consider the pending ones as flexible nodes I'm interested in pursuing - a list percolated out of the backlog from the ReadMe_Brainstorm document.
 
-This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is not about producing an outcome like in most repositories git. It's an educational learning resource I can publicize, and so inherently broad, amorphous, experimental. However, I will try and formalize some sections like demos, and some notes.
+This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is not about producing an outcome like in most repositories on git. It's an educational learning resource I can publicize, and so inherently broad, amorphous, experimental, incomplete. However, I will try and formalize some sections like demos, and super summary notes.
 
 ### Resource Links
 
-I'll be updating these resources for my reference as I go.
+I'll be updating these resources for my reference as I go. 
 
 - [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
-- [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based)
+- [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based) - Just keeps me on track(ed)
 <!-- - [Rust - Brainstorm](./README_BRAINSTORM.md) - Rough ideas list for this project -->
 
 ---
@@ -157,12 +157,12 @@ While doing Rustlings (next step), completed the super-summaries aka mostly code
 
 #### Cheat sheets for the 21 chapters:
 
-**Super Summary** sections for quick reference that are mostly just the final code with appropriate concise annotations (and stuff i wanted to reinforce) - as concise as possible. If you have professional coding experience - might be a faster way to explore Rust (skim it's syntax and nuances - like safety enforcement). At any rate - it's a record of my learning progress, and resource reference.
+**Super Summary** sections are for quick my quick reference - are mostly final code completion with revenant annotations (and stuff i needed to reinforce) as concise as possible. If you have professional coding experience - might be a faster way to explore Rust (skim it's syntax and nuances - like safety enforcement (ch4 ownership, ch10 lifelines)). At any rate - it's a record of my learning progress, and resource reference.
 
-> [NOTE]
-> This is about me learning (covering the material twice and summarizing), an exercise in memory retention for me - not publishing for others benefit, so i draw the line at pedanticism. 
+> [!NOTE]
+> I draw the line at pedanticism with regard to note taking and refining. 
 
-> [IMPORTANT]
+> [!IMPORTANT]
 > Super Summaries for most chapters are within the sub-chapter links "This chapter contains:" section, as I split out concerns in the directory.
 
 1. [Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md)

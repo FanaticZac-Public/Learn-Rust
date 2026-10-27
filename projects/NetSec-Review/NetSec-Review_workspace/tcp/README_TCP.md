@@ -9,3 +9,6 @@ This is a more
 - [socket2 API](https://docs.rs/socket2/latest/socket2/) socket using advanced configuration options
 
 ## Demo Example Options
+
+- [ ] Get more information about the connection and process 
+
