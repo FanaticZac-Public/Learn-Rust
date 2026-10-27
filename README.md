@@ -18,7 +18,7 @@ A professional learning record of Rust - which will evolve into applications foc
   - Socket Programming (NetSec + Multiplayer Games)
   - Professional Projects
   - Review all course material from degree (and work it in where possible)
-- For this git project to be my reference and career demonstration
+- For this git to be my personal reference and career demonstration
 
 > [!TIP]
 > Productivity Tip: Kill many birds with 1 stone
@@ -34,39 +34,37 @@ My name is Zach, I'm based in Vancouver, British Columbia, Canada, and hold a Ba
 
 ### Repository Purpose
 
-I didn't market myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..), but I had fun and did well. I don't like dumping my instructors resources or dumping my old assignments on git after-the-fact.
+I didn't market myself much throughout my schooling. I used several git accounts, used perforce for games courses, my major projects are top secret (shh..). Frankly I don't like dumping on git my instructors resources or old assignment solutions after-the-fact.
 
 And so that's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great way to review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward.
 
-Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this potentially monotonous process of self-marketing becomes something rather exciting. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this venture.
+Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this monotonous process of self-marketing becomes something rather exciting instead. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this adventure.
 
 Advantages of Rust:
 
 - Compiles into machine code
 - High performance
-  - C/C++-level performance with stronger memory and concurrency safety.
+  - C/C++ level performance with stronger memory and concurrency safety.
 - Safer conduct
   - Memory safety without garbage collection
   - Pushes several run-time errors into the compile time checks
+    - e.g. use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
   - Ownership and borrowing
   - Thread safety
-
-Pushes many potential bugs from runtime to compile time errors:
-
-- e.g. use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
 
 Those advantages are excellent for:
 
 - System Programming
 - Games (Bevy)
-- Embedded Programming
-- Web Assembly
 - Socket programming
+- backend programming
+- Web Assembly
+- Embedded Programming
 
 Some disadvantages:
 
-- Steeper learning curve (not too bad actually)
-- Longer compile time (! espresso time !)
+- Steeper learning curve (not too bad actually!)
+- Longer compile time (maybe in some production environments!)
 
 In short, it offers:
 
@@ -96,19 +94,17 @@ In short, it offers:
 
 ![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
 
-I enjoy the flexible orchestration that solo projects award. Academically I often advocated for individual projects whenever possible for the benefit of creative autonomy without bureaucracy, as well as experience of working on each inch of a project rather than a subset. As a consequence - I take ownership of my work more naturally.
+I enjoy the flexible orchestration that solo projects award. I often advocated for individual projects during my degree, whenever possible, for the benefit of creative autonomy without bureaucracy, as well as experience of working on each inch of a project rather than a subset. As a consequence - I take full ownership of my work more naturally.
 
-Akin to Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra). Weighing new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity foster "Eureka!" moments that were a particular highlights of many academic projects. A compass and a map go hand in hand.
-
-But I digress.
+Like with Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra). Weighing new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity foster "Eureka!" moments that were a particular highlights in some of my academic projects. A compass, a map, and binoculars together - maketh an adventurer. 
 
 ### Plan
 
-I'll maintain this project whenever I'm not employed or working on a private project implementation. I will try and do at least 1 meaningful commit per day.
+I'll maintain this project whenever I'm not employed or otherwise working on a private project implementation. I will try and do at least 1 meaningful commit per day otherwise.
 
-My projects steps are laid out below - you can consider the pending ones as flexible nodes I'm interested in pursuing - a list percolated out of the backlog from the ReadMe_Brainstorm document.
+My projects steps are laid out below. You can consider the pending ones as flexible nodes I'm interested in pursuing - a list percolated out of the backlog from the ReadMe_Brainstorm document.
 
-This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. It's not about producing an outcome like in most repositories git. It's an educational resource I can publicize, and so inherently broad, amorphous, experimental, incomplete.
+This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is not about producing an outcome like in most repositories git. It's an educational learning resource I can publicize, and so inherently broad, amorphous, experimental. However, I will try and formalize some sections like demos, and some notes.
 
 ### Resource Links
 
@@ -157,13 +153,17 @@ My initial objective was to read through the ["The Rust Programming Language"](h
 
 My implementation has been to read the (sub)chapters, making notes, and I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
 
-While doing Rustlings (next step), completed the super-summaries aka mostly code-only sections, added links, comments, summaries.
+While doing Rustlings (next step), completed the super-summaries aka mostly code-only sections, added links, comments, summaries. (The super summaries are the value added part)
 
 #### Cheat sheets for the 21 chapters:
 
-If you have professional coding experience - might be a faster way to explore Rust (skim it's syntax and nuances - like safety enforcement). At any rate - it's a record of my learning progress, and reference resource.
+**Super Summary** sections for quick reference that are mostly just the final code with appropriate concise annotations (and stuff i wanted to reinforce) - as concise as possible. If you have professional coding experience - might be a faster way to explore Rust (skim it's syntax and nuances - like safety enforcement). At any rate - it's a record of my learning progress, and resource reference.
 
-**Super Summary** sections are mostly just code with annotations - as concise as possible - for quick reference.
+> [NOTE]
+> This is about me learning (covering the material twice and summarizing), an exercise in memory retention for me - not publishing for others benefit, so i draw the line at pedanticism. 
+
+> [IMPORTANT]
+> Super Summaries for most chapters are within the sub-chapter links "This chapter contains:" section, as I split out concerns in the directory.
 
 1. [Cheat Sheet - ch01 - Getting Started](./tutorial/Rust%20Prog%20Lang/ch01/ch01-cheat_sheet.md)
 2. [Cheat Sheet - ch02 - Programming a Guessing Game](./tutorial/Rust%20Prog%20Lang/ch02/ch02-cheat_sheet.md) <!-- - DONE - but fix writing later. -->
@@ -207,7 +207,6 @@ If you have professional coding experience - might be a faster way to explore Ru
 #### UPDATE: FINISHED
 
 ---
-
 ---
 
 ### Side Quest: Rustlings - Exercises/Quizzes
@@ -239,9 +238,9 @@ If you have professional coding experience - might be a faster way to explore Ru
 
 <!-- <details><summary><strong>Details</strong></summary> -->
 
-To reinforce the book's learning outcomes while fresh in mind - I'd committed to some further practicing of the basics - drawing from the book (while I also refine the cheat sheets somewhat).
+To reinforce the book's learning outcomes while fresh in mind - I'd committed to some further practicing of the basics - drawing from the book (while I also refined the cheat sheets further).
 
-Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. Doing tests after completing the entire book is better for memory recall anyway.
+Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. Doing tests after completing the entire book is better for practicing memory recall anyway.
 
 <!-- 🦀 (Used my cheat sheets or official API reference only) 🦀 -->
 
@@ -291,10 +290,10 @@ Ok - so I'm choosing this as next step for a few reasons:
 
 - In fact, when i did these courses (which were entirely on Unix based systems), our sample code was always in C (for performance, low-level control, and learning un-abstracted fundamentals). Rust is a direct competitor to C for system level programming, therefore a good place to start and really test the core potential of Rust.
 
-2. I have a personal private project which includes socket programming (I'll discuss more in the ReadMe for this project)
-3. These skills and API language familiarizes would be helpful not only to running and planning my multiplayer game backends, but exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth networking, and so on.
+2. I have a personal private hobby project which includes socket programming (I'll discuss more in the ReadMe for this project) - so this is a pre-req.
+3. These skills and API language familiarizes would be helpful also to running and planning my multiplayer game backends, exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth hacking, and so on. It has widest associations.
 
-This leg of the project will constitute me reviewing and super-summarizing all the documentation from my Network Security Applications courses briefly, identifying potential applications and demos in Rust, and then completing/devising a variety of useful examples - in Rust! (As I grow ever stronger - in Rust! WHWhawhwahwahwahawha...)
+This leg of the project will constitute me reviewing and super-summarizing all the documentation from my Network Security Applications courses briefly, identifying potential applications and demos in Rust, and then completing/devising a variety of  examples - in Rust! Then - I'll do a large project finally (probably).
 
 I have created the project entry point ReadMe here:
 

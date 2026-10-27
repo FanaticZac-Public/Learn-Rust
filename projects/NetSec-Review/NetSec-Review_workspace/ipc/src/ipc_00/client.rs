@@ -1,10 +1,8 @@
 // See readme README_IPC.md for program descriptions
 
 use std::{
-    fs,
     io::{self, Read, Write},
-    os::unix::net::{UnixListener, UnixStream},
-    path::Path,
+    os::unix::net::{UnixStream},
 };
 
 pub fn run_client(socket_path: &str) -> io::Result<String> {

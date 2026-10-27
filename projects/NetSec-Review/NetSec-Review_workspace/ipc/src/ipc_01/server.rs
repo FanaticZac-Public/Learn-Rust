@@ -2,8 +2,8 @@
 
 use std::{
     fs,
-    io::{self, BufRead, BufReader, Read, Write},
-    os::unix::net::{UnixListener, UnixStream},
+    io::{self, BufRead, BufReader},
+    os::unix::net::{UnixListener},
     path::Path,
 };
 

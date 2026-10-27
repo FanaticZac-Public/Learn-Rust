@@ -1,0 +1,2 @@
+std::ptr::Unique<dyn std::error::Error>
+Result<(), Box<dyn std::error::Error>>

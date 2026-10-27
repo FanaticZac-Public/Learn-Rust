@@ -1,13 +1,11 @@
 // See readme README_IPC.md for program descriptions
 
 use std::{
-    fs,
-    io::{self, Read, Write},
-    os::unix::net::{UnixListener, UnixStream},
-    path::Path,
+    io::{self, Write},
+    os::unix::net::{UnixStream},
 };
 
-pub fn run_client(socket_path: &str) -> io::Result<String> {
+pub fn run_client(socket_path: &str) -> io::Result<()> {
     let mut stream = UnixStream::connect(socket_path)?;
 
     let mut message = String::new();
@@ -21,9 +19,9 @@ pub fn run_client(socket_path: &str) -> io::Result<String> {
         stream.write_all(message.as_bytes())?;
     }
 
-    stream.shutdown(std::net::Shutdown::Write)?;
+    // stream.shutdown(std::net::Shutdown::Write)?;
 
-    let mut response = String::new();
-    stream.read_to_string(&mut response)?;
-    Ok(response)
+    // let mut response = String::new();
+    // stream.read_to_string(&mut response)?;
+    // Ok(())
 }

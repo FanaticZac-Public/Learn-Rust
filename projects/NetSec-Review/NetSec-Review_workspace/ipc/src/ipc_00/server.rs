@@ -3,7 +3,7 @@
 use std::{
     fs,
     io::{self, Read, Write},
-    os::unix::net::{UnixListener, UnixStream},
+    os::unix::net::{UnixListener},
     path::Path,
 };
 

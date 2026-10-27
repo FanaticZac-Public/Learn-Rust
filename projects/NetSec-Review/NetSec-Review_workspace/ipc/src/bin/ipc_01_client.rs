@@ -7,7 +7,7 @@ use ipc::ipc_01::client::run_client;
 
 fn main() -> std::io::Result<()> {
     let response = run_client("/tmp/domain-socket.sock")?;
-    print!("Server replied: {response}");
+    // print!("Server replied: {response}");
     Ok(())
 }
 
