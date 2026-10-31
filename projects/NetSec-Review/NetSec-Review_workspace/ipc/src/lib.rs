@@ -9,3 +9,6 @@ pub mod ipc_02;
 
 // Server commands to clients, clients await reconnect, logging
 pub mod ipc_03;
+
+// Adding robust connection handling, multicast, varied data-transfer, UnixDatagram addon
+pub mod ipc_04;

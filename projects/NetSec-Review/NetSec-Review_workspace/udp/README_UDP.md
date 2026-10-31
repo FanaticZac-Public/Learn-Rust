@@ -8,6 +8,6 @@ Ok - so this one is of a particular interest - because it's more multi-player ga
 ## most related crate/API
   - [UdpSocket](https://doc.rust-lang.org/std/net/struct.UdpSocket.html)
   - [tokio UdpSocket](https://docs.rs/tokio/latest/tokio/net/struct.UdpSocket.html) - Tokio’s asynchronous UDP socket to handle network I/O without blocking a thread.
-  - [tokio UdpSocket](https://docs.rs/tokio/latest/tokio/net/struct.UdpSocket.html) - Tokio’s asynchronous UDP socket to handle network I/O without blocking a thread.
 
 ## Demo Example Options
+

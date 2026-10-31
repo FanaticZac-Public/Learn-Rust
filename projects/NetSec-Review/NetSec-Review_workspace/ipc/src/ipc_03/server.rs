@@ -1,4 +1,5 @@
 // See readme README_IPC.md for program descriptions
+
 // Based on example from the UnixListener API but with clientId and hashmap
 use crate::ipc_03::com_proc::*;
 use serde_json;
@@ -94,9 +95,8 @@ pub fn run_server(socket_path: &str) -> io::Result<()> {
             }
         };
 
-        // Only the selected connection gets the command menu.
         let disconnected = {
-            let reader = clients.get_mut(&id).expect("selected client exists");
+            let reader = clients.get_mut(&id).expect("Client does not exist");
             handle_selected_client(reader)?
         };
 

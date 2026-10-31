@@ -23,6 +23,8 @@ But I do want build things custom networking applications using Rust. For exampl
 | --------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
 | ![Matios One-Handed Keyboard](../../images/other-images/OIP-3045244786.jpg) | ![Raspberry Pi Zero 2 W](../../images/other-images/OIP-3191171976.jpg) |
 
+I've created a [Major Project 1](./Major-Project-01_one-hand-keyboard-System.md) document - as I will unify these communications protocols into managing 1 device - this device.
+
 ## Methodology - for this unit
 
 Ok - So I'm reviewing the learning outcomes and materials from the courses mentioned above - I'm still reluctant to put an course materials on git - and it's too verbose - but I'll drop in fundamental summaries, and write my own assignments based on course materials as I go forward.
@@ -100,10 +102,15 @@ These READMEs will help parse my demo ideas and will also be the location of des
 > This is because it doesn't require an actual network and therefore I don't need to test networking to test logical code problem and various communication related activities.
 > However, everything done in IPC could easily be ported to the other socket examples - it just reduces complexity for anything but purposeful production work. 
 
-- [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC)
+- [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC.md) **<- Currently in progress**
 - [TCP](./NetSec-Review_workspace/tcp/README_TCP.md)
 - [UDP](./NetSec-Review_workspace/udp/README_UDP.md)
 - [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)
 - [WebRTC](./NetSec-Review_workspace/webRTC/README_WEBRTC.md)
 - [Raw Sockets](./NetSec-Review_workspace/raw/README_RAW.md) - (experimental / lower-level abstractions)
 - TODO - MAYBE ADD COVERT BOTNET CONCERNS (PORT KNOCKING, ETC)
+
+
+## Appendix Eh: Major Project Ideas
+- Keyboard Commander (My one handed wearable keyboard project)
+- My own peer sharing service protocol.

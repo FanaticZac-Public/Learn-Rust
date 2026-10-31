@@ -10,7 +10,8 @@ It should be noted that in linux most of the packages for bluetooth are built on
     - Headset Profile (HSP)
     - Advanced Audio Distribution Profile (A2DP)
     - Serial Port Profile (SPP)
-    - (There's also more capabilies listed in the BlueR crate that can utilize LSCAP, RFCOMM sockets, mesh functionality, etc.)
+    - (There's also more capabilities listed in the BlueR crate that can utilize LSCAP, RFCOMM sockets, mesh functionality, etc.)
+- I believe i can also emulate a bluetooth keyboard (with one handed keyboard project) - which would work on any system (windows/mac), not just Unix. And would be easier to connect to PCs I don't own (could experiment)
 
 ## More application purpose demos
 - Setting up file stream between 2 devices

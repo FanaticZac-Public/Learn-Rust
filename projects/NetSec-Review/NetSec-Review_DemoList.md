@@ -1,6 +1,7 @@
 
-## NetSec Courses - Rust worthy application list - post review
+# NetSec Courses - Rust worthy application list - post review
 
+## Ideas from NetSec Coursework Reviews
 ### COMP 7003 
 
 This unit was more about Linux system review and most of the security stuff was OS based rather than programming. But these are noted:
@@ -57,7 +58,7 @@ This unit was more about Linux system review and most of the security stuff was 
   - (There's also more capabilies listed in the BlueR crate that can utilize LSCAP, RFCOMM sockets, mesh functionality, etc.)
 - For secure coding practices - look below and apply
 
-### Bigger demo ideas (that could incorporate more at once)
+#### Bigger demo ideas (that could incorporate more at once)
 
 - HTTPS server again but expanded
 - Chat Client
@@ -92,3 +93,13 @@ Beyond being a good way to test my custom networking protocols and libraries wit
 - A desktop app and background service communicate so the service can keep working even if the app closes.
 - A privileged system service can perform a specific operation for a less-privileged app, without giving that app full system access.
 - Separate programs written in different languages, or maintained by different teams, can cooperate through a defined message format.
+
+## Other Demo Ideas or tasks to implement
+
+Major Project 1 - Keyboard Commander
+
+Note for future (that i want to keep present of mind):
+- I do actually more more than one client type (proxy client, computational client, )
+  - and for a future adjustment to be a botnet functionality (distributed computing)
+    - Like for cracking passwords (is a good one) but others - split the work on some heavy computational task
+  - and so i want an abstract type and special types - later

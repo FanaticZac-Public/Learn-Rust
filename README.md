@@ -94,9 +94,9 @@ In short, it offers:
 
 ![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
 
-I enjoy the flexible orchestration that solo projects award. I often advocated for individual projects during my degree, whenever possible, for the benefit of creative autonomy without bureaucracy, as well as experience of working on each inch of a project rather than a subset. As a consequence - I take full ownership of my work more naturally.
+<!-- I enjoy the flexible orchestration that solo projects award. I often advocated for individual projects during my degree, whenever possible, for the benefit of creative autonomy without bureaucracy, as well as experience of working on each inch of a project rather than a subset. As a consequence - I take full ownership of my work more naturally.
 
-Like with Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra). Weighing new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity foster "Eureka!" moments that were a particular highlights in some of my academic projects. A compass, a map, and binoculars together - maketh an adventurer. 
+Like with Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra). Weighing new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity foster "Eureka!" moments that were a particular highlights in some of my academic projects. A compass, a map, and binoculars together - maketh an adventurer. -->
 
 ### Plan
 
@@ -104,11 +104,11 @@ I'll maintain this project whenever I'm not employed or otherwise working on a p
 
 My projects steps are laid out below. You can consider the pending ones as flexible nodes I'm interested in pursuing - a list percolated out of the backlog from the ReadMe_Brainstorm document.
 
-This repository is a large catch all for a bunch of things that I'm willing to share - stuff in different states of progress. This is not about producing an outcome like in most repositories on git. It's an educational learning resource I can publicize, and so inherently broad, amorphous, experimental, incomplete. However, I will try and formalize some sections like demos, and super summary notes.
+This repository is a large catch all for a bunch of things that I'm willing to share. It's not about producing an distinct software module, like most repositories on git. It's an educational/learning resource I can publicize, and so inherently broad, amorphous, experimental. However, I will try and formalize some sections like demos, and super summary notes.
 
 ### Resource Links
 
-I'll be updating these resources for my reference as I go. 
+I'll be updating these resources for my reference as I go.
 
 - [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
 - [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based) - Just keeps me on track(ed)
@@ -147,7 +147,7 @@ Still cleaning/refining retroactively alongside next steps -->
 
 <!-- <details open>  -->
 
-My initial objective was to read through the ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and complete all the primary exercises to become familiar with the language and it's core novel mechanisms that have given Rust it's reputation for safety and performance.
+My initial objective was to read through the full ["The Rust Programming Language"](https://doc.rust-lang.org/book/title-page.html) book and complete all the primary exercises to become familiar with the language and it's core novel mechanisms that have given Rust it's reputation for safety and performance.
 
 #### Read-through/Cheat-Sheet Strategy
 
@@ -158,9 +158,6 @@ While doing Rustlings (next step), completed the super-summaries aka mostly code
 #### Cheat sheets for the 21 chapters:
 
 **Super Summary** sections are for quick my quick reference - are mostly final code completion with revenant annotations (and stuff i needed to reinforce) as concise as possible. If you have professional coding experience - might be a faster way to explore Rust (skim it's syntax and nuances - like safety enforcement (ch4 ownership, ch10 lifelines)). At any rate - it's a record of my learning progress, and resource reference.
-
-> [!NOTE]
-> I draw the line at pedanticism with regard to note taking and refining. 
 
 > [!IMPORTANT]
 > Super Summaries for most chapters are within the sub-chapter links "This chapter contains:" section, as I split out concerns in the directory.
@@ -207,6 +204,7 @@ While doing Rustlings (next step), completed the super-summaries aka mostly code
 #### UPDATE: FINISHED
 
 ---
+
 ---
 
 ### Side Quest: Rustlings - Exercises/Quizzes
@@ -249,9 +247,9 @@ The official website for Rustlings is here:
 - [Official Rustlings Page](https://rustlings.rust-lang.org/)
 - [Rustlings Git](https://github.com/rust-lang/rustlings)
 
-#### UPDATE: FINISHED
-
 ![Finished Screenshot](./images/rust-images/Screenshot%20from%202026-10-16%2021-02-17.png)
+
+#### UPDATE: FINISHED
 
 <!-- </details> -->
 
@@ -290,14 +288,15 @@ Ok - so I'm choosing this as next step for a few reasons:
 
 - In fact, when i did these courses (which were entirely on Unix based systems), our sample code was always in C (for performance, low-level control, and learning un-abstracted fundamentals). Rust is a direct competitor to C for system level programming, therefore a good place to start and really test the core potential of Rust.
 
-2. I have a personal private hobby project which includes socket programming (I'll discuss more in the ReadMe for this project) - so this is a pre-req.
+2. I have a personal private hobby project which includes socket programming (I'll discuss more in the ReadMe for this project) - so this is a pre-req. (Link below as well now)
 3. These skills and API language familiarizes would be helpful also to running and planning my multiplayer game backends, exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth hacking, and so on. It has widest associations.
 
-This leg of the project will constitute me reviewing and super-summarizing all the documentation from my Network Security Applications courses briefly, identifying potential applications and demos in Rust, and then completing/devising a variety of  examples - in Rust! Then - I'll do a large project finally (probably).
+This leg of the project will constitute me reviewing and super-summarizing all the documentation from my Network Security Applications courses briefly, identifying potential applications and demos in Rust, and then completing/devising a variety of examples - in Rust! Then - I'll do a large project finally (probably).
 
 I have created the project entry point ReadMe here:
 
 - [NetSec Review Project](./projects/NetSec-Review/NetSec-Review_ReadMe.md)
+- [Major Project 1 - One Handed Keyboard Build](./projects/NetSec-Review/Major-Project-01_one-hand-keyboard-System.md)
 
 And so... project commenceth!
 

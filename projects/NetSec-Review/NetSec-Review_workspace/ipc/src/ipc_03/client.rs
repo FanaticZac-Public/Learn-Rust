@@ -29,7 +29,6 @@ pub fn run_client(socket_path: &str) -> io::Result<()> {
             }
         };
 
-        // Replace this with the actual client-side work for each command.
         let result = handle_command(command);
 
         let mut response = serde_json::to_string(&result)
