@@ -11,7 +11,7 @@
 
 ## Demo ideas list
 
-See [Appendix Eh](#appendix-eh---some-more-brainstorming) for more information
+See [Appendix Eh](#appendix-eh) for more information
 
 ---
 
@@ -24,7 +24,7 @@ See [Appendix Eh](#appendix-eh---some-more-brainstorming) for more information
   - The client transmits a message
   - The server receives that message
     - prints that massage and replies
-  - The client receives servers message, prints, and shutdown
+  - The client receives servers message and prints
 
 ### Source / Outcome
 
@@ -39,9 +39,12 @@ See [Appendix Eh](#appendix-eh---some-more-brainstorming) for more information
 
 ## Example 2 - Basic Looped IPC User Messenger
 
-This time I'm going model it after ch02 of the Rust Language Book (guessing game), except without the guessing. Effectively i want a little message loop where user as client can keep typing messages and server will print it out - and program doesn't quit until canceled ctl+C
+This time I'm going model it after ch02 of the Rust Language Book (guessing game), except without the guessing game part. Effectively i want a little message loop where user as client can keep typing messages and server will print it out - and program doesn't quit until canceled ctl+C
 
 1. Server: Add a loop, checking, and printing out messages received
+
+- Uses newline limiter
+
 2. Client: Maintains connection (don't worry about reading from server)
    - and asks for user input on loop to send to server.
 
@@ -80,13 +83,12 @@ Rust language feature used: **IO (input)**
 
 ---
 
-## Example 3 - More clients and connection information
+## Example 3 - Manage more clients and and store connection information
 
 - Let's start with getting more connection data
-  - (actually, for ipc, the stream itself can't access its own process information other than by reading it from /proc or using OS calls.)
-  - So I'ved added a static variable for just handling connections - DONE
-- Have multiple clients talk to the server at the same time - DONE
-- We'll indicate who's talking via the terminal - DONE
+  - I've added atomic static variable for just handling connections.
+- Have multiple clients talk to the server at the same time
+- Indicate who's talking via the terminal
 
 #### API Study/Review:
 
@@ -95,13 +97,13 @@ Let's review the API:
 - [Unix Stream](https://doc.rust-lang.org/std/os/unix/net/struct.UnixStream.html)
 - [Unix Listener](https://doc.rust-lang.org/std/os/unix/net/struct.UnixListener.html)
 
-##### Notes
+<!-- ##### Notes
 
 - UnixListener methods: accept, incoming, local_addr, set_nonblocking, take_error, try_clone
 - Example 2 was just not managing new connections in new threads
   - looping through listener.incoming() and spawning new threads for each client is way to go.
   - struct 'incoming' implements traits:
-    - Debug, Iterator, (auto-traits: Freeze, RefUnwindSafe, Send, Sync, Unpin, UnsafeUnpin, UnwindSafe)
+    - Debug, Iterator, (auto-traits: Freeze, RefUnwindSafe, Send, Sync, Unpin, UnsafeUnpin, UnwindSafe) -->
 
 ### Source / Outcome
 
@@ -118,28 +120,36 @@ Rust language feature used: **static variable counting**, **threads**
 
 ---
 
-## Example 4 - Basic IPC command selection template
+## Example 4 - Basic full-bodied IPC command selection
 
 Messages are great - but you ain't a queen B unless you directing the workers. 🐝
 
 - Add server command options (will use enum and match)
 - Clients will respond to the server command and do something - and report back.
+  - Stored as hashmap
 - I'm also going to rework the core application a bit more to handle
+
+#### Implementation Notes
+
+- Server now has a double nested menu
+  - you can select from printed active connections
+    - then select which of the unified enum options from the com_proc.rs file:
+      - ping, show notification, show image, play sound.
+  - In order be listening for connections while I await keyboard commands I throw the connection listener.incoming() in it's own thread and use mpsc to transfer data between new thread and main thread
+  - Both client and server files use the same enum definitions from comp_proc.rs, and commands are serialized/deserialized with serde_json::{to_string, from_str} commands respectively.
 
 #### API Study/Review:
 
 - [Serde](https://serde.rs/) - Serial/Deserializer.
 
-### Source / Outcome
-
-Ok. So build this out more on server and client side. Server has effectively a double nested menu - where you can select from active connections which that you'd like to interactive with (is displayed as the IDs), then select which of the unified enum options from the com_proc.rs file: ping, show notification, show image, play sound. On Server: In order be listening for connections while I await keyboard commands I throw the connection listener.incoming() in it's own thread and use mpsc to transfer data between threads (aka that thread and the main thread). Both client and server files use the same enum definitions from comp_proc.rs, and commands are serialized/deserialized with serde_json::{to_string, from_str} commands respectively.
-
-Rust language feature used:
+### Rust language feature used:
 
 - **enum states matching**,
 - **mpsc (multi-producer, single-consumer) thread communication**
 - **Serialization / Deserialization with Serde/Serde_json crate**
 - **hashmap usage**
+
+### Source / Outcome
 
 | Role     | Library                                    | Binary                                         | Description                                |
 | -------- | ------------------------------------------ | ---------------------------------------------- | ------------------------------------------ |
@@ -157,27 +167,62 @@ _Server (left) - sending individual commands to both clients (switching back and
 
 ## Side Bar
 
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+   <strong>
 Ok - after much ruminating on what to do next (and brainstorming a bunch of potential demos of IPC that didn't hit the mark for real use-case examples), I started developing a the real-use case I have for the whimsical final goal of this NetSec-Review venture - which I've now formalized here in a major project for this project:
+    </strong> 
+    </td>
+  </tr>
+</table>
 
 - [Major Project 1 - Keyboard Commander](./Major-Project-01_1-hand-keyboard-System.md)
-- See [MP1 - Keyboard Commander - Feature 1](../../Major-Project-01_one-hand-keyboard-System.md#feature-1---full-remote-keyboard-control) for my real world use case of an root-only service being interacted with by client interface for security and encapsulation reasons. I'm effectively key-logging myself.
-
-Note: I still want to continue some examples for IPC - but mostly around creating a robust connection - rather than working on more trivial aspects like (encryption, authentication, etc) - that I will push forward to work into TCP examples (where they're more relevant anyway)
+- See [MP1 - Keyboard Commander - Feature 1](../../Major-Project-01_one-hand-keyboard-System.md#feature-1---full-remote-keyboard-control) for my real world use case of an root-only service being interacted with by client interface for security and encapsulation reasons. (It's effectively a keylogger that will transmit when mode selected to act as remote keyboard - Danger Zone!)
 
 ---
 
 ## Example 5 - Robust connection handling, multicast, varied data-transfer, UnixDatagram addon
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+   <strong>
+Most program complete example
+    </strong> 
+    </td>
+  </tr>
+</table>
 
 I want example 5 (04) to have a complete base copy for reworking later for the final project.
 
 Next steps:
 
 - Add robustness to the clients (mixture of error handling )
-  - [x] I want then to not fail on disconnect but instead search for reconnection periodically
-  - ~~tI want to add on-shutdown style code to notify rather than resume connection is live until data transfer attempt~~t
-    - [x] This i justed handled with logical removing of client connections when attempting multi-cast
-- [x] I want to also have an option for sending the same data to all clients at the same time. (multi-cast)
-- [x] I want to include data transfers building on Rusts enum data management capabilities
+  - Prevent fail on disconnect and instead search for reconnection periodically
+    - Adjusted handler to remove client connections
+- Add option for sending the same data to all clients at the same time and implement logic. (multi-cast)
+- Implement actual data transfers using Rust style idiomatic enum Option management capabilities
   - Such that 'show image' transfers the image, same with sound (mp3)
   - (I still don't care too much about having real world data or linux control - for this with IPC)
 
@@ -190,41 +235,103 @@ Next steps:
 
 ### New Rust API/Crates
 
-Actually none in this case - full robustness though.
+- Used proper Option enum (Rusts version of memory safe null)
 
-### Source links
+### Source / Outcome
 
-| Role     | Library                                    | Binary                                         | Description                                |
-| -------- | ------------------------------------------ | ---------------------------------------------- | ------------------------------------------ |
-| Client   | [ipc_04/client.rs](./src/ipc_04/client.rs) | [ipc_04_client.rs](./src/bin/ipc_04_client.rs) |                                            |
-| Server   | [ipc_04/server.rs](./src/ipc_04/server.rs) | [ipc_04_server.rs](./src/bin/ipc_04_server.rs) |                                            |
-| Com proc | [ipc_04/com_proc](./src/ipc_04/com_proc.rs)   |                                                | Unified Communication Protocol action bank |
-
-### Outcome
+| Role     | Library                                     | Binary                                         | Description                                |
+| -------- | ------------------------------------------- | ---------------------------------------------- | ------------------------------------------ |
+| Client   | [ipc_04/client.rs](./src/ipc_04/client.rs)  | [ipc_04_client.rs](./src/bin/ipc_04_client.rs) |                                            |
+| Server   | [ipc_04/server.rs](./src/ipc_04/server.rs)  | [ipc_04_server.rs](./src/bin/ipc_04_server.rs) |                                            |
+| Com proc | [ipc_04/com_proc](./src/ipc_04/com_proc.rs) |                                                | Unified Communication Protocol action bank |
 
 ![alt text](image-3.png)
-
 
 _Server (left) - sending data packets commands to both clients (multicast)_
 
 _Also shows clients auto reconnecting on failure every 5 seconds_
 
-## Example 6 - Into example of UnixDatagram
+## Example 6 - Simple UnixDatagram
 
-- Let's do one option to utilize UnixDatagram (UDP style socket) on the side
-- Let's see if we can work fd passing into this example also so I can cover all the items I have for now with domain sockets.
+- Utilize UnixDatagram (connection-less UDP style socket)
+  - Just for posterity example
+
+### Implementation Notes
+
+- I create bi-directional communication by using 2 socket files but they're one-way each.
+
+### Notes
+
+- You can bind to a specific recv addr or use unbounded() to recv from any.
+  - This would be restricted through file permission system only.
+- There are some recv_vectored options for data + ancillary data
 
 ### New Rust API/Crates
+
 - [UnixDatagram](https://doc.rust-lang.org/std/os/unix/net/struct.UnixDatagram.html)
   - Unix Datagrams are also reliable and ordered (unlike UDP)
   - Bonus: send() is bounded, so you don't have to parse messages from byte stream
   - It's uni-directional 1-to-many, or 1-to-1.
-    - So security hardened from server perspective
-      - E.g. If server is sending to a less privileged client. (no revolving door)
-  - However socket buffers are finite, so sends can still fail under pressure.
-    - So "one send = one message"
+    - Use-case: E.g. If server is sending to a less privileged client. (no revolving door, like multiprocessor observer)
+  - "one send = one message"
 
+| Role   | Library                                    | Binary                                         |
+| ------ | ------------------------------------------ | ---------------------------------------------- |
+| Client | [ipc_05/client.rs](./src/ipc_05/client.rs) | [ipc_05_client.rs](./src/bin/ipc_05_client.rs) |
+| Server | [ipc_05/server.rs](./src/ipc_05/server.rs) | [ipc_05_server.rs](./src/bin/ipc_05_server.rs) |
 
+![alt text](image-5.png)
+
+_Very simple example using UnixDatagram - datapass and shutdown - ignore peer message_
+
+## Example 7 - Crate uds (UnixDomainSockets)
+
+- one example with SOCK_SEQPACKET
+- One example of abstract addresses (Linux Specific)
+  - I just learned about this one from the module - so let's try!
+- One example of fd-passing (my favorite)
+
+### Implementation Notes
+
+- Ok - so obviously fd (file descriptors) are process specific in the process descriptor table - what we're doing though - is passing the resource, not just the number (as though it would mean anything) which creates new fd in the receiving processes fd table.
+  - The receiving process makes it's own fd entry - but the point is we can say outsource some work on a resource that is owned by another process (or user).
+- Note: The primary use cases for doing fd-passing is to say pass a TCP connection to another process, or for supervisor process to pass one endpoint of a resource to a worker. (I may later do this in MP1 - for now program just indicates the fd is passed
+  )
+
+### Notes
+
+- uds crate has support for abstract addresses, fd-passing, SOCK_SEQPACKET sockets
+  - It effectively extends functionality of default unix sockets (and more)
+  - SEQPACKET - preserves message boundaries and a connection, with reliable, ordered delivery.
+    - UnixStream - reliable and ordered but is byte stream
+    - UnixDatagram - preserves message boundaries - but connection-less
+- "Everything-is-a-file" - my instructor lied!
+  - Ok - abstract socket addresses are a Linux kernel feature allows setting a path with a prefixed null byte ('\0') Read unix man page for more info:
+  - [unix man page for abstract socket](https://man7.org/linux/man-pages/man7/unix.7.html) - under abstract
+    - also read security in-case there was relevant something but nothing special about abstract sockets
+
+### Rust language feature used:
+
+- first use of **_'unsafe'_** rust code.
+
+### New Rust API/Crates
+
+- [Crate uds](https://docs.rs/uds/latest/uds/)
+  - [UnixStreamExt (Trait)](https://docs.rs/uds/latest/uds/trait.UnixStreamExt.html)
+  - [UnixListenerExt (Trait)](https://docs.rs/uds/latest/uds/trait.UnixListenerExt.html)
+  - [UnixDatagram (Trait)](https://docs.rs/uds/latest/uds/trait.UnixDatagramExt.html)
+  - uses Tokio library for nonblocking
+
+### Source / Outcome
+
+| Role   | Library                                    | Binary                                         |
+| ------ | ------------------------------------------ | ---------------------------------------------- |
+| Client | [ipc_06/client.rs](./src/ipc_06/client.rs) | [ipc_06_client.rs](./src/bin/ipc_06_client.rs) |
+| Server | [ipc_06/server.rs](./src/ipc_06/server.rs) | [ipc_06_server.rs](./src/bin/ipc_06_server.rs) |
+
+![alt text](image-4.png)
+
+_Shows using abstract socket address, SOCK_SEQPACKET, and fd passing, receiver reads from /etc/host_
 <!--
 Let's split commands up into recon and implementation using my existing commands
 
@@ -252,7 +359,7 @@ Let's split commands up into recon and implementation using my existing commands
 
 ---
 
-## Appendix A - Some more brainstorming
+## Appendix A
 
 These were eating up too much space at top
 
@@ -267,26 +374,22 @@ These were eating up too much space at top
 - [x] bidirectional communication back and forth
   - (did unidirectional - but user prompts are played out)
 - [x] handle multiple clients (initial)
-- [DOING] Parse different commands for transmitting different data types
-- [MOVING_TO_TCP] Add encryption to the messages (matters less for IPC)
-- [MOVING_TO_TCP] Get more information about the connection and process
+- [x] Parse different commands for transmitting different data types
   - This doesn't matter for IPC - with use Auth instead
-- [DOING] Robust connection control
+- [x] Robust connection control
   - currently drops when one client shuts down
-- [DOING] Should do some examples with UnixDatagram instead of stream.
-- [DOING] Add authentication
-- [DOING] Logging of connection history.
-- [DOING] Cleanup and failure handling
-- [ ] Show example of SEQPACKET with uds library
-- [ ] Show example of fd passing (uds or UnixStream)
+- [x] Should do some examples with UnixDatagram instead of stream.
+- [x] Cleanup and failure handling
+- [x] Show example of SEQPACKET with uds library
+- [x] Show example of fd passing (uds or UnixStream)
 
 ### More unified example
 
 To more test a real world scenario:
 
-- [ ] Setup up a service to run in background with special permissions (for some reason)
+- [MOVING_TO_MP1] Setup up a service to run in background with special permissions (for some reason)
   - Then have limited permission app (maybe user gui) send requests.
-- [ ] Setup a command and control scenario\
+- [x] Setup a command and control scenario
 
 ### Brainstorm - what use cases are IPC connections best for
 

@@ -59,6 +59,8 @@ dependencies = [
  "ctrlc",
  "serde",
  "serde_json",
+ "uds",
+ "unix-ancillary",
 ]
 
 [[package]]
@@ -179,10 +181,28 @@ dependencies = [
 ]
 
 [[package]]
+name = "uds"
+version = "0.4.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "885c31f06fce836457fe3ef09a59f83fe8db95d270b11cd78f40a4666c4d1661"
+dependencies = [
+ "libc",
+]
+
+[[package]]
 name = "unicode-ident"
 version = "1.0.27"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563"
+
+[[package]]
+name = "unix-ancillary"
+version = "0.6.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b8acd22a6c7aa27eb5b947514b22601274a86d56fe671ec1e15960e536d6d6d"
+dependencies = [
+ "libc",
+]
 
 [[package]]
 name = "windows-link"

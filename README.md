@@ -94,9 +94,9 @@ In short, it offers:
 
 ![Rust Scuttle](./images/rust-images/rust-scuttle.gif)
 
-<!-- I enjoy the flexible orchestration that solo projects award. I often advocated for individual projects during my degree, whenever possible, for the benefit of creative autonomy without bureaucracy, as well as experience of working on each inch of a project rather than a subset. As a consequence - I take full ownership of my work more naturally.
+I enjoy the flexible orchestration that solo projects award. I often advocated for individual projects during my degree, whenever possible, for the benefit of creative autonomy without bureaucracy, as well as experience of working on each inch of a project rather than a subset. As a consequence - I take full ownership of my work more naturally.
 
-Like with Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra). Weighing new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity foster "Eureka!" moments that were a particular highlights in some of my academic projects. A compass, a map, and binoculars together - maketh an adventurer. -->
+Like with Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstra). Weighing new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity foster the sorts "Eureka!" moments that were a particular highlight in some of my major academic projects. A compass, a map, and binoculars - together - maketh an adventurer.
 
 ### Plan
 

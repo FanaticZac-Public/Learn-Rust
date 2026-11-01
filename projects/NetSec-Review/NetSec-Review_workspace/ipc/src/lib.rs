@@ -10,5 +10,11 @@ pub mod ipc_02;
 // Server commands to clients, clients await reconnect, logging
 pub mod ipc_03;
 
-// Adding robust connection handling, multicast, varied data-transfer, UnixDatagram addon
+// Robust connection handling, multicast, data-transfer, 
 pub mod ipc_04;
+
+// Simple UnixDatagram example
+pub mod ipc_05;
+
+// Using uds (crate) for abstract addr, fd-passing, SOCK_SEQPACKET
+pub mod ipc_06;
