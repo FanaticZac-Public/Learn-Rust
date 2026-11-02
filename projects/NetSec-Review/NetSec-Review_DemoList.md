@@ -1,8 +1,8 @@
-
 # NetSec Courses - Rust worthy application list - post review
 
 ## Ideas from NetSec Coursework Reviews
-### COMP 7003 
+
+### COMP 7003
 
 This unit was more about Linux system review and most of the security stuff was OS based rather than programming. But these are noted:
 
@@ -12,7 +12,6 @@ This unit was more about Linux system review and most of the security stuff was 
   - It would help me get more familiar with these commands as well (but i would want it to do something the commands themselves cannot - and more useful than script - maybe just work into the botnet at the end for autonomous Reconnaissance)
 
 ### 7005
-
 
 - Use rust to collect as much inode data as you can - see what you can get from internal via it's own processes file descriptor table, and/or from proc, and from open file table.
 - (might just be linux review) but use rust perhaps to collect virtual file systems: proc, dev, etc.
@@ -65,23 +64,18 @@ This unit was more about Linux system review and most of the security stuff was 
 - Setting up my own email server
 - Peer Sharing App
 
-## Application Demos
-
-I've created a 'cargo workspace' in `NetSec-Review_workspace` that allows me to have several library projects and binary projects together - and they share downloaded dependencies and one target folder.
-
-Anyway - As I'm (re)creating some functional examples in Rust relating to Network Security applications, I'm going to create the various library projects, and then run them in the socket-tester binary program.
-
 ### Socket Topic board
 
-Doing the NetSec programming course in Rust will set me up for some cool programs later, I will touch on:
+Reviewing the NetSec programming courses in Rust will set me up for some programs later, I will touch on:
 
 - Domain Sockets aka (IPC: Inter-Process Communication)
 - TCP
 - UDP
 - Bluetooth test
 - ESP01 wireless test
-- BotNet basic Example
-- (There is also ic2 connection using a similar protocol - worth as lease a summary explanation that this extends beyond wifi style networking to circuitry)
+- BotNet basic Example 
+- There is also electronics protocols to check out. 
+    - ic2 connection using a similar protocol (can't remember what it was on my imu breakout - worth as least a summary explanation that this extends beyond wifi style networking to circuitry)
 
 ### Domain Sockets
 
@@ -96,10 +90,3 @@ Beyond being a good way to test my custom networking protocols and libraries wit
 
 ## Other Demo Ideas or tasks to implement
 
-Major Project 1 - Keyboard Commander
-
-Note for future (that i want to keep present of mind):
-- I do actually more more than one client type (proxy client, computational client, )
-  - and for a future adjustment to be a botnet functionality (distributed computing)
-    - Like for cracking passwords (is a good one) but others - split the work on some heavy computational task
-  - and so i want an abstract type and special types - later

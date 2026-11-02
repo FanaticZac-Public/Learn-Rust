@@ -10,8 +10,10 @@ This is a more
 
 ## Demo Example Options
 
-- [ ] Get more information about the connection and process 
-- [MOVING_TO_TCP] Add encryption to the messages (matters less for IPC)
-- [MOVING_TO_TCP] Get more information about the connection and process
-- [MOVING_TO_TCP] Add authentication
-- [MOVING_TO_MP1] Logging of connection history.
+- [] Get information about the connection and process 
+- [] Go over all TCP options
+- [] Add encryption to the messages (matters less for IPC)
+- [] Get more information about the connection and process
+- [] Add authentication
+- [] Logging of connection history.
+- 

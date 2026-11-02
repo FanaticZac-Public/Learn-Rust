@@ -10,11 +10,15 @@ I have picked up this fancy and extremely low-profile (but still full size), Mat
 
 ## Background
 
-The Matias keyboard works by mirroring the keys when holding down the space bar - all the left keys become right keys. It was actually designed for people with disabilities, so overall its pretty intuitive - it's meant for real work. There are some special usage requirements for getting all the special character so i may rework some of the inputs later for coding and electronics control - but that's down the road.
+The Matias keyboard works by mirroring the keys when holding down the space bar with your thumb. All the left keys are mirrored right keys. It was actually designed for people with disabilities, so overall its pretty intuitive - it's meant for real work. There are some special usage requirements for getting all the special character so i may rework some of the key-mapping later.
 
 ## Project goals
 
-Effectively i want this one-handed keyboard to be a wearable keyboard and small enough i could clip to my pocket. still have full typing control when on the train or doing a presentation. At home i actually want this to work like a universal remote control for my various computers at home (and robotics and electronics projects) by entering a key or some other switch to toggle effortlessly between devices - and then for my keys to be logged and transmitted to that particular device.
+Effectively i want this one-handed keyboard to be a wearable keyboard and small enough i could clip to my pocket. still have full typing control when doing a presentation or just messing around.
+
+At home i actually want this to work like a universal remote control several computers at home (and robotics and electronics projects) by entering a key or gpio switch and toggle effortlessly between devices - and then for my keys to be transmitted to that particular device like a wireless keyboard.
+
+I should be able to use it for coding (if necessary) and also want modes for use-cases like electronics control and so forth.
 
 Primary Goal Queue:
 
@@ -22,17 +26,18 @@ Primary Goal Queue:
 
 ## OS System
 
-So being as I'm already reviewing all my NetSec material - and being as this device is meant to be a portable wireless keyboard with a brain, and that the Raspberry Pi has a Debian Linux OS and will have some sensitive communication data relating to other systems I own - I will harden this device to be a fully secure utility device. Being as this Raspberry Pi is a small low performance PC - this is an area where Rust's performance acumens makes the most impact.
+Being as this device is will be a portable wireless keyboard with a new brain with full Linux distro and will have sensitive communication data relating to other systems and networks I own - I will harden this device as much as possible. The Raspberry Pi Zero W2 is a small low performance PC - but that's exactly an area where Rust's performance acumens makes the most impact.
 
-Features:
+OS setups (to be updated as I go over review material):
 
-- Firewall
-- IDS
--
+- Firewall (I really want locked down confirmed addr schema)
+- IDS (With gpio - it would be fun to have physical indicators - sounds, lights, buzzer, vibration)
 
 ## Software and Networking Protocols
 
-Since this NetSec-Review chapter is largely in the spirit of socket application programming - in Rust - I'm going to try and work some use-cases and experiments. Frankly - I never intended to focus on IPC that much - but in trying to make use-cases for demos in this Review chapter - I do want to trying running the main control system as a elevated background service - and have client control switch modes to port keyboard key-presses, and perhaps other modes and features - encapsulating some of the privileged functions.
+Since this NetSec-Review chapter is largely in the spirit of socket application programming - in Rust - I'm going to try and work some use-cases and experiments (more then necessary probably).
+
+For IPC - I do want to trying running the main control system as a elevated supervisor service with limited privilege workers. I'll have some client control switch modes to port keyboard key-presses, and perhaps other modes and features - encapsulating some of the privileged functions.
 
 At any rate - setting up a unified communication protocol will let me port
 
@@ -42,12 +47,14 @@ Features:
   - For IPC - I started her for learning Rust - but I think i would like to work in an IPC service structure that can handle the switching for the keyboard forwarding and other communication protocols - in OS.
   - They that inter-process service can handle each socket connection to each registered device as it's own limited admin process.
     - This will protect the what is basically a raw keylogger
+  - dns (crate) has extended capabilities for Unix sockets including fd-passing (tcp connections perhaps), SOCK_SEQPACKET.
+    - (Note abstract socket addr is a security concern)
 - TCP
   - Obviously for a keyboard we want a reliable protocol where every click matters
 - UDP
   - If I add some sort of mouse, joystick, camera feed, etc imu as input - I'll utilize this protocol.
 
-### Feature 1 (Priority) - Full Remote Keyboard Control
+### Major Feature 1 (Priority) - Full Remote Keyboard Control
 
 - IPC server that is basically a key logger program, but only logging when the 'redirect keyboard input' mode is selected:
   - it will disconnect the existing keyboard input from being read by the kernel
@@ -59,8 +66,8 @@ Features:
 - TCP Client will then take those keyboard events and register them as a virtual keyboard on controlled PC.
 
 #### Security Concerns
-- Effectively this involves creating an administrated key-logger - and passing those values (in certain mode) to the client and over a socket connection. 
 
+- Effectively this involves creating an administrated key-logger (in certain mode) - and passing those values  to the client and over a socket connection.
 
 #### New Rust API/Crates
 
@@ -79,17 +86,29 @@ Features:
 - 3.7v lithium battery charger
 - 3.7v lithium phone battery
 - (maybe) IR blaster
-- (maybe) detachable IMU - for mouse.
+- (maybe) detachable IMU - for mouse. 
 - (maybe) co-opt my smart watch for mini touch screen
   - It's also got a dial i like (for remote stepper motor control)
 - I want some sort of feedback for when entering commands
   - lights, vibration, sound (bluetooth), taping
 
+### Lee's Electronics (Love this place) - Purchase List
+
+-
+
 ## Physical device system
 
-In order to make this work, I need to remove the black plate and route a riser the same shape as the keyboard.
+- In order to make this work, I need to remove the black plate and route a riser the same shape as the keyboard.
 
+Tasks:
+
+- [Need to cut out my wood riser]
 
 ## Potential Future Feature
 
 - I believe i can also emulate a bluetooth keyboard - which would work on any system (windows/mac), not just Unix. And would be easier to connect to PCs I don't own (could experiment)
+- I do actually more more than one client type (proxy client, computational client, )
+  - and for a future adjustment to be a botnet functionality (distributed computing)
+    - Like for cracking passwords (is a good one) but others - split the work on some heavy computational task
+  - and so i want an abstract type and special types - later
+- I do want want a connector with ESP01 in case of no-network access to certain devices.

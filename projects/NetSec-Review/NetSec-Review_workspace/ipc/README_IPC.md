@@ -433,7 +433,6 @@ Scenario A: A multi-user system allows remote connection by various users. When 
     - e.g. `/dev/pts/11`
     - echo "Hello in the other window" > /dev/pts/11
     - Watch terminal registered `watch -n 2 'ls /dev/pts'`
-    - (could definitely troll someone you hacked or another user)
     - `ps -u "$USER" -o pid,tty,comm` useful
 - Check users
   - `loginctl`

@@ -27,7 +27,7 @@ So I will go back for chapters 1-8 for each tasks, I will still do a first read-
 For chapter 9 and beyond - going to ensure perfect practice first time.
 For 1-8 - going to go back and review with cheat-sheet creation and assess. Will mark below whether I'm confident with the learning outcomes - remaining requires review or extra practice.
 
-## Exercise Options Backlog (needs more exposure to:)
+## Just Exercise Options Backlog (needs more exposure to:)
 
 - Create you own version of the walkthroughs in ch07 (Packages, Crates, and Modules)
   - Most of it was common, except it didn't explore the 2 crate types enough, their typical
@@ -61,6 +61,9 @@ Just brainstorming here.
 Methodologies: - Pick favorite textbooks to dig into (Algorithms) - Test Rust Paradigms (Bevy, WebAssembly, embedded) - At least touch on each briefly - Pick at platform: web, micro-controller (raspberry, esp), gpu - Portfolio booster
 
 ### Web-Server
+
+- I've already built a front end for portfolio site with React (mostly)
+  - I need to build backend with Rust (and mongo maybe)
 
 #### Exercises/Samples to make
 
@@ -107,9 +110,11 @@ Methodologies: - Pick favorite textbooks to dig into (Algorithms) - Test Rust Pa
 
 ### Linux OS - Util or App
 
+Having deep dived some more advanced Linux topics during the NetSec review and with MP1 - I will create a unit specific to utility apps and happy hacking stuff
+
 - Recreate encryption util from NetSec courses
-- Create custom app as deep-dive for printing /proc folder updates.
-- Create your own task app on desktop using one the gui options on the API. (Something you can use)
+- Create util for printing /proc folder updates to UI (or log).
+- Task app on desktop using one the gui options on the API. (Something you can use)
 
 ### CompSci Review Topics
 
@@ -136,8 +141,6 @@ Methodologies: - Pick favorite textbooks to dig into (Algorithms) - Test Rust Pa
 
 ### Books worth doing a Rust related walkthrough
 
-- [The Embedded Rust Book](https://doc.rust-lang.org/beta/embedded-book/)
-  - My keyboard project above for raspberry pi Zero 2 would pair well with this.
 
 ### Raspberry Pi kit - Central Repository Kit
 
