@@ -69,6 +69,12 @@ Features:
 
 - Effectively this involves creating an administrated key-logger (in certain mode) - and passing those values  to the client and over a socket connection.
 
+##### bluetooth
+- Restrict certain pairing types SSP 
+    - My trusted devices should have OOB authenticated P-256 (LinkType=8) or better.
+    - My keyboard client connections (when mimicking a bluetooth keyboard) - should have proper restrictive considerations. - aka unidirectional.
+    - MITM attacks - during pairing and at existing connections should be mitigated.
+
 #### New Rust API/Crates
 
 - [rdev](https://docs.rs/rdev/latest/rdev/) - sort of a more OS eventlistening and sending library (not the best)

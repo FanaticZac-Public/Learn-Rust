@@ -42,11 +42,7 @@ Ok - So I'm reviewing the learning outcomes and materials from the courses menti
 <!-- Here's where I'm organizing the total potential demo list:
 - [My (potential) Demo List](./NetSec-Review_DemoList.md) -->
 
-## Default/Built-In Tool Chain
 
-- Bluetooth
-  - [My hcitool notes](./Tools-Review/hcitool-notes.md)
-  - [bluetoothctl guide](https://hadess.github.io/bluez/bluetoothctl.html)
 
 ## Rust Project Demo Library
 
@@ -83,6 +79,7 @@ ipc
 // Server:
 $ cargo run --bin ipc_00_server
 ```
+
 ```console
 // Client:
 $ cargo run --bin ipc_00_client
@@ -92,35 +89,35 @@ $ cargo run --bin ipc_00_client
 
 The READMEs will help parse my demo ideas and will also be the location of descriptions for each specific demo, each with links directly to the 4 (or more) main source code sections.
 
-<!-- > [!NOTE]
-> IPC apps will probably get the most attention for learning rust and playing around with sockets.
-> This is because it doesn't require an actual network and therefore I don't need to test networking to test logical code problem and various communication related activities.
-> However, everything done in IPC could easily be ported to the other socket examples - it just reduces complexity for anything but purposeful production work. -->
+> [!NOTE]
+> List is sequential in terms of my initial attention - meaning - when I work on adding value beyond initial sockets - like authentication/encryption, different models, etc, it will tend to develop organically across topics 
 
-| # Ex. | Topic / Link                                                              | Status / Notes                 |
-| ----: | ------------------------------------------------------------------------- | ------------------------------ |
-|     7 | [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC.md)       | Completed all initial examples |
-|     0 | [TCP](./NetSec-Review_workspace/tcp/README_TCP.md)                        | In progress                    |
-|     0 | [UDP](./NetSec-Review_workspace/udp/README_UDP.md)                        |                                |
-|     0 | [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)      | In progress (more fun - do now)                  |
-|     0 | [WebRTC](./NetSec-Review_workspace/webRTC/README_WEBRTC.md)               |                                |
-|     0 | [Raw Sockets - Experimental](./NetSec-Review_workspace/raw/README_RAW.md) |                                |
+| # Ex. | Topic / Link                                                              | Status / Notes                  |
+| ----: | ------------------------------------------------------------------------- | ------------------------------- |
+|     7 | [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC.md)       | Completed all initial examples  |
+|     1 | [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)      | In progress (more fun - do now) |
+|     0 | [TCP](./NetSec-Review_workspace/tcp/README_TCP.md)                        |                                 |
+|     0 | [UDP](./NetSec-Review_workspace/udp/README_UDP.md)                        |                                 |
+|     0 | [WebRTC](./NetSec-Review_workspace/webRTC/README_WEBRTC.md)               |                                 |
+|     0 | [Raw Sockets - Experimental](./NetSec-Review_workspace/raw/README_RAW.md) |                                 |
 
+- Future possibility 
+  - ADD COVERT BOTNET CONCERNS (PORT KNOCKING, ETC)
+  - Multi-connection-method manager - with unified application security layer and custom protocol.
 <!-- - [x] [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC.md)
 - [TCP](./NetSec-Review_workspace/tcp/README_TCP.md) **<- Currently in progress**
 - [UDP](./NetSec-Review_workspace/udp/README_UDP.md)
 - [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)
 - [WebRTC](./NetSec-Review_workspace/webRTC/README_WEBRTC.md)
 - [Raw Sockets](./NetSec-Review_workspace/raw/README_RAW.md) - (experimental / lower-level abstractions)
-- TODO - MAYBE ADD COVERT BOTNET CONCERNS (PORT KNOCKING, ETC)
 - x means initial passthrough done. -->
 
 ## Appendix A: Major Project Ideas
 
 - [Keyboard Commander](./Major-Project-01_one-hand-keyboard-System.md) (My one handed wearable keyboard project)
 - My own peer sharing service protocol.
-systemctl list-sockets
+  systemctl list-sockets
 
+## Useful Linux tools
 
-## Useful Linux tools 
 - systemctl list-sockets

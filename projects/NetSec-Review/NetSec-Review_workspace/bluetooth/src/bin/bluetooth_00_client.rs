@@ -7,7 +7,7 @@ use bluetooth::bluetooth_00::client::run_client;
 
 // just created a little file to store my mac to add to gitignore (in lieu of .env)
 // I didn't want to write a build.rs for this purpose
-#[path = "../bluetooth_00/env.rs"]
+#[path = "../env.rs"]
 mod env;
 
 #[tokio::main]

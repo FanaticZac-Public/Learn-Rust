@@ -38,19 +38,19 @@ I didn't market myself much throughout my schooling. I used several git accounts
 
 And so that's where this Rust venture comes in! Since Rust has some incredible strengths as a programming language (and novel mechanisms to learn), it's a great way to review and recreate some of my favorite projects, pursue some more ambitious objectives, and market myself in a more thoughtful way going forward.
 
-Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this monotonous process of self-marketing becomes something rather exciting instead. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this adventure.
+Rust is a fascinating language conceptually with excellent characteristics for my primary hobbies and professional goals - and so this monotonous process of self-marketing becomes something rather exciting instead. So it is in that spirit of practice, marketing, and intellectual exploration - that I begin this new-ish adventure.
 
 Advantages of Rust:
 
-- Compiles into machine code
+- Compiles directly into machine code
 - High performance
   - C/C++ level performance with stronger memory and concurrency safety.
-- Safer conduct
+- Safer conduct with ownership and borrowing
   - Memory safety without garbage collection
   - Pushes several run-time errors into the compile time checks
     - e.g. use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
-  - Ownership and borrowing
-  - Thread safety
+  - Thread safety 
+  - Null safety mechanism
 
 Those advantages are excellent for:
 
@@ -64,7 +64,7 @@ Those advantages are excellent for:
 Some disadvantages:
 
 - Steeper learning curve (not too bad actually!)
-- Longer compile time (maybe in some production environments!)
+- Longer compile time (not at my scale!)
 
 In short, it offers:
 
@@ -108,11 +108,11 @@ I'll maintain this project whenever I'm not employed or otherwise working on a p
 
 My projects steps are laid out below. You can consider the pending ones as flexible nodes I'm interested in pursuing - a list percolated out of the backlog from the ReadMe_Brainstorm document.
 
-This repository is a large catch all for a bunch of things that I'm willing to share. It's not about producing an distinct software module, like most repositories on git. It's an educational/learning resource I can publicize, and so inherently broad, amorphous, experimental. However, I will try and formalize some sections like demos, and super summary notes.
+This repository is a large catch all for a bunch of things that I'm willing to share. It's not about producing an distinct software module, like most repositories on git. It's an educational/learning resource I can publicize, so inherently broad, amorphous, experimental. However, I will try and formalize some sections like demos and super summary notes.
 
 ### Resource Links
 
-I'll be updating these resources for my reference as I go.
+I'll be updating and adding resources for reference as I go.
 
 - [Rust Learning Links](./notebooks/00-rust-learing-links.md) (Noted as encountered)
 - [TimeSchedule](./schedule/pomodoros-timesheet.ods) (Pomodoros based) - Just keeps me on track(ed)
@@ -155,13 +155,13 @@ My initial objective was to read through the full ["The Rust Programming Languag
 
 #### Read-through/Cheat-Sheet Strategy
 
-My implementation has been to read the (sub)chapters, making notes, and I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
+My procedure has been to read the (sub)chapters, making notes. I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
 
-While doing Rustlings (next step), completed the super-summaries aka mostly code-only sections, added links, comments, summaries. (The super summaries are the value added part)
+While doing Rustlings (following step), came back and completed the super-summaries(mostly code-only sections with annotations), added links, comments, or summaries. (The super summaries are the value added part)
 
 #### Cheat sheets for the 21 chapters:
 
-**Super Summary** sections are for quick my quick reference - are mostly final code completion with revenant annotations (and stuff i needed to reinforce) as concise as possible. If you have professional coding experience - might be a faster way to explore Rust (skim it's syntax and nuances - like safety enforcement (ch4 ownership, ch10 lifelines)). At any rate - it's a record of my learning progress, and resource reference.
+ If you have professional coding experience - just reading the Super Summaries might be a faster way to explore Rust (skim it's syntax and nuances like safety enforcement (ch4 ownership, ch10 lifelines)). At any rate - it's a record of my learning progress, and a resource reference.
 
 > [!IMPORTANT]
 > Super Summaries for most chapters are within the sub-chapter links "This chapter contains:" section, as I split out concerns in the directory.
@@ -290,12 +290,12 @@ Ok - so I'm choosing this as next step for a few reasons:
 
 1. Socket programming (NetSec) incorporates low-level programming practices that makes good use of advance techniques around concurrency and parallelism (key strengths in Rust).
 
-- In fact, when i did these courses (which were entirely on Unix based systems), our sample code was always in C (for performance, low-level control, and learning un-abstracted fundamentals). Rust is a direct competitor to C for system level programming, therefore a good place to start and really test the core potential of Rust.
+- In fact, when i did these courses (entirely on Unix based systems), our sample code was always in C (for performance, low-level control, and learning less-abstracted fundamentals). However Rust is a direct competitor to C for system level programming, where Rust's particular strengths as a competitor preside, therefore a good place to start and really test the core potential of Rust in practice.
 
-2. I have a personal private hobby project which includes socket programming (I'll discuss more in the ReadMe for this project) - so this is a pre-req. (Link below as well now)
-3. These skills and API language familiarizes would be helpful also to running and planning my multiplayer game backends, exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth hacking, and so on. It has widest associations.
+2. I have a personal private hobby project which includes socket programming (I'll discuss more in the ReadMe for this project) - so this is a pre-req for that. (Link below as well now)
+3. These skills and API language familiarizes would be helpful also to running and planning my multiplayer game backends, exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth hacking, and so on. It has widest relevant associations.
 
-This leg of the project will constitute me reviewing and super-summarizing all the documentation from my Network Security Applications courses briefly, identifying potential applications and demos in Rust, and then completing/devising a variety of examples - in Rust! Then - I'll do a large project finally (probably).
+This step of the project will constitute me reviewing and super-summarizing most the documentation from my Network Security Applications courses briefly, and identifying a variety of potential applications and demo examples. Then - I'll do a larger project finally that has some extra complexity.
 
 I have created the project entry point ReadMe here:
 

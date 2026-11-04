@@ -8,3 +8,4 @@ bluer = { version = "0.17.4", features = ["full"] }
 tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread", "io-util"]}
 futures = "0.3.34"
 dotenv = "0.15.0"
+aes-gcm = "0.11.1"
