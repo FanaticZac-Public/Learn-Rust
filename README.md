@@ -108,7 +108,7 @@ I'll maintain this project whenever I'm not employed or otherwise working on a p
 
 My projects steps are laid out below. You can consider the pending ones as flexible nodes I'm interested in pursuing - a list percolated out of the backlog from the ReadMe_Brainstorm document.
 
-This repository is a large catch all for a bunch of things that I'm willing to share. It's not about producing an distinct software module, like most repositories on git. It's an educational/learning resource I can publicize, so inherently broad, amorphous, experimental. However, I will try and formalize some sections like demos and super summary notes.
+This repository is a large catch all for a bunch of things that I'm willing to share. It's not about producing an distinct software module, like most repositories on GitHub. It's an educational/learning resource I can publicize and inherently incomplete, broad, amorphous, experimental. However, I will try and formalize some sections like demos and super summary notes - and make a clear path from main page to source files.
 
 ### Resource Links
 
@@ -155,9 +155,9 @@ My initial objective was to read through the full ["The Rust Programming Languag
 
 #### Read-through/Cheat-Sheet Strategy
 
-My procedure has been to read the (sub)chapters, making notes. I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
+My procedure had been to read the (sub)chapters and making notes. I also added more where I had extra questions, wanted more samples, or ran tangential experiments.
 
-While doing Rustlings (following step), came back and completed the super-summaries(mostly code-only sections with annotations), added links, comments, or summaries. (The super summaries are the value added part)
+While doing Rustlings (following step), came back and completed the super-summaries (mostly code-only sections with annotations), added links, comments, or summaries. (The super summaries are the value added part)
 
 #### Cheat sheets for the 21 chapters:
 
@@ -240,7 +240,7 @@ While doing Rustlings (following step), came back and completed the super-summar
 
 <!-- <details><summary><strong>Details</strong></summary> -->
 
-To reinforce the book's learning outcomes while fresh in mind - I'd committed to some further practicing of the basics - drawing from the book (while I also refined the cheat sheets further).
+To reinforce the book's learning outcomes while fresh in mind - I had committed to some further practicing of the basics - drawing from the book (while I also refined the super summaries in the cheat sheets further).
 
 Rustlings is an interactive program that has 94 exercises where you have to fix the code to beat the lesson. It's intended as a work book alongside reading the official Rust book, but I wasn't aware of it at first. Doing tests after completing the entire book is better for practicing memory recall anyway.
 
@@ -292,10 +292,10 @@ Ok - so I'm choosing this as next step for a few reasons:
 
 - In fact, when i did these courses (entirely on Unix based systems), our sample code was always in C (for performance, low-level control, and learning less-abstracted fundamentals). However Rust is a direct competitor to C for system level programming, where Rust's particular strengths as a competitor preside, therefore a good place to start and really test the core potential of Rust in practice.
 
-2. I have a personal private hobby project which includes socket programming (I'll discuss more in the ReadMe for this project) - so this is a pre-req for that. (Link below as well now)
-3. These skills and API language familiarizes would be helpful also to running and planning my multiplayer game backends, exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth hacking, and so on. It has widest relevant associations.
+2. I have a personal private hobby project which includes socket programming (I'll discuss more in the ReadMe for this project) - so this is a prerequisite for that. (Link below as well now)
+3. These skills and API language familiarizes would be helpful also to running and planning my multiplayer game backends, exploring embedded programming with my ESP01 and Raspberry Pi, Bluetooth hacking, and so on. It has the widest relevant associations.
 
-This step of the project will constitute me reviewing and super-summarizing most the documentation from my Network Security Applications courses briefly, and identifying a variety of potential applications and demo examples. Then - I'll do a larger project finally that has some extra complexity.
+This step constitutes me reviewing and super-summarizing most the documentation from my Network Security Applications courses (and elsewhere), and identifying a variety of potential applications and demo examples - and choosing some. Then - I'll do a larger project finally that has some extra complexity.
 
 I have created the project entry point ReadMe here:
 

@@ -12,7 +12,7 @@ pub async fn run_server() -> bluer::Result<()> {
     println!("Listening on RFCOMM channel 1");
 
     loop {
-        let (mut stream, peer) = listener.accept().await?;
+        let (mut stream, _peer) = listener.accept().await?;
         // println!("Connected: {peer:?}");
 
         let mut buf = [0; 1024];

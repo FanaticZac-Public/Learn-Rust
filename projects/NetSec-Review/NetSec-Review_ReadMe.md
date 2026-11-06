@@ -42,13 +42,11 @@ Ok - So I'm reviewing the learning outcomes and materials from the courses menti
 <!-- Here's where I'm organizing the total potential demo list:
 - [My (potential) Demo List](./NetSec-Review_DemoList.md) -->
 
-
-
 ## Rust Project Demo Library
 
 ### Rust Workspace Structure - Simplified examples for each crate.
 
-So this is a part of 'cargo workspace' that allows my demos to all use the same dependencies locally (rather than redundant downloads for each crate) so there's only one target build in NetSec_Review_Workspace, each crate has it's own toml still but on build there is only one download.
+So this is a part of 'cargo workspace' that allows my demo crates to all use the same dependencies locally (rather than redundant downloads for each crate) so there's only one target build in NetSec_Review_Workspace, each crate has it's own toml still but on build there is only one download of any overused public crates.
 
 This is ipc example showing only the 00 demo (numbering only for file names). Check each crates README for specific demo details. Binaries contain main entry point functions, libraries contain modules (implementations)
 
@@ -89,21 +87,43 @@ $ cargo run --bin ipc_00_client
 
 The READMEs will help parse my demo ideas and will also be the location of descriptions for each specific demo, each with links directly to the 4 (or more) main source code sections.
 
+<table cellpadding="0" cellspacing="0"  bgcolor="#090909"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66" valign="middle">
+      <img
+        src="../../images/ed-images/ed_hack_1.png"
+        width="40"
+        height="40"
+        alt="Author Git Logo"
+        align="center"
+      >
+    </td>
+    <td>
+   <strong>
+      These demos are the source outputs for my practicing of Rust (and some socket programming fundamentals) for this unit.
+    </strong>
+    </td>
+  </tr>
+</table>
+
 > [!NOTE]
-> List is sequential in terms of my initial attention - meaning - when I work on adding value beyond initial sockets - like authentication/encryption, different models, etc, it will tend to develop organically across topics 
+> List is sequential in terms of my initial attention - meaning - when I work on adding value beyond initial sockets - like authentication/encryption, different models, etc, it will tend to develop organically across topics as my boredom and interests dictates
 
 | # Ex. | Topic / Link                                                              | Status / Notes                  |
 | ----: | ------------------------------------------------------------------------- | ------------------------------- |
 |     7 | [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC.md)       | Completed all initial examples  |
-|     1 | [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)      | In progress (more fun - do now) |
+|     3 | [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)      | In progress (more fun - do now) |
 |     0 | [TCP](./NetSec-Review_workspace/tcp/README_TCP.md)                        |                                 |
 |     0 | [UDP](./NetSec-Review_workspace/udp/README_UDP.md)                        |                                 |
 |     0 | [WebRTC](./NetSec-Review_workspace/webRTC/README_WEBRTC.md)               |                                 |
 |     0 | [Raw Sockets - Experimental](./NetSec-Review_workspace/raw/README_RAW.md) |                                 |
 
-- Future possibility 
+- Future possibility
   - ADD COVERT BOTNET CONCERNS (PORT KNOCKING, ETC)
+  - I'd really like to do a laser line of sight transmission like they do for audio sometimes.
   - Multi-connection-method manager - with unified application security layer and custom protocol.
+
 <!-- - [x] [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC.md)
 - [TCP](./NetSec-Review_workspace/tcp/README_TCP.md) **<- Currently in progress**
 - [UDP](./NetSec-Review_workspace/udp/README_UDP.md)

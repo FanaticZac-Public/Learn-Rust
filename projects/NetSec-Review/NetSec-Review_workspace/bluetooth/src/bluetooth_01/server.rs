@@ -18,7 +18,7 @@ pub async fn run_server() -> Result<(), Box<dyn std::error::Error>> {
     let key = Key::<Aes256Gcm>::try_from(&key_bytes[..])?;
 
     loop {
-        let (mut stream, peer) = listener.accept().await?;
+        let (mut stream, _peer) = listener.accept().await?;
         // println!("Connected: {peer:?}");
 
         // So in this we're sending one packet with byte length of data packet to be expected following
