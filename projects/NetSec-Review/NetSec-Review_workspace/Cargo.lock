@@ -103,6 +103,8 @@ dependencies = [
  "aes-gcm",
  "bluer",
  "futures",
+ "futures-util",
+ "socket2",
  "tokio",
 ]
 

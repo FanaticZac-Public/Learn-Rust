@@ -4,18 +4,10 @@
 
 - [Unix Stream](https://doc.rust-lang.org/std/os/unix/net/struct.UnixStream.html)
 - [Unix Listener](https://doc.rust-lang.org/std/os/unix/net/struct.UnixListener.html)
-- [UnixDatagram](https://doc.rust-lang.org/std/os/unix/net/struct.UnixDatagram.html) - More like UDP domain socket\
-- [uds (Crate)] - Unix domain sockets] (https://docs.rs/uds/latest/uds/)
+- [UnixDatagram](https://doc.rust-lang.org/std/os/unix/net/struct.UnixDatagram.html)
+- [uds (Crate) - Unix domain sockets](https://docs.rs/uds/latest/uds/)
   - includes fd-passing
   - SOCK_SEQPACKET option
-
-## Demo ideas list
-
-See [Appendix Eh](#appendix-eh) for more information
-
----
-
----
 
 ## Example 1 - Basic communication
 
@@ -41,16 +33,13 @@ See [Appendix Eh](#appendix-eh) for more information
 
 This time I'm going model it after ch02 of the Rust Language Book (guessing game), except without the guessing game part. Effectively i want a little message loop where user as client can keep typing messages and server will print it out - and program doesn't quit until canceled ctl+C
 
-1. Server: Add a loop, checking, and printing out messages received
-
-- Uses newline limiter
-
+1. Server: Add a loop, checking, and printing out messages received (newline delimiter)
 2. Client: Maintains connection (don't worry about reading from server)
    - and asks for user input on loop to send to server.
 
 ### Source / Outcome
 
-Rust language feature used: **IO (input)**
+Rust language feature used: **io**
 
 | Role   | Library                                    | Binary                                         |
 | ------ | ------------------------------------------ | ---------------------------------------------- |
@@ -58,6 +47,8 @@ Rust language feature used: **IO (input)**
 | Server | [ipc_01/server.rs](./src/ipc_01/server.rs) | [ipc_01_server.rs](./src/bin/ipc_01_server.rs) |
 
 ![alt text](image.png)
+
+---
 
 ---
 
@@ -75,7 +66,7 @@ Rust language feature used: **IO (input)**
     </td>
     <td>
    <strong>
-    One thing that is a little tricky here is that i don't <br> want to add too much or too little in each iteration...
+    Let's speed things up
     </strong> 
     </td>
   </tr>
@@ -127,7 +118,7 @@ Messages are great - but you ain't a queen B unless you directing the workers. ð
 - Add server command options (will use enum and match)
 - Clients will respond to the server command and do something - and report back.
   - Stored as hashmap
-- I'm also going to rework the core application a bit more to handle
+- I'm also going to rework the core application a bit more to be more proper
 
 #### Implementation Notes
 
@@ -181,14 +172,14 @@ _Server (left) - sending individual commands to both clients (switching back and
     </td>
     <td>
    <strong>
-Ok - after much ruminating on what to do next (and brainstorming a bunch of potential demos of IPC that didn't hit the mark for real use-case examples), I started developing a the real-use case I have for the whimsical final goal of this NetSec-Review venture - which I've now formalized here in a major project for this project:
+Ok - after much ruminating on what to do next (and brainstorming a bunch of potential demos of IPC that didn't hit the mark for real use-case examples), I started developing a the real-use case for my whimsical final goal of this NetSec-Review venture - which I've now formalized here in a major project for this project:
     </strong> 
     </td>
   </tr>
 </table>
 
 - [Major Project 1 - Keyboard Commander](./Major-Project-01_1-hand-keyboard-System.md)
-- See [MP1 - Keyboard Commander - Feature 1](../../Major-Project-01_one-hand-keyboard-System.md#feature-1---full-remote-keyboard-control) for my real world use case of an root-only service being interacted with by client interface for security and encapsulation reasons. (It's effectively a keylogger that will transmit when mode selected to act as remote keyboard - Danger Zone!)
+- See [MP1 - Keyboard Commander - Feature 1](../../Major-Project-01_one-hand-keyboard-System.md#feature-1---full-remote-keyboard-control) root-only service interfaced with client application for security and encapsulation reasons (real-world IPC use-case).
 
 ---
 
@@ -214,17 +205,15 @@ Most program complete example
   </tr>
 </table>
 
-I want example 5 (04) to have a complete base copy for reworking later for the final project.
+Example 5 (04) is a complete base copy for reworking later for the final project.
 
-Next steps:
-
-- Add robustness to the clients (mixture of error handling )
+- Add robustness to the clients (mixture of error handling)
   - Prevent fail on disconnect and instead search for reconnection periodically
     - Adjusted handler to remove client connections
 - Add option for sending the same data to all clients at the same time and implement logic. (multi-cast)
 - Implement actual data transfers using Rust style idiomatic enum Option management capabilities
   - Such that 'show image' transfers the image, same with sound (mp3)
-  - (I still don't care too much about having real world data or linux control - for this with IPC)
+  - (I still don't care too much about having real world data or linux control - for this with IPC - without an operational purpose)
 
 #### Implementation Notes
 
@@ -258,7 +247,7 @@ _Also shows clients auto reconnecting on failure every 5 seconds_
 
 ### Implementation Notes
 
-- I create bi-directional communication by using 2 socket files but they're one-way each.
+- UnixDatagram sockets are unidirectional. I created bi-directional communication by using 2 socket files.
 
 ### Notes
 
@@ -293,22 +282,16 @@ _Very simple example using UnixDatagram - datapass and shutdown - ignore peer me
 
 ### Implementation Notes
 
-- Ok - so obviously fd (file descriptors) are process specific in the process descriptor table - what we're doing though - is passing the resource, not just the number (as though it would mean anything) which creates new fd in the receiving processes fd table.
+- Ok - so we all know fd (file descriptors) are process specific in the process descriptor table - what we're doing though - is passing the resource which creates new fd in the receiving processes fd table - handing over the resource (say file).
   - The receiving process makes it's own fd entry - but the point is we can say outsource some work on a resource that is owned by another process (or user).
-- Note: The primary use cases for doing fd-passing is to say pass a TCP connection to another process, or for supervisor process to pass one endpoint of a resource to a worker. (I may later do this in MP1 - for now program just indicates the fd is passed
-  )
+- Note: The primary use cases for doing fd-passing is to say pass a TCP connection to another process, or for supervisor process to pass one endpoint of a resource to a worker. (I may later do this in MP1 - for now program just indicates the fd is passed)
+- It implements SEQPACKET - preserves message boundaries and a connection, with reliable, ordered delivery.
+- Allows abstract addresses - are a Linux kernel feature allows setting a path with a prefixed null byte ('\0') Read unix man page for more info:
+  - [unix man page for abstract socket](https://man7.org/linux/man-pages/man7/unix.7.html) - under abstract
 
 ### Notes
 
-- uds crate has support for abstract addresses, fd-passing, SOCK_SEQPACKET sockets
-  - It effectively extends functionality of default unix sockets (and more)
-  - SEQPACKET - preserves message boundaries and a connection, with reliable, ordered delivery.
-    - UnixStream - reliable and ordered but is byte stream
-    - UnixDatagram - preserves message boundaries - but connection-less
-- "Everything-is-a-file" - my instructor lied!
-  - Ok - abstract socket addresses are a Linux kernel feature allows setting a path with a prefixed null byte ('\0') Read unix man page for more info:
-  - [unix man page for abstract socket](https://man7.org/linux/man-pages/man7/unix.7.html) - under abstract
-    - also read security in-case there was relevant something but nothing special about abstract sockets
+- Also read security in-case there was relevant something but nothing special about abstract sockets. Although - I don't like that you can't control permissions the same way - i likely would always use a everything-is-a-file socket implementation.
 
 ### Rust language feature used:
 
@@ -317,6 +300,8 @@ _Very simple example using UnixDatagram - datapass and shutdown - ignore peer me
 ### New Rust API/Crates
 
 - [Crate uds](https://docs.rs/uds/latest/uds/)
+  - It effectively extends functionality of default unix sockets (and more)
+  - uds crate has support for abstract addresses, fd-passing, SOCK_SEQPACKET sockets
   - [UnixStreamExt (Trait)](https://docs.rs/uds/latest/uds/trait.UnixStreamExt.html)
   - [UnixListenerExt (Trait)](https://docs.rs/uds/latest/uds/trait.UnixListenerExt.html)
   - [UnixDatagram (Trait)](https://docs.rs/uds/latest/uds/trait.UnixDatagramExt.html)
@@ -331,7 +316,8 @@ _Very simple example using UnixDatagram - datapass and shutdown - ignore peer me
 
 ![alt text](image-4.png)
 
-_Shows using abstract socket address, SOCK_SEQPACKET, and fd passing, receiver reads from /etc/host_
+_Shows using abstract socket address, SOCK_SEQPACKET, and fd passing, receiver reads from passed file descriptor /etc/host_
+
 <!--
 Let's split commands up into recon and implementation using my existing commands
 

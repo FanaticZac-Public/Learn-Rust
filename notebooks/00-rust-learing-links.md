@@ -12,6 +12,7 @@ These are links that I wanted to reference via things i encountered in the book 
   - [Appendix D: Useful Development Tools](https://doc.rust-lang.org/book/appendix-04-useful-development-tools.html)
   - [Constant Evaluation - which operations and compile time concerns](https://doc.rust-lang.org/reference/const_eval.html)
   - [Attributes in Rust](https://doc.rust-lang.org/reference/attributes.html)
+- [Rust Cheat Sheet](https://cheats.rs/)
 - [Rust Language API reference](https://doc.rust-lang.org/std/prelude/index.html)
 - [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
   - TODO: Need to review this (following tutorial - haven't yet).

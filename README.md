@@ -49,7 +49,7 @@ Advantages of Rust:
   - Memory safety without garbage collection
   - Pushes several run-time errors into the compile time checks
     - e.g. use-after-free, null-pointer dereferences, double frees, (many) buffer overflows
-  - Thread safety 
+  - Thread safety
   - Null safety mechanism
 
 Those advantages are excellent for:
@@ -97,7 +97,7 @@ In short, it offers:
 <!-- I enjoy the flexible orchestration that solo projects award. I often advocated for individual projects during my degree (particularly for games), whenever possible, for the benefit of creative autonomy, as well as the experience of working on each inch of a project rather than a subset.  -->
 
 <!-- As a consequence - I take full ownership of my work more naturally. -->
-<!-- 
+<!--
 Like with Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstras comes to mind also). Learning new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity in engineering can foster unique and rewarding discoveries.  -->
 
 <!-- A compass, a map, and binoculars - combined - maketh an adventurer. But I digress. -->
@@ -161,7 +161,7 @@ While doing Rustlings (following step), came back and completed the super-summar
 
 #### Cheat sheets for the 21 chapters:
 
- If you have professional coding experience - just reading the Super Summaries might be a faster way to explore Rust (skim it's syntax and nuances like safety enforcement (ch4 ownership, ch10 lifelines)). At any rate - it's a record of my learning progress, and a resource reference.
+If you have professional coding experience - just reading the Super Summaries might be a faster way to explore Rust (skim it's syntax and nuances like safety enforcement (ch4 ownership, ch10 lifelines)). At any rate - it's a record of my learning progress, and a resource reference.
 
 > [!IMPORTANT]
 > Super Summaries for most chapters are within the sub-chapter links "This chapter contains:" section, as I split out concerns in the directory.
@@ -304,6 +304,44 @@ I have created the project entry point ReadMe here:
 
 And so... project commenceth!
 
+---
+
+---
+
+#### Side Quest: Short-Queue of Exercises
+
+<table cellpadding="0" cellspacing="0"  bgcolor="#e9a700"   border="1"
+  frame="box"   rules="none">
+  <tr>
+    <td width="66"  valign="middle"  cellpadding="0"
+  cellspacing="0" bgcolor="#111" >
+      <img
+        src="./images/rust-images/rust-happy_ferris.svg"
+        width="40"
+        height="40"
+        alt="Rust - Does note compile crab"
+        align="right"
+      >
+    </td>
+    <td>
+        <font color="#111">
+    <strong>
+  Currently in progress
+</strong>
+</font>
+    </td>
+  </tr>
+</table>
+
+Ok - While doing the NetSec review - I was really feeling to mix it up a bit (since my demos don't scatch as much of a Rust itch with client/server protocols only) - and shifted to some Leet-Code session (since it has Rust as an option now).
+
+On Leet-Code free - they also don't let you use the debugger (only way to see stout on there) - so placing in this project - I can share my efforts and debug my code examples (not to mention work with tests more). 
+
+I'm doing those as 1 page sources, located here: 
+- [Leet Code Practice](./practice/leet_code/src/bin/)
+
+I also created a new resource for quickly browsing built in API methods
+- [API - Super Summaries](./notebooks/api-super-summaries/README_API_CHEATSHEET.md)
 ---
 
 ---

@@ -16,12 +16,12 @@ pub async fn run_server(
     let local = SocketAddr::new(address, AddressType::BrEdr, PSM);
     // let local = SocketAddr::any_br_edr();
     let socket = Datagram::bind(local).await?;
-    let actual = socket.as_ref().local_addr()?;
+    // let actual = socket.as_ref().local_addr()?;
 //    eprintln!("SERVER: listening at {actual:?}");
       eprintln!("SERVER: listening...");
 
     let mut packet = [0u8; 1024];
-    let mut received = 0u32;
+    // let mut received = 0u32;
 
     loop {
         let (n, sender) = socket.recv_from(&mut packet).await?;
@@ -46,6 +46,6 @@ pub async fn run_server(
             "Received #{seq} from {0:?}, {1:?}: {message}", sender.addr_type, sender.psm
         );
 
-        received += 1;
+        // received += 1;
     }
 }

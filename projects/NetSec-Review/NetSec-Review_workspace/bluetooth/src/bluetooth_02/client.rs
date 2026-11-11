@@ -13,7 +13,6 @@ pub async fn run_client(
 ) -> Result<(), Box<dyn Error>> {
     let address: Address = server_address.parse()?;
 
-    // Dynamically allocate the CLIENT's local endpoint.
     let socket = Datagram::bind(SocketAddr::any_br_edr()).await?;
 
     println!(
@@ -29,7 +28,7 @@ pub async fn run_client(
 
     println!("Sending to {server:?}");
 
-        socket.connect(server).await?;
+    socket.connect(server).await?;
 
     println!("Datagram peer connected!");
 

@@ -4,5 +4,7 @@ pub mod bluetooth_00;
 // Looped with aes_gcm application security
 pub mod bluetooth_01;
 
-// Audio Relay Example
+// L2CAP Datagram Socket
 pub mod bluetooth_02;
+
+pub mod bluetooth_03;
