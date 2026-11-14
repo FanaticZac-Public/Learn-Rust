@@ -1,8 +1,19 @@
-pub fn main() {
-    println!("{0:?}", roman_to_int("III".to_string()));
-    println!("{0:?}", roman_to_int("LVIII".to_string()));
-    println!("{0:?}", roman_to_int("MCMXCIV".to_string()));
-}
+// Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
+
+// Symbol       Value
+// I             1
+// V             5
+// X             10
+// L             50
+// C             100
+// D             500
+// M             1000
+
+// pub fn main() {
+//     println!("{0:?}", roman_to_int("III".to_string()));
+//     println!("{0:?}", roman_to_int("LVIII".to_string()));
+//     println!("{0:?}", roman_to_int("MCMXCIV".to_string()));
+// }
 
 use std::collections::HashMap;
 
@@ -36,14 +47,14 @@ pub fn roman_to_int(s: String) -> i32 {
     tally
 }
 
-// #[cfg(test)]
-// mod tests {
-//     use super::two_sum;
+#[cfg(test)]
+mod tests {
+    use super::roman_to_int;
 
-//     #[test]
-//     fn example_cases() {
-//         assert_eq!(two_sum(vec![2, 7, 11, 15], 9), vec![0, 1]);
-//         assert_eq!(two_sum(vec![3, 2, 4], 6), vec![1, 2]);
-//         assert_eq!(two_sum(vec![3, 3], 6), vec![0, 1]);
-//     }
-// }
+    #[test]
+    fn roman_to_int_tests() {
+        assert_eq!(roman_to_int("III".to_string()), 3);
+        assert_eq!(roman_to_int("LVIII".to_string()), 58);
+        assert_eq!(roman_to_int("MCMXCIV".to_string()), 1994);
+    }
+}

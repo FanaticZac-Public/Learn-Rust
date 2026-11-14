@@ -1,8 +1,4 @@
-pub fn main() {
-    println!("{0}", is_palindrome(101))
-}
-
-// cargo test --bin palindrome-number -- --nocapture 
+// Given an integer x, return true if x is a palindrome, and false otherwise.
 
 // could improve memory - but it's so elegant... 
 pub fn is_palindrome(x: i32) -> bool {
@@ -15,7 +11,7 @@ mod tests {
     use super::is_palindrome;
 
     #[test]
-    fn palindrome_cases() {
+    fn palindrome_tests() {
         let examples = [
             (101, true),
             (-121, false),

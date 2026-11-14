@@ -203,7 +203,7 @@ _server (receiver) output_
     </td>
     <td>
    <strong>
-Ok - so I actually got super distracted playing around with bluetooth devices, particularly ps4 controls that were having a connect and then disconnect problem - but anyway went down a rabbit hole but learned more about bluetooth input devices, and studying how input system system works on linux, troubleshooting my connection with btmon, witnessing the HID layer and it's communication, udevadm, etc. - I was finally able to get these up on headless mode (I honestly think it was just updates that resolved it). Also did you now a ps4 controller has a touchpad and works by default as mouse on the pc desktop? Anyway... back to our regularly scheduled Rustling...
+Ok - so I actually got super distracted playing around with bluetooth devices, particularly ps4 controls that were having a connect and then disconnect problem - but anyway went down a rabbit hole but learned more about bluetooth input devices, and studying how input system system works on linux, troubleshooting my connection with btmon, witnessing the HID layer and it's communication, udevadm, etc. - I was finally able to get these up on headless mode (I honestly think it was just updates that resolved it). Also did you know a ps4 controller has a touchpad and works by default as mouse on the pc desktop? Anyway... back to our regularly scheduled Rustling...
     </strong> 
     </td>
   </tr>
@@ -213,18 +213,17 @@ Ok - so I actually got super distracted playing around with bluetooth devices, p
 
 ## Example 4 - L2CAP (SeqPacket)
 
-Ok without further ado-doo, let's do a basic example with L2CAP (SeqPacket) - this aristo-packet stamps that envelope with his family wax (jk) - aka - gives you crisp message boundaries.
+Let's do a basic example with L2CAP (SeqPacket) - this aristo-packet stamps that envelope with his family wax (jk) - aka - but it gives you crisp message boundaries.
 
-SeqPacket is best suited for state updates, or control inputs, etc - reliable (application oriented) ideally non-continuous data that you might want to build quickly with crisp message boundaries, rather than delimited. 
+SeqPacket is best suited for state updates, or control inputs, etc - reliable (application oriented) ideally non-continuous data that you might want to build quickly with crisp message boundaries, rather than a stream delimited like serial connection. 
 
-To spice this one up - I'm going to see what other data we can get - and maybe add some extra data - let's say... checking latency and jitter, recording round-trip times (min/max,average), timestamps... and just get all the data i can...
-
-Here we go...
+To spice this one up - I'm going to see what other data we can get - and maybe add some extra data - let's say... checking latency and jitter, recording round-trip times (min/max,average), timestamps... and just get all the data i can.
 
 ### Implementation Notes
 
-- This one i had some tricky connection issues - acting same as the datagram packets - like it simply cant connect headless - and couldn't figure out why the connection style packet wasn't automatically bringing up the service. I realized one difference is that I'm doing LE(low-energy) connection - for LE over blue classic connection - you have set advertising on the controller - that way the client and properly ping it. This happens in leiu of a SCP service (that you would require for classic bluetooth).
-- Anyway - Program just pings the server the reply just echos the packet - and the client then times the responses, stores them - and gives you stats at the end for session.
+- This one i had some tricky connection issues - acting same as the datagram packets - like I simply couldn't connect headless or with display manager up and present connection - a connection style packet on a common service should do that automatically. 
+  - I realized one difference is that I'm doing LE (low-energy) connection. On LE rather than bluetooth classic connection - you have to tell your adapter to advertise - that way the client can properly reach the server. This happens in lieu of a SDP record (that you would have to setup for classic bluetooth - if not a common (already setup) protocol).
+- Anyway - Program just pings the server the reply just echos the packet - and the client then times the responses, stores them - and gives you stats at the end for session. 50 packets
 
 ### Source
 

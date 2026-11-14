@@ -14,7 +14,7 @@ The Matias keyboard works by mirroring the keys when holding down the space bar 
 
 ## Project goals
 
-Effectively i want this one-handed keyboard to be a wearable keyboard and small enough i could clip to my pocket. still have full typing control when doing a presentation or just messing around.
+Effectively i want this one-handed keyboard to be a wearable keyboard and small enough i could clip to my pocket. still have full typing control when doing a presentation or just messing around (or maybe add Flipper Zero style functions later)
 
 At home i actually want this to work like a universal remote control several computers at home (and robotics and electronics projects) by entering a key-combo or gpio switch to toggle effortlessly between devices - and then for my keys to be transmitted to that particular device like a wireless keyboard (in that mode).
 

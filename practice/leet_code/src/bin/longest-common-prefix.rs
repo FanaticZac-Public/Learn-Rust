@@ -1,21 +1,6 @@
-pub fn main() {
-    println!(
-        "{0:?}",
-        longest_common_prefix(vec![
-            "flower".to_string(),
-            "flow".to_string(),
-            "flight".to_string()
-        ])
-    );
-    println!(
-        "{0:?}",
-        longest_common_prefix(vec![
-            "dog".to_string(),
-            "racecar".to_string(),
-            "car".to_string()
-        ])
-    );
-}
+// Write a function to find the longest common prefix string amongst an array of strings.
+
+// If there is no common prefix, return an empty string "".
 
 // My poor version - bad rust skills.. lol
 //////////////////////////////////////
@@ -91,16 +76,31 @@ pub fn longest_common_prefix(strs: Vec<String>) -> String {
     prefix
 }
 
-// It was at this point where I made the /notebooks/api-super-summaries listings... need to memorize these functions or my code will suck in Rust.
+#[cfg(test)]
+mod tests {
+    use super::longest_common_prefix;
 
-// #[cfg(test)]
-// mod tests {
-//     use super::two_sum;
+    #[test]
+    fn finds_common_prefix() {
+        assert_eq!(
+            longest_common_prefix(vec![
+                "flower".to_string(),
+                "flow".to_string(),
+                "flight".to_string(),
+            ]),
+            "fl"
+        );
+    }
 
-//     #[test]
-//     fn example_cases() {
-//         assert_eq!(two_sum(vec![2, 7, 11, 15], 9), vec![0, 1]);
-//         assert_eq!(two_sum(vec![3, 2, 4], 6), vec![1, 2]);
-//         assert_eq!(two_sum(vec![3, 3], 6), vec![0, 1]);
-//     }
-// }
+    #[test]
+    fn returns_empty_string_when_there_is_no_common_prefix() {
+        assert_eq!(
+            longest_common_prefix(vec![
+                "dog".to_string(),
+                "racecar".to_string(),
+                "car".to_string(),
+            ]),
+            ""
+        );
+    }
+}

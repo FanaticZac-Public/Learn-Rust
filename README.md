@@ -100,7 +100,7 @@ In short, it offers:
 <!--
 Like with Agile methodology: having a plan matters, but so does listening to signals and pivoting to high value targets (Dijkstras comes to mind also). Learning new ideas, making trade-offs, solving unexpected problems - is the humanity in software development. Flexibility and creativity in engineering can foster unique and rewarding discoveries.  -->
 
-<!-- A compass, a map, and binoculars - combined - maketh an adventurer. But I digress. -->
+A compass, a map, and binoculars maketh an adventurer.
 
 ### Plan
 
@@ -300,6 +300,7 @@ This step constitutes me reviewing and super-summarizing most the documentation 
 I have created the project entry point ReadMe here:
 
 - [NetSec Review Project](./projects/NetSec-Review/NetSec-Review_ReadMe.md)
+  - [Demo Examples](./projects/NetSec-Review/NetSec-Review_ReadMe.md#demo-examples)
 - [Major Project 1 - One Handed Keyboard Build](./projects/NetSec-Review/Major-Project-01_one-hand-keyboard-System.md)
 
 And so... project commenceth!
@@ -308,7 +309,7 @@ And so... project commenceth!
 
 ---
 
-#### Side Quest: Short-Queue of Exercises
+### Side Quest: Short-Queue of Exercises
 
 <table cellpadding="0" cellspacing="0"  bgcolor="#e9a700"   border="1"
   frame="box"   rules="none">
@@ -333,15 +334,42 @@ And so... project commenceth!
   </tr>
 </table>
 
-Ok - While doing the NetSec review - I was really feeling to mix it up a bit (since my demos don't scatch as much of a Rust itch with client/server protocols only) - and shifted to some Leet-Code session (since it has Rust as an option now).
+Ok - While doing the NetSec review - I wanted to mix it up more - since those demos are Rust API oriented. LeetCode will let me practice Rust idiomatic fundamentals. On Leet-Code free, they also don't let you use the debugger of see stout so I'm going to solve the problems in this project, then check on LeetCode.
 
-On Leet-Code free - they also don't let you use the debugger (only way to see stout on there) - so placing in this project - I can share my efforts and debug my code examples (not to mention work with tests more). 
+These are 1 page binary files, each with own implementation (new to rust - so probably not capilatizing on Rusts best features and methods), the I'll check duckduckgo AI solution (just to see if theres' some methods or syntax I didn't think of - to compare), and I'll do the testing functions for each for posterity sake.
 
-I'm doing those as 1 page sources, located here: 
-- [Leet Code Practice](./practice/leet_code/src/bin/)
+[Leet Code Practice - Directory](./practice/leet_code/src/bin/)
 
-I also created a new resource for quickly browsing built in API methods
-- [API - Super Summaries](./notebooks/api-super-summaries/README_API_CHEATSHEET.md)
+<details>
+<summary>Opens for direct links here</summary>
+  <ul>
+    <li><a href="./practice/leet_code/src/bin/two-sum.rs">Two Sum</a></li>
+     <li><a href="./practice/leet_code/src/bin/palindrome-number.rs">Palindrome Number
+</a></li>
+     <li><a href="./practice/leet_code/src/bin/roman-to-integer.rs">Roman to Integer
+</a></li>
+     <li><a href="./practice/leet_code/src/bin/longest-common-prefix.rs">Longest Common Prefix
+</a></li>
+     <li><a href="./practice/leet_code/src/bin/valid-parentheses.rs">Valid Parentheses
+</a></li>
+  </ul>
+</details>
+<br>
+
+<!-- - I also created a new resource for quickly browsing built in API methods
+
+- [API - Super Summaries](./notebooks/api-super-summaries/README_API_CHEATSHEET.md) -->
+
+```console
+// To  run all tests (from project directory)
+$ cargo test
+
+// To test specific file
+// -- opens up the sub-options
+// --nocapture let's you see stout in the test
+$ cargo test --bin two-sum -- --nocapture
+```
+
 ---
 
 ---
@@ -372,8 +400,7 @@ I also created a new resource for quickly browsing built in API methods
 Side Quests - Details Dropdown
 </summary>
 
-> [!Caution]
-> BRAINSTORM AHEAD:
+> [!CAUTION] BRAINSTORM AHEAD:
 
 #### Side Quest: Test out different targets with Rust
 
@@ -485,7 +512,7 @@ Ok - I'm thinking I'm dilly-dallying too much with the textbook and syntax - alt
 
 This is a priority (desc) queue of exercises pulled from the brainstorm page that I think are worth doing but not necessarily having a useful deliverable (exercises will be moved out of backlog in Brainstorm readme and placed here):
 
-> [!Tip]
+> [!TIP]
 > These might make good blog posts
 
 <!-- Ensure these are links when created - in practice folder -->
@@ -511,18 +538,6 @@ This 'course' was made for intro programmers to Rust. The developer seems pretty
   - [companion GitHub repository](https://github.com/mainmatter/100-exercises-to-learn-rust)
 
 ---
-
-#### Side Quest: Reinforce core Rust API knowledge
-
-<!-- <details><summary><strong>See Details (Closed by Default)</strong></summary> -->
-
-While doing the iterators section of the Rustlings exercises, one of my solutions used the flat_map() method to flatten an array of hashmaps such that I could count the values in all of them across hashmaps in a single concise command. I added it to my notes in [cheat sheet ch13 - iterators](./tutorial/Rust%20Prog%20Lang/ch13/Iterators.md) at end of Super Summary even through the book didn't touch on it because i wanted to example stored for reference.
-
-I may want to similarly extend other Super Summaries with more method investigation of primary APIs. Here's a priority (desc) queue of potential priority areas:
-
-<!-- Ensure docs and links when created - in the notebooks folder -->
-
-- [Iterator](https://doc.rust-lang.org/std/iter/trait.Iterator.html)
 
 </details>
 

@@ -83,7 +83,7 @@ $ cargo run --bin ipc_00_server
 $ cargo run --bin ipc_00_client
 ```
 
-### Demo Examples by category
+### Demo Examples
 
 The READMEs will help parse my demo ideas and will also be the location of descriptions for each specific demo, each with links directly to the 4 (or more) main source code sections.
 
@@ -100,21 +100,21 @@ The READMEs will help parse my demo ideas and will also be the location of descr
       >
     </td>
     <td>
-   <strong>
-      These demos are the source outputs for my practicing of Rust (and some socket programming fundamentals) for this unit.
-    </strong>
+   <!-- <strong> -->
+      These demos are my personal demonstrations when practicing Rust for various socket programming fundamentals.
+    <!-- </strong> -->
     </td>
   </tr>
 </table>
 
 > [!NOTE]
-> List is sequential in terms of my initial attention - meaning - when I work on adding value beyond initial sockets - like authentication/encryption, different models, etc, it will tend to develop organically across topics as my boredom and interests dictates. 
-> I am trying to cover the basics of simple examples of each protocol in use - to use as a jump off point for later larger applications and perhaps unification holistically within MP1.
+> List is sequential in terms of my initial attention I'm just sort of ad-hoc adding value beyond initial sockets - like authentication/encryption, different models - it develops organically across topics as my boredom and interests dictates. 
+
 
 | # Ex. | Topic / Link                                                              | Status / Notes                  |
 | ----: | ------------------------------------------------------------------------- | ------------------------------- |
 |     7 | [Domain Sockets (IPC)](./NetSec-Review_workspace/ipc/README_IPC.md)       | Completed all initial examples  |
-|     3 | [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)      | In progress (more fun - do now) |
+|     4 | [BLUETOOTH](./NetSec-Review_workspace/bluetooth/README_BLUETOOTH.md)      | In progress (more fun - do now) |
 |     0 | [TCP](./NetSec-Review_workspace/tcp/README_TCP.md)                        |                                 |
 |     0 | [UDP](./NetSec-Review_workspace/udp/README_UDP.md)                        |                                 |
 |     0 | [WebRTC](./NetSec-Review_workspace/webRTC/README_WEBRTC.md)               |                                 |
